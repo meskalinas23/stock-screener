@@ -216,7 +216,7 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
         close = close.iloc[:, 0]
 
     avg_volume = hist["Volume"].tail(20).mean()
-    if avg_volume < MIN_AVG_VOLUME:
+    if float(avg_volume) < MIN_AVG_VOLUME:
         return None
 
     last_volume = hist["Volume"].iloc[-1]
