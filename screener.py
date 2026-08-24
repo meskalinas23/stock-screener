@@ -211,15 +211,16 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
     if hist.empty or len(hist) < SMA_PERIOD + 5:
         return None
 
-    close = hist["Close"]
+        close = hist["Close"]
     if isinstance(close, pd.DataFrame):
         close = close.iloc[:, 0]
-
-    avg_volume = hist["Volume"].tail(20).mean()
+    volume = hist["Volume"]
+    if isinstance(volume, pd.DataFrame):
+        volume = volume.iloc[:, 0]
+    avg_volume = volume.tail(20).mean()
     if float(avg_volume) < MIN_AVG_VOLUME:
         return None
-
-    last_volume = hist["Volume"].iloc[-1]
+    last_volume = volume.iloc[-1]
     if isinstance(last_volume, pd.Series):
         last_volume = last_volume.iloc[0]
     volume_ratio = float(last_volume) / float(avg_volume) if avg_volume > 0 else 0.0
