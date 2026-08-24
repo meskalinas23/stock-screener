@@ -210,8 +210,7 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
 
     if hist.empty or len(hist) < SMA_PERIOD + 5:
         return None
-
-        close = hist["Close"]
+    close = hist["Close"]
     if isinstance(close, pd.DataFrame):
         close = close.iloc[:, 0]
     volume = hist["Volume"]
