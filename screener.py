@@ -29,6 +29,8 @@ MAX_HOLD_DAYS = 20         # cap how many days forward we look when timing a his
 MIN_AVG_VOLUME = 300_000   # skip illiquid names
 REQUEST_PAUSE_SEC = 0.3    # pause between tickers to avoid rate-limiting
 EARNINGS_BLACKOUT_DAYS = 3 # skip a hit if earnings fall within this many days
+MIN_RISK_REWARD = 2.0      # skip setups worse than 1:2 reward-to-risk
+MIN_WIN_RATE = 0.50        # skip setups with historical win rate below 50%
 SECTOR_WARNING_COUNT = 3   # warn if this many+ hits share one sector
 NEWS_ITEMS_PER_TICKER = 3  # headlines to pull for each flagged ticker
 VOLUME_SPIKE_RATIO = 1.5   # today's volume vs 20-day avg — above this = "confirmed" by volume
@@ -276,7 +278,11 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
         return None  # skip — earnings gap risk would swamp the stop-loss
 
     risk_reward = reward / risk
+    if risk_reward < MIN_RISK_REWARD:
+        return None
     hold_stats = backtest_hold_time(close, sma20, rsi, direction)
+    if hold_stats["win_rate"] < MIN_WIN_RATE:
+        return None
     news = get_news_headlines(ticker)
 
     return {
