@@ -2,9 +2,8 @@ name: Daily Mean-Reversion Screener
 
 on:
   schedule:
-    # Runs 21:30 UTC = shortly after US market close, Mon-Fri
-    - cron: "30 21 * * 1-5"
-  workflow_dispatch: {}   # lets you also trigger it manually from the Actions tab
+    - cron: "0 13 * * 1-5"   # 13:00 UTC, weekdays — adjust as needed
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,7 +12,7 @@ jobs:
   screen:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -22,15 +21,15 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install pandas yfinance
 
-      - name: Run screener
+      - name: screen
         run: python screener.py
 
-      - name: Commit report
+      - name: Commit and push report
         run: |
           git config user.name "screener-bot"
-          git config user.email "actions@github.com"
-          git add reports/
-          git commit -m "Daily screen $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git config user.email "screener-bot@users.noreply.github.com"
+          git add docs/index.html reports/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update screener results"
           git push
