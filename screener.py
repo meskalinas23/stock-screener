@@ -30,7 +30,7 @@ MIN_AVG_VOLUME = 300_000   # skip illiquid names
 REQUEST_PAUSE_SEC = 0.3    # pause between tickers to avoid rate-limiting
 EARNINGS_BLACKOUT_DAYS = 3 # skip a hit if earnings fall within this many days
 MIN_RISK_REWARD = 2.0      # skip setups worse than 1:2 reward-to-risk
-MIN_WIN_RATE = 0.50        # skip setups with historical win rate below 50%
+MIN_WIN_RATE = 50          # skip setups with historical win rate below 50%
 SECTOR_WARNING_COUNT = 3   # warn if this many+ hits share one sector
 NEWS_ITEMS_PER_TICKER = 3  # headlines to pull for each flagged ticker
 VOLUME_SPIKE_RATIO = 1.5   # today's volume vs 20-day avg — above this = "confirmed" by volume
