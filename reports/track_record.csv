@@ -668,3 +668,7 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 667,2026-09-07,PCG,LONG,14.3,13.59,16.69,open,,,
 668,2026-09-07,ADSK,LONG,217.9,207.0,250.32,open,,,
 669,2026-09-07,CDNS,LONG,292.7,278.07,322.26,open,,,
+670,2026-09-07,EIX,LONG,56.77,53.93,68.1,open,,,
+671,2026-09-07,PCG,LONG,14.3,13.59,16.69,open,,,
+672,2026-09-07,ADSK,LONG,217.9,207.0,250.32,open,,,
+673,2026-09-07,CDNS,LONG,292.7,278.07,322.26,open,,,
