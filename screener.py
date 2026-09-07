@@ -515,6 +515,143 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
     return "\n".join(lines)
 
 
+def build_html_report(hits: list[dict], track_summary: dict) -> str:
+    today = dt.date.today().isoformat()
+
+    macro_warnings = check_upcoming_macro_events()
+    macro_html = ""
+    if macro_warnings:
+        items = "".join(f"<li>{w} &mdash; expect elevated volatility, size down accordingly</li>" for w in macro_warnings)
+        macro_html = f"<div class='warning'><strong>Macro event warning:</strong><ul>{items}</ul></div>"
+
+    track_html = ""
+    if track_summary["n"] > 0:
+        track_html = f"""
+        <p class="track-record"><strong>Live track record:</strong>
+        {track_summary['n']} resolved picks, {track_summary['win_rate']:.0f}% win rate,
+        avg {track_summary['avg_hold_days']} days held on winners.
+        (Small samples early on aren't statistically meaningful yet.)</p>
+        """
+
+    sector_html = ""
+    if hits:
+        sector_counts: dict = {}
+        for h in hits:
+            sector_counts[h["sector"]] = sector_counts.get(h["sector"], 0) + 1
+        crowded = {s: c for s, c in sector_counts.items() if c >= SECTOR_WARNING_COUNT}
+        if crowded:
+            items = "".join(
+                f"<li>{c} of today's picks are in {s} &mdash; likely one shared sector move, not {c} independent opportunities</li>"
+                for s, c in crowded.items()
+            )
+            sector_html = f"<div class='warning'><strong>Sector concentration warning:</strong><ul>{items}</ul></div>"
+
+    if not hits:
+        table_html = "<p>No candidates flagged today.</p>"
+        news_html = ""
+    else:
+        rows = ""
+        for h in hits:
+            hold = h["avg_hold_days"] if h["avg_hold_days"] is not None else "n/a"
+            win_rate = f"{h['hist_win_rate']:.0f}%" if h["hist_win_rate"] is not None else "n/a"
+            earnings = f"{h['days_to_earnings']}d" if h["days_to_earnings"] is not None else "unknown"
+            vol = f"{h['volume_ratio']}x" + (" &#128293;" if h["volume_confirmed"] else "")
+            direction_class = "long" if h["direction"] == "LONG" else "short"
+            rows += f"""
+            <tr>
+                <td>{h['ticker']}</td>
+                <td>{h['sector']}</td>
+                <td class="{direction_class}">{h['direction']}</td>
+                <td>${h['price']}</td>
+                <td>{h['rsi']}</td>
+                <td>{h['pct_vs_sma20']}%</td>
+                <td>{vol}</td>
+                <td>${h['entry']}</td>
+                <td>${h['stop_loss']}</td>
+                <td>${h['target']}</td>
+                <td>{h['risk_reward']}:1</td>
+                <td>{hold}</td>
+                <td>{win_rate}</td>
+                <td>{h['hist_sample_size']}</td>
+                <td>{earnings}</td>
+            </tr>
+            """
+        table_html = f"""
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>{rows}</tbody>
+        </table>
+        """
+
+        news_sections = ""
+        for h in hits:
+            if h["news"]:
+                items = "".join(
+                    f"<li><a href='{n['link']}'>{n['title']}</a></li>" if n["link"]
+                    else f"<li>{n['title']}</li>"
+                    for n in h["news"]
+                )
+            else:
+                items = "<li>No recent headlines found &mdash; check manually before acting.</li>"
+            news_sections += f"<h3>{h['ticker']}</h3><ul>{items}</ul>"
+        news_html = f"<h2>News context</h2>{news_sections}"
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body {{ font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }}
+        table {{ border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }}
+        th, td {{ border: 1px solid #ddd; padding: 6px 8px; text-align: left; }}
+        th {{ background: #f5f5f5; }}
+        .long {{ color: #0a7d2c; font-weight: bold; }}
+        .short {{ color: #c0392b; font-weight: bold; }}
+        .updated {{ color: #666; font-size: 0.9em; }}
+        .warning {{ background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }}
+        .track-record {{ background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }}
+        .notes {{ color: #555; font-size: 0.85em; margin-top: 15px; }}
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: {today}</p>
+    {macro_html}
+    {track_html}
+    {sector_html}
+    <h2>Setups ({len(hits)})</h2>
+    {table_html}
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was {VOLUME_SPIKE_RATIO}x+ the 20-day average.
+        Tickers with earnings due within {EARNINGS_BLACKOUT_DAYS} days are excluded.
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    {news_html}
+</body>
+</html>
+"""
+    return html
+
+
+def write_html_report(hits: list[dict], track_summary: dict):
+    import os
+    html = build_html_report(hits, track_summary)
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/index.html", "w") as f:
+        f.write(html)
+    print("Wrote docs/index.html")
+
+
 def main():
     print("Fetching S&P 500 ticker list...")
     ticker_records = get_sp500_tickers()
@@ -536,6 +673,8 @@ def main():
     # Also always update a "latest.md" for easy viewing
     with open("reports/latest.md", "w") as f:
         f.write(report)
+
+    write_html_report(hits, track_summary)
 
     print(f"Report written to {out_path}")
     print(report)
