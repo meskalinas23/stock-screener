@@ -689,3 +689,7 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 688,2026-09-08,DDOG,LONG,212.93,202.28,235.27,open,,,
 689,2026-09-08,CDNS,LONG,292.7,278.07,322.26,open,,,
 690,2026-09-08,CCL,LONG,23.51,22.33,25.87,open,,,
+691,2026-09-08,EIX,LONG,56.77,53.93,68.1,open,,,
+692,2026-09-08,PCG,LONG,14.3,13.59,16.69,open,,,
+693,2026-09-08,ADSK,LONG,217.9,207.0,250.32,open,,,
+694,2026-09-08,CDNS,LONG,292.7,278.07,322.26,open,,,

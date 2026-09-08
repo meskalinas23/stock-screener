@@ -1,116 +1,34 @@
 # Mean-Reversion Screener — 2026-09-08
 
-**Sector concentration warning:**
-- 8 of today's picks are in Information Technology — likely one shared sector move, not 8 independent opportunities
-- 3 of today's picks are in Consumer Discretionary — likely one shared sector move, not 3 independent opportunities
-
-17 candidate(s) flagged. Highest risk/reward first.
+4 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| CIEN | Information Technology | LONG | $321.0 | 24.2 | -17.6% | 1.41x | $321.0 | $304.95 | $389.75 | 4.28:1 | 10.5 | 31% | 13 | 93d |
 | EIX | Utilities | LONG | $56.77 | 30.1 | -16.6% | 0.74x | $56.77 | $53.93 | $68.1 | 3.99:1 | 6.2 | 50% | 10 | 49d |
-| MRNA | Health Care | SHORT | $145.55 | 59.3 | 23.4% | 0.45x | $145.55 | $152.83 | $117.96 | 3.79:1 | 6.8 | 46% | 13 | 58d |
-| FICO | Information Technology | LONG | $932.26 | 18.5 | -15.7% | 4.56x 🔥 | $932.26 | $885.65 | $1105.23 | 3.71:1 | 8.0 | 36% | 28 | 57d |
-| LULU | Consumer Discretionary | LONG | $100.61 | 23.2 | -15.4% | 6.19x 🔥 | $100.61 | $95.58 | $118.92 | 3.64:1 | 7.2 | 20% | 20 | 93d |
 | PCG | Utilities | LONG | $14.3 | 35.0 | -14.3% | 0.97x | $14.3 | $13.59 | $16.69 | 3.34:1 | 8.3 | 56% | 18 | 44d |
-| HOOD | Financials | SHORT | $122.11 | 72.0 | 18.2% | 1.14x | $122.11 | $128.22 | $103.3 | 3.08:1 | 7.3 | 21% | 34 | 57d |
 | ADSK | Information Technology | LONG | $217.9 | 21.4 | -13.0% | 1.95x 🔥 | $217.9 | $207.0 | $250.32 | 2.98:1 | 7.6 | 55% | 20 | 80d |
-| AXON | Industrials | LONG | $515.67 | 32.7 | -13.0% | 0.79x | $515.67 | $489.89 | $592.43 | 2.98:1 | 7.0 | 45% | 11 | 56d |
-| CRM | Information Technology | SHORT | $259.23 | 78.2 | 17.3% | 0.64x | $259.23 | $272.19 | $220.92 | 2.96:1 | 11.9 | 39% | 18 | 85d |
-| SNDK | Information Technology | SHORT | $1740.0 | 75.3 | 13.7% | 1.24x | $1740.0 | $1827.0 | $1529.79 | 2.42:1 | 7.0 | 9% | 22 | 59d |
-| DELL | Information Technology | SHORT | $524.14 | 70.8 | 12.4% | 1.34x | $524.14 | $550.35 | $466.11 | 2.21:1 | 6.0 | 27% | 30 | 80d |
-| NCLH | Consumer Discretionary | LONG | $15.57 | 21.0 | -9.7% | 0.85x | $15.57 | $14.79 | $17.25 | 2.16:1 | 5.8 | 35% | 17 | 57d |
-| CLX | Consumer Staples | LONG | $93.06 | 13.4 | -9.7% | 0.77x | $93.06 | $88.41 | $103.02 | 2.14:1 | 8.6 | 40% | 20 | 56d |
-| DDOG | Information Technology | LONG | $212.93 | 33.4 | -9.5% | 0.6x | $212.93 | $202.28 | $235.27 | 2.1:1 | 6.6 | 29% | 17 | 58d |
 | CDNS | Information Technology | LONG | $292.7 | 22.9 | -9.2% | 1.88x 🔥 | $292.7 | $278.07 | $322.26 | 2.02:1 | 7.0 | 56% | 9 | 48d |
-| CCL | Consumer Discretionary | LONG | $23.51 | 25.7 | -9.1% | 0.88x | $23.51 | $22.33 | $25.87 | 2.01:1 | 9.3 | 43% | 14 | 20d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average — high volume on the signal day usually means real capitulation/blow-off rather than a quiet drift that could just as easily reverse again. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
 ## News context
-
-**CIEN**
-- [AAOI Dips 46% in Three Months: Should You Buy the Stock Now or Wait?](https://finance.yahoo.com/markets/stocks/articles/aaoi-dips-46-three-months-162800982.html)
-- [NetApp Raised Guidance as Ciena’s Revenue Jumped 37%. Are AI Networks and Storage Finally Converting Into Earnings?](https://finance.yahoo.com/technology/ai/articles/netapp-raised-guidance-ciena-revenue-224652965.html)
-- [How Much Track Is Left For ANET Stock?](https://www.trefis.com/articles/614379/how-much-track-is-left-for-anet-stock/2026-09-04)
 
 **EIX**
 - [PG&E (PCG) and Edison (EIX) Sink After California Wildfire Liability Deal Falls Apart](https://finance.yahoo.com/markets/stocks/articles/pg-e-pcg-edison-eix-221941185.html)
 - [Jim Cramer on PG&E (PCG): Wildfire Liability Puts Growth Plans Under Pressure](https://finance.yahoo.com/markets/stocks/articles/jim-cramer-pg-e-pcg-102609345.html)
 - [Why Edison International Stock Withered on Wednesday](https://www.fool.com/investing/2026/09/02/why-edison-international-stock-withered-on-wednesd/)
 
-**MRNA**
-- [The Cure for Cancer is Becoming an Investable Opportunity: Analyst Sees $600 Million for Tempus AI](https://beincrypto.com/cancer-vaccine-diagnostics-investment-opportunity/)
-- [How Is Moderna's Stock Performance Compared to Other Healthcare Stocks](https://www.barchart.com/story/news/4472896/how-is-moderna-s-stock-performance-compared-to-other-healthcare-stocks)
-- [Moderna Just Doubled Overnight, and 2 More Healthcare Stocks Could Follow It](https://www.marketbeat.com/articles/moderna-just-doubled-overnight-and-2-more-healthcare-stocks-could-follow-it/?utm_source=yahoofinance&utm_medium=yahoofinance)
-
-**FICO**
-- [FICO Stock Falls Pre-Market After Bill Pulte Declares ‘No More’ to FICO’s Mortgage Scoring Monopoly — Orders Fannie Mae, Freddie Mac to Open Door to VantageScore (UPDATED)](https://finance.yahoo.com/real-estate/articles/fico-stock-falls-pre-market-163005697.html)
-- [One Regulator Just Ended Fair Isaac’s (FICO) Mortgage Monopoly. The Stock Fell 16% – Is It Justified?](https://finance.yahoo.com/markets/stocks/articles/one-regulator-just-ended-fair-035755697.html)
-- [Has Fair Isaac (FICO) Fallen Into Reasonable Territory After FHFA?](https://finance.yahoo.com/markets/stocks/articles/fair-isaac-fico-fallen-reasonable-230722466.html)
-
-**LULU**
-- [LULU Stock Is Down Over 50% YTD As Heidi O’Neill Takes Over: What Wall Street Wants Fixed First](https://stocktwits.com/news-articles/markets/equity/lulu-stock-is-down-over-50-ytd-as-heidi-o-neill-takes-over-what-wall-street-wants-fixed-first/cZt3Sa1RJxq)
-- [JPMorgan resets Lululemon stock price target by 38%](https://www.thestreet.com/investing/stocks/jpmorgan-lululemon-lulu-stock-price-target-cut)
-- [Lululemon Says Negative Social Media Buzz Hurt Traffic](https://finance.yahoo.com/markets/stocks/articles/lululemon-says-negative-social-media-233054166.html)
-
 **PCG**
 - [PG&E (PCG) and Edison (EIX) Sink After California Wildfire Liability Deal Falls Apart](https://finance.yahoo.com/markets/stocks/articles/pg-e-pcg-edison-eix-221941185.html)
 - [Is PG&E Corporation Stock Underperforming the Nasdaq?](https://www.barchart.com/story/news/4474852/is-pg-e-corporation-stock-underperforming-the-nasdaq)
 - [Jim Cramer on PG&E (PCG): Wildfire Liability Puts Growth Plans Under Pressure](https://finance.yahoo.com/markets/stocks/articles/jim-cramer-pg-e-pcg-102609345.html)
-
-**HOOD**
-- [HOOD Stock Gains Overnight: Retail Gets Bullish As Robinhood Lands First IPO Underwriting Gig](https://stocktwits.com/news-articles/markets/equity/hood-stock-gains-overnight-retail-gets-bullish-as-robinhood-lands-first-ipo-underwriting-gig/cZt3ZSlRJxv)
-- [Robinhood Wins a New Role in the Oura IPO: Underwriter](https://www.wsj.com/finance/robinhood-wins-a-new-role-in-the-oura-ipo-underwriter-9a76c632?siteid=yhoof2&yptr=yahoo)
-- [‘That Caught Our Attention’: Wall Street’s Just Turned the Most Bullish Since 2022, But Robinhood Says Its Own Customers Are Quietly Selling](https://www.barchart.com/story/news/4476336/that-caught-our-attention-wall-streets-just-turned-the-most-bullish-since-2022-but-robinhood-says-its-own-customers-are-quietly-selling)
 
 **ADSK**
 - [Own Oracle For The AI Boom? PTC's Story Looks Cleaner](https://www.trefis.com/articles/614377/own-oracle-for-the-ai-boom-ptcs-story-looks-cleaner/2026-09-04)
 - [Is Autodesk Stock's Pullback A Foundation To Build On?](https://www.trefis.com/articles/614376/is-autodesk-stocks-pullback-a-foundation-to-build-on/2026-09-04)
 - [What Pays Adobe Stock Owners While The Freemium Bet Waits](https://www.trefis.com/articles/614402/what-pays-adobe-stock-owners-while-the-freemium-bet-waits/2026-09-04)
 
-**AXON**
-- [Why Is Axon (AXON) Up 3% Since Last Earnings Report?](https://finance.yahoo.com/markets/stocks/articles/why-axon-axon-3-since-153012881.html)
-- [Axon's Connected Devices Unit Fuels Growth: Can It Sustain the Momentum?](https://finance.yahoo.com/markets/stocks/articles/axons-connected-devices-unit-fuels-142500335.html)
-- [Insider Alert: Axon President Sells $9.6 Million in Stock](https://www.fool.com/coverage/filings/2026/09/03/insider-alert-axon-president-sells-usd9-6-million-in-stock/)
-
-**CRM**
-- [Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump](https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html)
-- [Palantir Surged 51% in August. The Rest of Tech Wasn't Even Close](https://finance.yahoo.com/markets/stocks/articles/palantir-surged-51-august-rest-172023418.html)
-- [Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software](https://247wallst.com/investing/etf/2026/09/07/investors-pulled-700-million-from-igv-hours-before-snowflake-reignited-software/)
-
-**SNDK**
-- [Why SNDK, DELL, PANW Stocks Are Rallying Overnight Ahead Of Fresh Trading Week](https://stocktwits.com/news-articles/markets/equity/why-sndk-dell-panw-stocks-are-rallying-overnight-ahead-of-fresh-trading-week/cZt30ruRJx8)
-- [The AI Memory Stock That Could Outshine the Obvious Picks](https://www.fool.com/investing/2026/09/07/the-ai-memory-stock-that-could-outshine-the-obviou/)
-- [Sandisk Soars Nearly 12% Before Joining the S&P 100](https://finance.yahoo.com/markets/stocks/articles/sandisk-soars-nearly-12-joining-215620577.html)
-
-**DELL**
-- [Why Did DELL, VOD, ZETA Stocks Surge To 52-Week Highs Last Week?](https://stocktwits.com/news-articles/markets/equity/why-did-dell-vod-zeta-stocks-surge-to-52-week-highs-last-week/cZt3Sp3RJxr)
-- [Dell Stock Jumped 15% Last Week. Here's Why This Top AI Stock Is Still a Buy](https://www.fool.com/investing/2026/09/07/dell-stock-why-top-ai-stock-is-a-buy/)
-- [Why SNDK, DELL, PANW Stocks Are Rallying Overnight Ahead Of Fresh Trading Week](https://stocktwits.com/news-articles/markets/equity/why-sndk-dell-panw-stocks-are-rallying-overnight-ahead-of-fresh-trading-week/cZt30ruRJx8)
-
-**NCLH**
-- [Consumer Discretionary - Travel and Vacation Providers Stocks Q2 Results: Benchmarking Norwegian Cruise Line (NYSE:NCLH)](https://finance.yahoo.com/markets/stocks/articles/consumer-discretionary-travel-vacation-providers-014823835.html)
-- [Norwegian Cruise Line Just Dropped 16% in a Month: Sell Now, or Buy More?](https://247wallst.com/investing/2026/09/02/norwegian-cruise-line-just-dropped-16-in-a-month-sell-now-or-buy-more/)
-- [Oil Price Rally Helps Energy Stocks, Hurts Airlines](https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-01-2026/card/oil-price-rally-helps-energy-stocks-hurts-airlines-DPyLQTwzu2TucaLLdJuE?siteid=yhoof2&yptr=yahoo)
-
-**CLX**
-- [Procter & Gamble Margins Under Pressure: Time to Stay Cautious?](https://finance.yahoo.com/markets/stocks/articles/procter-gamble-margins-under-pressure-165800939.html)
-- [Can Cost Savings Offset Inflation & Protect Clorox's Margins?](https://finance.yahoo.com/markets/stocks/articles/cost-savings-offset-inflation-protect-144700934.html)
-- [3 Profitable Stocks We Steer Clear Of](https://finance.yahoo.com/markets/stocks/articles/3-profitable-stocks-steer-clear-091118253.html)
-
-**DDOG**
-- [Palantir Stock Leads August Rally -- Nvidia, Salesforce and Super Micro Jump](https://finance.yahoo.com/markets/stocks/articles/palantir-stock-leads-august-rally-215855985.html)
-- [Is Datadog (DDOG) Undervalued As Its Pullback Tests A Rich Valuation?](https://finance.yahoo.com/markets/stocks/articles/datadog-ddog-undervalued-pullback-tests-190553689.html)
-- [GitLab’s AI Tools Are Starting to Turn Developer Demand Into Real Revenue](https://www.marketbeat.com/articles/gitlabs-ai-tools-are-starting-to-turn-developer-demand-into-real-revenue/?utm_source=yahoofinance&utm_medium=yahoofinance)
-
 **CDNS**
 - [Wall Street Bulls Look Optimistic About Cadence (CDNS): Should You Buy?](https://finance.yahoo.com/markets/stocks/articles/wall-street-bulls-look-optimistic-133003026.html)
 - [Cadence Design Systems (CDNS) Stock Still Looks Overvalued Despite AI Chip Demand](https://finance.yahoo.com/markets/stocks/articles/cadence-design-systems-cdns-stock-141306563.html)
 - [Cadence Design Systems (CDNS) Following PCIe 6.0 Progress Has Fair Value Back In Focus](https://finance.yahoo.com/markets/stocks/articles/cadence-design-systems-cdns-following-090710711.html)
-
-**CCL**
-- [Will Carnival (CCL) Beat Estimates Again in Its Next Earnings Report?](https://finance.yahoo.com/markets/stocks/articles/carnival-ccl-beat-estimates-again-161001835.html)
-- [Carnival Stock Just Hit a 52-Week Low. Why It’s Time to Buy.](https://www.barrons.com/articles/carnival-stock-buy-c26a9bb0?siteid=yhoof2&yptr=yahoo)
-- [3 Consumer Stocks with Open Questions](https://finance.yahoo.com/markets/stocks/articles/3-consumer-stocks-open-questions-120610556.html)
