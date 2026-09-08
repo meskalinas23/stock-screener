@@ -30,7 +30,7 @@ MIN_AVG_VOLUME = 300_000   # skip illiquid names
 REQUEST_PAUSE_SEC = 0.3    # pause between tickers to avoid rate-limiting
 EARNINGS_BLACKOUT_DAYS = 3 # skip a hit if earnings fall within this many days
 MIN_RISK_REWARD = 2.0      # skip setups worse than 1:2 reward-to-risk
-MIN_WIN_RATE = 50          # skip setups with historical win rate below 50%
+MIN_WIN_RATE = 0.50        # skip setups with historical win rate below 50%
 SECTOR_WARNING_COUNT = 3   # warn if this many+ hits share one sector
 NEWS_ITEMS_PER_TICKER = 3  # headlines to pull for each flagged ticker
 VOLUME_SPIKE_RATIO = 1.5   # today's volume vs 20-day avg — above this = "confirmed" by volume
@@ -619,6 +619,8 @@ def build_html_report(hits: list[dict], track_summary: dict) -> str:
         .warning {{ background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }}
         .track-record {{ background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }}
         .notes {{ color: #555; font-size: 0.85em; margin-top: 15px; }}
+        .archive {{ columns: 3; column-gap: 20px; list-style: none; padding: 0; }}
+        .archive li {{ margin-bottom: 4px; }}
     </style>
 </head>
 <body>
@@ -643,13 +645,39 @@ def build_html_report(hits: list[dict], track_summary: dict) -> str:
     return html
 
 
+def build_archive_list_html() -> str:
+    import os
+    archive_dir = "docs/reports"
+    if not os.path.isdir(archive_dir):
+        return ""
+    dates = sorted(
+        (f[:-5] for f in os.listdir(archive_dir) if f.endswith(".html")),
+        reverse=True,
+    )
+    if not dates:
+        return ""
+    items = "".join(f"<li><a href='reports/{d}.html'>{d}</a></li>" for d in dates)
+    return f"<h2>Past reports</h2><ul class='archive'>{items}</ul>"
+
+
 def write_html_report(hits: list[dict], track_summary: dict):
     import os
-    html = build_html_report(hits, track_summary)
-    os.makedirs("docs", exist_ok=True)
+    today = dt.date.today().isoformat()
+
+    os.makedirs("docs/reports", exist_ok=True)
+
+    # dated copy (no archive list inside it, just the day's report)
+    dated_html = build_html_report(hits, track_summary)
+    with open(f"docs/reports/{today}.html", "w") as f:
+        f.write(dated_html)
+
+    # main page = today's report + archive list appended
+    archive_html = build_archive_list_html()
+    main_html = dated_html.replace("</body>", f"{archive_html}</body>")
     with open("docs/index.html", "w") as f:
-        f.write(html)
-    print("Wrote docs/index.html")
+        f.write(main_html)
+
+    print(f"Wrote docs/index.html and docs/reports/{today}.html")
 
 
 def main():
