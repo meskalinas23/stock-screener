@@ -1,26 +1,26 @@
 # Mean-Reversion Screener — 2026-09-14
 
-**Macro event warning:**
-- Federal Funds Rate (USD) on 2026-09-16 (in 2 day(s)) — expect elevated volatility, size down accordingly
-- FOMC Economic Projections (USD) on 2026-09-16 (in 2 day(s)) — expect elevated volatility, size down accordingly
-- FOMC Statement (USD) on 2026-09-16 (in 2 day(s)) — expect elevated volatility, size down accordingly
-- FOMC Press Conference (USD) on 2026-09-16 (in 2 day(s)) — expect elevated volatility, size down accordingly
+**This week's high-impact events:**
+- Federal Funds Rate on 2026-09-16 at 18:00 UTC
+- FOMC Economic Projections on 2026-09-16 at 18:00 UTC
+- FOMC Statement on 2026-09-16 at 18:00 UTC
+- FOMC Press Conference on 2026-09-16 at 18:30 UTC
 
 11 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| CASY | Consumer Staples | LONG | $615.47 | 9.4 | -20.4% | 1.17x | $615.47 | $584.7 | $773.48 | 5.13:1 | 10.0 | 86% | 14 | 86d |
-| PCG | Utilities | LONG | $13.8 | 33.0 | -14.1% | 0.5x | $13.8 | $13.11 | $16.07 | 3.29:1 | 8.3 | 56% | 18 | 39d |
-| BKNG | Consumer Discretionary | LONG | $173.92 | 18.2 | -12.5% | 1.0x | $173.92 | $165.22 | $198.87 | 2.87:1 | 7.9 | 50% | 16 | 44d |
-| SYK | Health Care | LONG | $275.56 | 20.9 | -12.6% | 1.32x | $275.56 | $261.78 | $315.11 | 2.87:1 | 9.2 | 75% | 16 | 46d |
-| ADSK | Information Technology | LONG | $212.4 | 26.9 | -12.1% | 0.76x | $212.4 | $201.78 | $241.7 | 2.76:1 | 7.6 | 55% | 20 | 75d |
-| HWM | Industrials | LONG | $229.61 | 25.6 | -12.1% | 1.02x | $229.61 | $218.13 | $261.16 | 2.75:1 | 11.9 | 90% | 10 | 53d |
-| FDS | Financials | LONG | $259.71 | 21.4 | -11.6% | 1.1x | $259.71 | $246.72 | $293.63 | 2.61:1 | 5.2 | 50% | 16 | 17d |
-| AMGN | Health Care | LONG | $377.35 | 16.8 | -11.2% | 0.88x | $377.35 | $358.48 | $424.76 | 2.51:1 | 10.6 | 67% | 15 | 51d |
-| IP | Materials | LONG | $34.36 | 20.2 | -10.8% | 1.15x | $34.36 | $32.64 | $38.54 | 2.43:1 | 9.4 | 60% | 20 | 45d |
-| AON | Financials | LONG | $302.69 | 21.9 | -10.1% | 1.69x 🔥 | $302.69 | $287.56 | $336.72 | 2.25:1 | 7.0 | 71% | 14 | 47d |
-| EXPE | Consumer Discretionary | LONG | $280.83 | 32.0 | -9.9% | 0.84x | $280.83 | $266.79 | $311.74 | 2.2:1 | 7.8 | 50% | 12 | 53d |
+| CASY | Consumer Staples | LONG | $615.47 | 9.4 | -20.4% | 1.17x | $615.47 | $584.7 | $773.48 | 5.13:1 | 10.0 | 86% | 14 | 85d |
+| PCG | Utilities | LONG | $13.8 | 33.0 | -14.1% | 0.5x | $13.8 | $13.11 | $16.07 | 3.29:1 | 8.3 | 56% | 18 | 38d |
+| BKNG | Consumer Discretionary | LONG | $173.92 | 18.2 | -12.5% | 1.0x | $173.92 | $165.22 | $198.87 | 2.87:1 | 7.9 | 50% | 16 | 43d |
+| SYK | Health Care | LONG | $275.56 | 20.9 | -12.6% | 1.32x | $275.56 | $261.78 | $315.11 | 2.87:1 | 9.2 | 75% | 16 | 45d |
+| ADSK | Information Technology | LONG | $212.4 | 26.9 | -12.1% | 0.76x | $212.4 | $201.78 | $241.7 | 2.76:1 | 7.6 | 55% | 20 | 74d |
+| HWM | Industrials | LONG | $229.61 | 25.6 | -12.1% | 1.02x | $229.61 | $218.13 | $261.16 | 2.75:1 | 11.9 | 90% | 10 | 52d |
+| FDS | Financials | LONG | $259.71 | 21.4 | -11.6% | 1.1x | $259.71 | $246.72 | $293.63 | 2.61:1 | 5.2 | 50% | 16 | 16d |
+| AMGN | Health Care | LONG | $377.35 | 16.8 | -11.2% | 0.88x | $377.35 | $358.48 | $424.76 | 2.51:1 | 10.6 | 67% | 15 | 50d |
+| IP | Materials | LONG | $34.36 | 20.2 | -10.8% | 1.15x | $34.36 | $32.64 | $38.54 | 2.43:1 | 9.4 | 60% | 20 | 44d |
+| AON | Financials | LONG | $302.69 | 21.9 | -10.1% | 1.69x 🔥 | $302.69 | $287.56 | $336.72 | 2.25:1 | 7.0 | 71% | 14 | 46d |
+| EXPE | Consumer Discretionary | LONG | $280.83 | 32.0 | -9.9% | 0.84x | $280.83 | $266.79 | $311.74 | 2.2:1 | 7.8 | 50% | 12 | 52d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
