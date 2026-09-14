@@ -6,6 +6,10 @@ dated markdown/HTML report with entry/stop/target and risk-to-reward for each hi
 This does NOT place any trades. It only researches and reports. You decide.
 """
 
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
 import datetime as dt
 import time
 
@@ -43,11 +47,10 @@ SP500_LIST_URL = (
 
 # ---------------------------------------------------------------------------
 # Macro event calendar — pulled live from a free public ForexFactory feed.
-# No manual date entry needed. Filters to high-impact USD events only
-# (FOMC, CPI, PPI, NFP, GDP, etc.) within MACRO_WARNING_DAYS.
+# No manual date entry needed. Shows today's events plus the full week's
+# high-impact USD events (FOMC, CPI, PPI, NFP, GDP, etc.).
 # ---------------------------------------------------------------------------
 FF_CALENDAR_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
-MACRO_WARNING_DAYS = 3
 MACRO_RELEVANT_COUNTRIES = {"USD"}
 MACRO_RELEVANT_IMPACT = {"High"}
 
@@ -62,10 +65,14 @@ def fetch_macro_events() -> list[dict]:
         return []
 
 
-def check_upcoming_macro_events(days_ahead: int = MACRO_WARNING_DAYS) -> list[str]:
+def check_upcoming_macro_events() -> dict:
+    """Returns this week's high-impact USD events, split into 'today' and 'this_week'."""
     events = fetch_macro_events()
     now = pd.Timestamp.now(tz="UTC")
-    warnings = []
+    today_events = []
+    week_events = []
+    fetch_failed = len(events) == 0
+
     for e in events:
         if e.get("country") not in MACRO_RELEVANT_COUNTRIES:
             continue
@@ -76,11 +83,14 @@ def check_upcoming_macro_events(days_ahead: int = MACRO_WARNING_DAYS) -> list[st
         except (ValueError, KeyError, TypeError):
             continue
         delta_days = (event_time.date() - now.date()).days
-        if 0 <= delta_days <= days_ahead:
-            when = "today" if delta_days == 0 else f"in {delta_days} day(s)"
-            title = e.get("title", "Economic event")
-            warnings.append(f"{title} ({e.get('country', '')}) on {event_time.date().isoformat()} ({when})")
-    return warnings
+        title = e.get("title", "Economic event")
+        entry = f"{title} on {event_time.date().isoformat()} at {event_time.strftime('%H:%M UTC')}"
+        if delta_days == 0:
+            today_events.append(entry)
+        if 0 <= delta_days <= 7:
+            week_events.append(entry)
+
+    return {"today": today_events, "week": week_events, "fetch_failed": fetch_failed}
 
 
 def get_sp500_tickers() -> list[dict]:
@@ -361,12 +371,24 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
     today = dt.date.today().isoformat()
     lines = [f"# Mean-Reversion Screener — {today}", ""]
 
-    macro_warnings = check_upcoming_macro_events()
-    if macro_warnings:
-        lines.append("**Macro event warning:**")
-        for w in macro_warnings:
-            lines.append(f"- {w} — expect elevated volatility, size down accordingly")
+    macro = check_upcoming_macro_events()
+    if macro["fetch_failed"]:
+        lines.append("*Macro calendar: couldn't reach the feed this run — check manually if needed.*")
         lines.append("")
+    else:
+        if macro["today"]:
+            lines.append("**📅 Today's high-impact events:**")
+            for w in macro["today"]:
+                lines.append(f"- {w}")
+            lines.append("")
+        if macro["week"]:
+            lines.append("**This week's high-impact events:**")
+            for w in macro["week"]:
+                lines.append(f"- {w}")
+            lines.append("")
+        if not macro["today"] and not macro["week"]:
+            lines.append("*No high-impact USD events found this week.*")
+            lines.append("")
 
     if track_summary["n"] > 0:
         lines.append(
@@ -443,14 +465,72 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
     return "\n".join(lines)
 
 
+def build_risk_reward_chart(h: dict, out_dir="docs/charts") -> str:
+    """Draw a simple entry/stop/target visual for one setup. Returns the relative path used in HTML."""
+    import os
+    os.makedirs(out_dir, exist_ok=True)
+
+    entry = h["entry"]
+    stop = h["stop_loss"]
+    target = h["target"]
+    direction = h["direction"]
+
+    fig, ax = plt.subplots(figsize=(5, 2.2))
+
+    if direction == "LONG":
+        risk_low, risk_high = stop, entry
+        reward_low, reward_high = entry, target
+    else:
+        risk_low, risk_high = entry, stop
+        reward_low, reward_high = target, entry
+
+    ax.axhspan(risk_low, risk_high, color="#e74c3c", alpha=0.25)
+    ax.axhspan(reward_low, reward_high, color="#27ae60", alpha=0.25)
+
+    ax.axhline(entry, color="#333", linewidth=1.5)
+    ax.axhline(stop, color="#c0392b", linewidth=1, linestyle="--")
+    ax.axhline(target, color="#0a7d2c", linewidth=1, linestyle="--")
+
+    label_style = dict(va="center", fontsize=9, bbox=dict(facecolor="white", edgecolor="none", pad=1.5))
+    ax.text(0.02, entry, f"Entry ${entry}", transform=ax.get_yaxis_transform(), color="#333", **label_style)
+    ax.text(0.02, stop, f"Stop ${stop}", transform=ax.get_yaxis_transform(), color="#c0392b", **label_style)
+    ax.text(0.02, target, f"Target ${target}", transform=ax.get_yaxis_transform(), color="#0a7d2c", **label_style)
+
+    y_min = min(stop, target, entry) * 0.98
+    y_max = max(stop, target, entry) * 1.02
+    ax.set_ylim(y_min, y_max)
+    ax.set_xlim(0, 1)
+    ax.set_xticks([])
+    ax.set_title(f"{h['ticker']} — {direction} — R:R {h['risk_reward']}:1", fontsize=10)
+    fig.tight_layout()
+
+    today = dt.date.today().isoformat()
+    filename = f"{h['ticker']}_{today}.png"
+    path = os.path.join(out_dir, filename)
+    fig.savefig(path, dpi=110)
+    plt.close(fig)
+
+    return f"charts/{filename}"
+
+
 def build_html_report(hits: list[dict], track_summary: dict) -> str:
     today = dt.date.today().isoformat()
 
-    macro_warnings = check_upcoming_macro_events()
-    macro_html = ""
-    if macro_warnings:
-        items = "".join(f"<li>{w} &mdash; expect elevated volatility, size down accordingly</li>" for w in macro_warnings)
-        macro_html = f"<div class='warning'><strong>Macro event warning:</strong><ul>{items}</ul></div>"
+    macro = check_upcoming_macro_events()
+    if macro["fetch_failed"]:
+        macro_html = "<div class='warning'><em>Macro calendar: couldn't reach the feed this run — check manually if needed.</em></div>"
+    elif not macro["today"] and not macro["week"]:
+        macro_html = "<div class='warning'><em>No high-impact USD events found this week.</em></div>"
+    else:
+        today_html = ""
+        if macro["today"]:
+            items = "".join(f"<li>{w}</li>" for w in macro["today"])
+            today_html = f"<strong>📅 Today's high-impact events:</strong><ul>{items}</ul>"
+        week_html = ""
+        if macro["week"]:
+            items = "".join(f"<li>{w}</li>" for w in macro["week"])
+            week_html = f"<strong>This week's high-impact events:</strong><ul>{items}</ul>"
+        macro_html = f"<div class='warning'>{today_html}{week_html}</div>"
 
     track_html = ""
     if track_summary["n"] > 0:
@@ -519,6 +599,7 @@ def build_html_report(hits: list[dict], track_summary: dict) -> str:
 
         news_sections = ""
         for h in hits:
+            chart_path = build_risk_reward_chart(h)
             if h["news"]:
                 items = "".join(
                     f"<li><a href='{n['link']}'>{n['title']}</a></li>" if n["link"]
@@ -527,7 +608,7 @@ def build_html_report(hits: list[dict], track_summary: dict) -> str:
                 )
             else:
                 items = "<li>No recent headlines found &mdash; check manually before acting.</li>"
-            news_sections += f"<h3>{h['ticker']}</h3><ul>{items}</ul>"
+            news_sections += f"<h3>{h['ticker']}</h3><img src='{chart_path}' alt='{h['ticker']} risk/reward chart' style='max-width:100%;'><ul>{items}</ul>"
         news_html = f"<h2>News context</h2>{news_sections}"
 
     html = f"""<!DOCTYPE html>
