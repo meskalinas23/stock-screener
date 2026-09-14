@@ -62,9 +62,9 @@ Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SH
 - [Oracle Posts Higher Profit, Revenue on Continued Cloud Infrastructure Strength](https://www.wsj.com/business/earnings/oracle-orcl-q1-earnings-report-stock-5158944b?siteid=yhoof2&yptr=yahoo)
 
 **AMGN**
-- [Amgen (AMGN) Fell 5% on a Drug That Isn’t Even Its Own. Here’s the Lp(a) Bet Now in Question.](https://finance.yahoo.com/healthcare/articles/amgen-amgn-fell-5-drug-142916899.html)
-- [Jim Cramer Weighs Amgen (AMGN) After Novartis Trial Failure](https://finance.yahoo.com/markets/stocks/articles/jim-cramer-weighs-amgen-amgn-104813723.html)
-- [Heart Disease, a Historic Strength for Big Pharma, Becomes a Weakness](https://www.wsj.com/health/pharma/heart-disease-a-historic-strength-for-big-pharma-becomes-a-weakness-983f0062?siteid=yhoof2&yptr=yahoo)
+- [Here is What to Know Beyond Why Amgen Inc. (AMGN) is a Trending Stock](https://finance.yahoo.com/markets/stocks/articles/know-beyond-why-amgen-inc-130003061.html)
+- [4 Healthcare Stocks to Play Safe as Fed Gears Up for Rate Hike](https://finance.yahoo.com/healthcare/articles/4-healthcare-stocks-play-safe-124500182.html)
+- [Amgen vs. Vertex Pharmaceuticals: Which Healthcare Stock Is a Better Buy in 2026?](https://www.fool.com/coverage/better-buy/2026/09/14/amgen-vs-vertex-pharmaceuticals-which-healthcare-stock-is-a-better-buy-in-2026/)
 
 **IP**
 - [Chewy downgraded, Shopify initiated: Wall Street's top analyst calls](https://finance.yahoo.com/markets/stocks/articles/chewy-downgraded-shopify-initiated-wall-134036018.html)
@@ -72,9 +72,9 @@ Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SH
 - [Here Are Friday’s Top Wall Street Analyst Research Calls: Atmos Energy, Celanese, Check Point Software, Chewy, Dell Technologies, Fortinet, Global Payments, HP, Shopify, and More](https://247wallst.com/investing/2026/09/11/here-are-fridays-top-wall-street-analyst-research-calls-atmos-energy-celanese-check-point-software-chewy-dell-technologies-fortinet-global-payments-hp-shopify-and-more/)
 
 **AON**
+- [Market Chatter: Aon Commences Seven-Part US Dollar Bond Sale to Fund USI Takeover](https://finance.yahoo.com/markets/stocks/articles/market-chatter-aon-commences-seven-124024801.html)
 - [PLMR's Gray Surety Acquisition Boosts Scale and Diversification](https://finance.yahoo.com/markets/stocks/articles/plmrs-gray-surety-acquisition-boosts-141400017.html)
 - [Here’s Why SGA U.S. LCG Liquidated Its Position in Aon plc (AON)](https://finance.yahoo.com/markets/stocks/articles/why-sga-u-lcg-liquidated-135528166.html)
-- [Is Aon Stock Underperforming the Dow?](https://www.barchart.com/story/news/4472498/is-aon-stock-underperforming-the-dow)
 
 **EXPE**
 - [Airbnb’s CEO Says AI Is the Best Thing That Ever Happened to His Company. Here’s Why](https://247wallst.com/investing/2026/09/13/airbnbs-ceo-says-ai-is-the-best-thing-that-ever-happened-to-his-company-heres-why/)
