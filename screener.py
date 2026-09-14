@@ -1,7 +1,7 @@
 """
 S&P 500 Mean-Reversion Screener
 Scans S&P 500 stocks for oversold mean-reversion setups, and writes a
-dated markdown report with entry/stop/target and risk-to-reward for each hit.
+dated markdown/HTML report with entry/stop/target and risk-to-reward for each hit.
 
 This does NOT place any trades. It only researches and reports. You decide.
 """
@@ -10,30 +10,31 @@ import datetime as dt
 import time
 
 import pandas as pd
+import requests
 import yfinance as yf
 
 # ---------------------------------------------------------------------------
 # Config — tune these to change how strict/loose the screener is
 # ---------------------------------------------------------------------------
 RSI_PERIOD = 7
-RSI_OVERSOLD = 30          # flag LONG candidates if RSI drops below this
-RSI_OVERBOUGHT = 70        # flag SHORT candidates if RSI rises above this
+RSI_OVERSOLD = 30
+RSI_OVERBOUGHT = 70
 BOLLINGER_PERIOD = 20
 BOLLINGER_STDDEV = 2
 SMA_PERIOD = 20
-MIN_PCT_BELOW_SMA = 0.06   # flag LONG if price is 6%+ below its 20-day SMA
-MIN_PCT_ABOVE_SMA = 0.06   # flag SHORT if price is 6%+ above its 20-day SMA
-STOP_LOSS_PCT = 0.05       # stop-loss 5% away from entry, either direction
-LOOKBACK_DAYS = 500        # ~2 years — needed so there's history to backtest hold time on
-MAX_HOLD_DAYS = 20         # cap how many days forward we look when timing a historical trade
-MIN_AVG_VOLUME = 300_000   # skip illiquid names
-REQUEST_PAUSE_SEC = 0.3    # pause between tickers to avoid rate-limiting
-EARNINGS_BLACKOUT_DAYS = 3 # skip a hit if earnings fall within this many days
-MIN_RISK_REWARD = 2.0      # skip setups worse than 1:2 reward-to-risk
-MIN_WIN_RATE = 50          # skip setups with historical win rate below 50%
-SECTOR_WARNING_COUNT = 3   # warn if this many+ hits share one sector
-NEWS_ITEMS_PER_TICKER = 3  # headlines to pull for each flagged ticker
-VOLUME_SPIKE_RATIO = 1.5   # today's volume vs 20-day avg — above this = "confirmed" by volume
+MIN_PCT_BELOW_SMA = 0.06
+MIN_PCT_ABOVE_SMA = 0.06
+STOP_LOSS_PCT = 0.05
+LOOKBACK_DAYS = 500
+MAX_HOLD_DAYS = 20
+MIN_AVG_VOLUME = 300_000
+REQUEST_PAUSE_SEC = 0.3
+EARNINGS_BLACKOUT_DAYS = 3
+MIN_RISK_REWARD = 2.0
+MIN_WIN_RATE = 50            # skip setups with historical win rate below 50%
+SECTOR_WARNING_COUNT = 3
+NEWS_ITEMS_PER_TICKER = 3
+VOLUME_SPIKE_RATIO = 1.5
 
 SP500_LIST_URL = (
     "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/"
@@ -41,18 +42,45 @@ SP500_LIST_URL = (
 )
 
 # ---------------------------------------------------------------------------
-# Macro event calendar — fill this in yourself from official sources:
-#   FOMC meeting dates: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
-#   CPI/PPI release schedule: https://www.bls.gov/schedule/news_release/2026_sched.htm
-# Add one entry per event as ("YYYY-MM-DD", "Event name"). The screener will
-# warn you in the report if a listed event falls within MACRO_WARNING_DAYS.
+# Macro event calendar — pulled live from a free public ForexFactory feed.
+# No manual date entry needed. Filters to high-impact USD events only
+# (FOMC, CPI, PPI, NFP, GDP, etc.) within MACRO_WARNING_DAYS.
 # ---------------------------------------------------------------------------
-MACRO_EVENTS: list[tuple[str, str]] = [
-    # ("2026-09-16", "FOMC Meeting"),
-    # ("2026-09-11", "CPI Release"),
-    # ("2026-09-10", "PPI Release"),
-]
+FF_CALENDAR_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
 MACRO_WARNING_DAYS = 3
+MACRO_RELEVANT_COUNTRIES = {"USD"}
+MACRO_RELEVANT_IMPACT = {"High"}
+
+
+def fetch_macro_events() -> list[dict]:
+    """Pull this week's economic calendar from the free ForexFactory feed. Best-effort — returns [] on failure."""
+    try:
+        resp = requests.get(FF_CALENDAR_URL, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+        return resp.json()
+    except Exception:
+        return []
+
+
+def check_upcoming_macro_events(days_ahead: int = MACRO_WARNING_DAYS) -> list[str]:
+    events = fetch_macro_events()
+    now = pd.Timestamp.now(tz="UTC")
+    warnings = []
+    for e in events:
+        if e.get("country") not in MACRO_RELEVANT_COUNTRIES:
+            continue
+        if e.get("impact") not in MACRO_RELEVANT_IMPACT:
+            continue
+        try:
+            event_time = pd.to_datetime(e["date"], utc=True)
+        except (ValueError, KeyError, TypeError):
+            continue
+        delta_days = (event_time.date() - now.date()).days
+        if 0 <= delta_days <= days_ahead:
+            when = "today" if delta_days == 0 else f"in {delta_days} day(s)"
+            title = e.get("title", "Economic event")
+            warnings.append(f"{title} ({e.get('country', '')}) on {event_time.date().isoformat()} ({when})")
+    return warnings
 
 
 def get_sp500_tickers() -> list[dict]:
@@ -64,15 +92,12 @@ def get_sp500_tickers() -> list[dict]:
 
 
 def get_news_headlines(ticker: str, max_items: int = NEWS_ITEMS_PER_TICKER) -> list[dict]:
-    """Pull recent headlines for a ticker. Best-effort — returns [] on any failure."""
     try:
         raw = yf.Ticker(ticker).news or []
     except Exception:
         return []
-
     headlines = []
     for item in raw[:max_items]:
-        # yfinance news items are nested dicts; be defensive about the shape
         content = item.get("content", item)
         title = content.get("title") or item.get("title")
         link = (
@@ -86,7 +111,6 @@ def get_news_headlines(ticker: str, max_items: int = NEWS_ITEMS_PER_TICKER) -> l
 
 
 def days_until_next_earnings(ticker: str) -> int | None:
-    """Trading days until next earnings report. None if unknown/unavailable."""
     try:
         edates = yf.Ticker(ticker).get_earnings_dates(limit=4)
         if edates is None or edates.empty:
@@ -101,21 +125,6 @@ def days_until_next_earnings(ticker: str) -> int | None:
         return None
 
 
-def check_upcoming_macro_events(days_ahead: int = MACRO_WARNING_DAYS) -> list[str]:
-    today = dt.date.today()
-    warnings = []
-    for date_str, name in MACRO_EVENTS:
-        try:
-            event_date = dt.date.fromisoformat(date_str)
-        except ValueError:
-            continue
-        delta = (event_date - today).days
-        if 0 <= delta <= days_ahead:
-            when = "today" if delta == 0 else f"in {delta} day(s)"
-            warnings.append(f"{name} on {date_str} ({when})")
-    return warnings
-
-
 def compute_rsi(close: pd.Series, period: int = RSI_PERIOD) -> pd.Series:
     delta = close.diff()
     gain = delta.clip(lower=0)
@@ -127,27 +136,16 @@ def compute_rsi(close: pd.Series, period: int = RSI_PERIOD) -> pd.Series:
     return rsi
 
 
-def backtest_hold_time(
-    close: pd.Series, sma: pd.Series, rsi: pd.Series, direction: str
-) -> dict:
-    """
-    Look back through this ticker's own history for prior instances of the
-    same kind of setup (RSI crossing into oversold/overbought), then measure
-    how many trading days it took, on average, for price to reach the
-    20-day-average target vs. hit the stop-loss first.
-    """
+def backtest_hold_time(close: pd.Series, sma: pd.Series, rsi: pd.Series, direction: str) -> dict:
     closes = close.values
     smas = sma.values
     rsis = rsi.values
     n = len(closes)
+    resolutions = []
 
-    resolutions = []  # list of (days_to_resolve, hit_target: bool)
-
-    # walk through history, skip the most recent bar (that's today's live signal)
     for i in range(SMA_PERIOD, n - 1 - MAX_HOLD_DAYS):
         if pd.isna(rsis[i]) or pd.isna(smas[i]):
             continue
-
         if direction == "LONG":
             fresh_signal = rsis[i] < RSI_OVERSOLD and not (
                 not pd.isna(rsis[i - 1]) and rsis[i - 1] < RSI_OVERSOLD
@@ -156,62 +154,42 @@ def backtest_hold_time(
             fresh_signal = rsis[i] > RSI_OVERBOUGHT and not (
                 not pd.isna(rsis[i - 1]) and rsis[i - 1] > RSI_OVERBOUGHT
             )
-
         if not fresh_signal:
             continue
 
         entry = closes[i]
         target = smas[i]
-        if direction == "LONG":
-            stop = entry * (1 - STOP_LOSS_PCT)
-        else:
-            stop = entry * (1 + STOP_LOSS_PCT)
+        stop = entry * (1 - STOP_LOSS_PCT) if direction == "LONG" else entry * (1 + STOP_LOSS_PCT)
 
         for j in range(1, MAX_HOLD_DAYS + 1):
             price = closes[i + j]
             if direction == "LONG":
                 if price >= target:
-                    resolutions.append((j, True))
-                    break
+                    resolutions.append((j, True)); break
                 if price <= stop:
-                    resolutions.append((j, False))
-                    break
+                    resolutions.append((j, False)); break
             else:
                 if price <= target:
-                    resolutions.append((j, True))
-                    break
+                    resolutions.append((j, True)); break
                 if price >= stop:
-                    resolutions.append((j, False))
-                    break
-        # if neither hit within MAX_HOLD_DAYS, the instance is dropped (inconclusive)
+                    resolutions.append((j, False)); break
 
     if not resolutions:
         return {"avg_hold_days": None, "win_rate": None, "sample_size": 0}
-
     wins = [r for r in resolutions if r[1]]
     win_rate = round(100 * len(wins) / len(resolutions), 0)
     avg_hold_days = round(sum(r[0] for r in wins) / len(wins), 1) if wins else None
-
-    return {
-        "avg_hold_days": avg_hold_days,
-        "win_rate": win_rate,
-        "sample_size": len(resolutions),
-    }
+    return {"avg_hold_days": avg_hold_days, "win_rate": win_rate, "sample_size": len(resolutions)}
 
 
 def analyze_ticker(ticker: str, sector: str) -> dict | None:
     try:
-        hist = yf.download(
-            ticker,
-            period=f"{LOOKBACK_DAYS}d",
-            progress=False,
-            auto_adjust=True,
-        )
+        hist = yf.download(ticker, period=f"{LOOKBACK_DAYS}d", progress=False, auto_adjust=True)
     except Exception:
         return None
-
     if hist.empty or len(hist) < SMA_PERIOD + 5:
         return None
+
     close = hist["Close"]
     if isinstance(close, pd.DataFrame):
         close = close.iloc[:, 0]
@@ -238,13 +216,11 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
     last_lower_band = float(lower_band.iloc[-1])
     last_upper_band = float(upper_band.iloc[-1])
     last_rsi = float(rsi.iloc[-1])
-
-    pct_vs_sma = (last_close - last_sma) / last_sma  # positive = above, negative = below
+    pct_vs_sma = (last_close - last_sma) / last_sma
 
     is_oversold_rsi = last_rsi < RSI_OVERSOLD
     is_below_band = last_close < last_lower_band
     is_far_below_sma = pct_vs_sma <= -MIN_PCT_BELOW_SMA
-
     is_overbought_rsi = last_rsi > RSI_OVERBOUGHT
     is_above_band = last_close > last_upper_band
     is_far_above_sma = pct_vs_sma >= MIN_PCT_ABOVE_SMA
@@ -257,8 +233,7 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
         return None
 
     entry = last_close
-    target = last_sma  # reversion target = back to the 20-day average
-
+    target = last_sma
     if direction == "LONG":
         stop_loss = entry * (1 - STOP_LOSS_PCT)
         risk = entry - stop_loss
@@ -275,36 +250,25 @@ def analyze_ticker(ticker: str, sector: str) -> dict | None:
 
     days_to_earnings = days_until_next_earnings(ticker)
     if days_to_earnings is not None and 0 <= days_to_earnings <= EARNINGS_BLACKOUT_DAYS:
-        return None  # skip — earnings gap risk would swamp the stop-loss
+        return None
 
     risk_reward = reward / risk
     if risk_reward < MIN_RISK_REWARD:
         return None
     hold_stats = backtest_hold_time(close, sma20, rsi, direction)
-    if hold_stats["win_rate"] < MIN_WIN_RATE:
+    if hold_stats["win_rate"] is None or hold_stats["win_rate"] < MIN_WIN_RATE:
         return None
     news = get_news_headlines(ticker)
 
     return {
-        "ticker": ticker,
-        "sector": sector,
-        "direction": direction,
-        "price": round(entry, 2),
-        "rsi": round(last_rsi, 1),
-        "pct_vs_sma20": round(pct_vs_sma * 100, 1),
-        "touched_band": touched_band,
-        "entry": round(entry, 2),
-        "stop_loss": round(stop_loss, 2),
-        "target": round(target, 2),
-        "risk_reward": round(risk_reward, 2),
-        "avg_volume": int(avg_volume),
-        "volume_ratio": round(volume_ratio, 2),
-        "volume_confirmed": volume_confirmed,
-        "avg_hold_days": hold_stats["avg_hold_days"],
-        "hist_win_rate": hold_stats["win_rate"],
-        "hist_sample_size": hold_stats["sample_size"],
-        "days_to_earnings": days_to_earnings,
-        "news": news,
+        "ticker": ticker, "sector": sector, "direction": direction,
+        "price": round(entry, 2), "rsi": round(last_rsi, 1),
+        "pct_vs_sma20": round(pct_vs_sma * 100, 1), "touched_band": touched_band,
+        "entry": round(entry, 2), "stop_loss": round(stop_loss, 2), "target": round(target, 2),
+        "risk_reward": round(risk_reward, 2), "avg_volume": int(avg_volume),
+        "volume_ratio": round(volume_ratio, 2), "volume_confirmed": volume_confirmed,
+        "avg_hold_days": hold_stats["avg_hold_days"], "hist_win_rate": hold_stats["win_rate"],
+        "hist_sample_size": hold_stats["sample_size"], "days_to_earnings": days_to_earnings, "news": news,
     }
 
 
@@ -336,44 +300,25 @@ def load_track_record() -> pd.DataFrame:
 
 
 def resolve_open_positions(df: pd.DataFrame) -> pd.DataFrame:
-    """Check every still-open logged position against current price and
-    mark it win/loss/expired if it's been resolved since it was logged."""
     open_rows = df[df["status"] == "open"]
     for idx, row in open_rows.iterrows():
         try:
-            recent = yf.download(
-                row["ticker"], period="5d", progress=False, auto_adjust=True
-            )
+            recent = yf.download(row["ticker"], period="5d", progress=False, auto_adjust=True)
             if recent.empty:
                 continue
             current_price = float(recent["Close"].iloc[-1])
         except Exception:
             continue
-
         date_flagged = dt.date.fromisoformat(row["date_flagged"])
         days_held = (dt.date.today() - date_flagged).days
-
-        hit_target = (
-            current_price >= row["target"] if row["direction"] == "LONG"
-            else current_price <= row["target"]
-        )
-        hit_stop = (
-            current_price <= row["stop"] if row["direction"] == "LONG"
-            else current_price >= row["stop"]
-        )
-
+        hit_target = current_price >= row["target"] if row["direction"] == "LONG" else current_price <= row["target"]
+        hit_stop = current_price <= row["stop"] if row["direction"] == "LONG" else current_price >= row["stop"]
         if hit_target:
-            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = [
-                "win", dt.date.today().isoformat(), days_held, current_price
-            ]
+            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = ["win", dt.date.today().isoformat(), days_held, current_price]
         elif hit_stop:
-            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = [
-                "loss", dt.date.today().isoformat(), days_held, current_price
-            ]
+            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = ["loss", dt.date.today().isoformat(), days_held, current_price]
         elif days_held > MAX_HOLD_DAYS:
-            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = [
-                "expired", dt.date.today().isoformat(), days_held, current_price
-            ]
+            df.loc[idx, ["status", "date_resolved", "days_held", "exit_price"]] = ["expired", dt.date.today().isoformat(), days_held, current_price]
     return df
 
 
@@ -383,17 +328,9 @@ def append_new_hits(df: pd.DataFrame, hits: list[dict]) -> pd.DataFrame:
     new_rows = []
     for i, h in enumerate(hits):
         new_rows.append({
-            "id": start_id + i,
-            "date_flagged": today,
-            "ticker": h["ticker"],
-            "direction": h["direction"],
-            "entry": h["entry"],
-            "stop": h["stop_loss"],
-            "target": h["target"],
-            "status": "open",
-            "date_resolved": "",
-            "days_held": "",
-            "exit_price": "",
+            "id": start_id + i, "date_flagged": today, "ticker": h["ticker"], "direction": h["direction"],
+            "entry": h["entry"], "stop": h["stop_loss"], "target": h["target"], "status": "open",
+            "date_resolved": "", "days_held": "", "exit_price": "",
         })
     if new_rows:
         df = pd.concat([df, pd.DataFrame(new_rows)], ignore_index=True)
@@ -444,7 +381,6 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
         lines.append("No candidates flagged today.")
         return "\n".join(lines)
 
-    # sector concentration check
     sector_counts: dict[str, int] = {}
     for h in hits:
         sector_counts[h["sector"]] = sector_counts.get(h["sector"], 0) + 1
@@ -452,10 +388,7 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
     if crowded:
         lines.append("**Sector concentration warning:**")
         for s, c in crowded.items():
-            lines.append(
-                f"- {c} of today's picks are in {s} — likely one shared "
-                f"sector move, not {c} independent opportunities"
-            )
+            lines.append(f"- {c} of today's picks are in {s} — likely one shared sector move, not {c} independent opportunities")
         lines.append("")
 
     lines.append(f"{len(hits)} candidate(s) flagged. Highest risk/reward first.")
@@ -469,9 +402,7 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
     for h in hits:
         hold = h["avg_hold_days"] if h["avg_hold_days"] is not None else "n/a"
         win_rate = f"{h['hist_win_rate']:.0f}%" if h["hist_win_rate"] is not None else "n/a"
-        earnings = (
-            f"{h['days_to_earnings']}d" if h["days_to_earnings"] is not None else "unknown"
-        )
+        earnings = f"{h['days_to_earnings']}d" if h["days_to_earnings"] is not None else "unknown"
         vol = f"{h['volume_ratio']}x" + (" 🔥" if h["volume_confirmed"] else "")
         lines.append(
             f"| {h['ticker']} | {h['sector']} | {h['direction']} | ${h['price']} | "
@@ -492,11 +423,8 @@ def build_report(hits: list[dict], track_summary: dict) -> str:
         "Tickers with earnings due within "
         f"{EARNINGS_BLACKOUT_DAYS} days are excluded entirely (gap risk). "
         f"'Volume vs Avg' 🔥 means today's volume was {VOLUME_SPIKE_RATIO}x+ "
-        "the 20-day average — high volume on the signal day usually means "
-        "real capitulation/blow-off rather than a quiet drift that could "
-        "just as easily reverse again. "
-        "This is a mechanical screen only — check the news below before "
-        "acting. Not financial advice."
+        "the 20-day average. This is a mechanical screen only — check the "
+        "news below before acting. Not financial advice."
     )
 
     lines.append("")
@@ -636,6 +564,7 @@ def build_html_report(hits: list[dict], track_summary: dict) -> str:
         SHORT = overbought, expected to pull back down toward the 20-day average.
         Stop-loss = 5% against the position. &#128293; means volume was {VOLUME_SPIKE_RATIO}x+ the 20-day average.
         Tickers with earnings due within {EARNINGS_BLACKOUT_DAYS} days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
         Mechanical screen only &mdash; check news before acting. Not financial advice.
     </p>
     {news_html}
@@ -650,10 +579,7 @@ def build_archive_list_html() -> str:
     archive_dir = "docs/reports"
     if not os.path.isdir(archive_dir):
         return ""
-    dates = sorted(
-        (f[:-5] for f in os.listdir(archive_dir) if f.endswith(".html")),
-        reverse=True,
-    )
+    dates = sorted((f[:-5] for f in os.listdir(archive_dir) if f.endswith(".html")), reverse=True)
     if not dates:
         return ""
     items = "".join(f"<li><a href='reports/{d}.html'>{d}</a></li>" for d in dates)
@@ -663,15 +589,12 @@ def build_archive_list_html() -> str:
 def write_html_report(hits: list[dict], track_summary: dict):
     import os
     today = dt.date.today().isoformat()
-
     os.makedirs("docs/reports", exist_ok=True)
 
-    # dated copy (no archive list inside it, just the day's report)
     dated_html = build_html_report(hits, track_summary)
     with open(f"docs/reports/{today}.html", "w") as f:
         f.write(dated_html)
 
-    # main page = today's report + archive list appended
     archive_html = build_archive_list_html()
     main_html = dated_html.replace("</body>", f"{archive_html}</body>")
     with open("docs/index.html", "w") as f:
@@ -697,8 +620,6 @@ def main():
     os.makedirs("reports", exist_ok=True)
     with open(out_path, "w") as f:
         f.write(report)
-
-    # Also always update a "latest.md" for easy viewing
     with open("reports/latest.md", "w") as f:
         f.write(report)
 
