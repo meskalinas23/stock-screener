@@ -931,3 +931,8 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 930,2026-10-02,GIS,LONG,31.99,30.39,35.31,open,,,
 931,2026-10-02,MKC,LONG,44.58,42.36,49.09,open,,,
 932,2026-10-02,NRG,LONG,95.36,90.59,104.9,open,,,
+933,2026-10-05,CTVA,LONG,12.39,11.77,70.8,open,,,
+934,2026-10-05,PTC,SHORT,192.26,201.87,139.2,open,,,
+935,2026-10-05,CHTR,LONG,107.77,102.38,124.81,open,,,
+936,2026-10-05,MOS,LONG,21.29,20.23,23.91,open,,,
+937,2026-10-05,GIS,LONG,31.68,30.1,34.98,open,,,
