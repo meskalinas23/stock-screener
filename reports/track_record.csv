@@ -945,3 +945,5 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 944,2026-10-07,MOS,LONG,20.01,19.01,23.34,open,,,
 945,2026-10-07,CHTR,LONG,107.79,102.4,121.65,open,,,
 946,2026-10-07,CHRW,LONG,135.03,128.28,149.66,open,,,
+947,2026-10-08,PTC,SHORT,193.73,203.41,148.68,open,,,
+948,2026-10-08,MOS,LONG,19.88,18.89,23.06,open,,,
