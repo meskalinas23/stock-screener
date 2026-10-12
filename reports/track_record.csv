@@ -954,3 +954,6 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 953,2026-10-09,T,LONG,22.11,21.01,24.95,open,,,
 954,2026-10-09,CBOE,SHORT,306.27,321.58,273.7,open,,,
 955,2026-10-09,HUM,SHORT,436.89,458.73,390.88,open,,,
+956,2026-10-12,PTC,SHORT,194.39,204.11,154.75,open,,,
+957,2026-10-12,MOS,LONG,18.85,17.91,22.42,open,,,
+958,2026-10-12,CHTR,LONG,102.48,97.36,115.9,open,,,

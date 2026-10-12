@@ -1,21 +1,23 @@
-# Mean-Reversion Screener — 2026-10-09
+# Mean-Reversion Screener — 2026-10-12
 
-*No high-impact USD events found this week.*
+**This week's high-impact events:**
+- Core CPI m/m on 2026-10-14 at 12:30 UTC
+- Core CPI y/y on 2026-10-14 at 12:30 UTC
+- CPI m/m on 2026-10-14 at 12:30 UTC
+- CPI y/y on 2026-10-14 at 12:30 UTC
+- Core PPI m/m on 2026-10-15 at 12:30 UTC
+- Core Retail Sales m/m on 2026-10-15 at 12:30 UTC
+- PPI m/m on 2026-10-15 at 12:30 UTC
+- Retail Sales m/m on 2026-10-15 at 12:30 UTC
+- Fed Chairman Warsh Speaks on 2026-10-16 at 03:30 UTC
 
-**Sector concentration warning:**
-- 3 of today's picks are in Communication Services — likely one shared sector move, not 3 independent opportunities
-
-7 candidate(s) flagged. Highest risk/reward first.
+3 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PTC | Information Technology | SHORT | $194.48 | 90.4 | 28.1% | 0.69x | $194.48 | $204.2 | $151.86 | 4.38:1 | 10.0 | 58% | 19 | 33d |
-| MOS | Materials | LONG | $18.77 | 10.9 | -17.4% | 0.93x | $18.77 | $17.84 | $22.73 | 4.22:1 | 8.2 | 50% | 16 | 25d |
-| VZ | Communication Services | LONG | $41.35 | 12.9 | -12.0% | 2.92x 🔥 | $41.35 | $39.28 | $46.98 | 2.73:1 | 9.4 | 75% | 12 | 17d |
-| CHTR | Communication Services | LONG | $104.23 | 23.4 | -11.7% | 1.16x | $104.23 | $99.02 | $117.98 | 2.64:1 | 7.3 | 53% | 19 | 28d |
-| T | Communication Services | LONG | $22.11 | 16.6 | -11.4% | 2.71x 🔥 | $22.11 | $21.01 | $24.95 | 2.57:1 | 8.4 | 56% | 16 | 12d |
-| CBOE | Financials | SHORT | $306.27 | 80.5 | 11.9% | 0.63x | $306.27 | $321.58 | $273.7 | 2.13:1 | 9.8 | 57% | 21 | 21d |
-| HUM | Health Care | SHORT | $436.89 | 74.9 | 11.8% | 2.51x 🔥 | $436.89 | $458.73 | $390.88 | 2.11:1 | 9.7 | 50% | 24 | 28d |
+| PTC | Information Technology | SHORT | $194.39 | 90.3 | 25.6% | 1.02x | $194.39 | $204.11 | $154.75 | 4.08:1 | 10.0 | 58% | 19 | 30d |
+| MOS | Materials | LONG | $18.85 | 13.7 | -15.9% | 1.19x | $18.85 | $17.91 | $22.42 | 3.79:1 | 8.2 | 50% | 16 | 22d |
+| CHTR | Communication Services | LONG | $102.48 | 21.2 | -11.6% | 0.53x | $102.48 | $97.36 | $115.9 | 2.62:1 | 7.3 | 53% | 19 | 25d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
@@ -27,17 +29,5 @@ Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SH
 **MOS**
 - No recent headlines found — check manually before acting.
 
-**VZ**
-- No recent headlines found — check manually before acting.
-
 **CHTR**
-- No recent headlines found — check manually before acting.
-
-**T**
-- No recent headlines found — check manually before acting.
-
-**CBOE**
-- No recent headlines found — check manually before acting.
-
-**HUM**
 - No recent headlines found — check manually before acting.

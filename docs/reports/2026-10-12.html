@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-10-12</p>
+    <div class='warning'><strong>This week's high-impact events:</strong><ul><li>Core CPI m/m on 2026-10-14 at 12:30 UTC</li><li>Core CPI y/y on 2026-10-14 at 12:30 UTC</li><li>CPI m/m on 2026-10-14 at 12:30 UTC</li><li>CPI y/y on 2026-10-14 at 12:30 UTC</li><li>Core PPI m/m on 2026-10-15 at 12:30 UTC</li><li>Core Retail Sales m/m on 2026-10-15 at 12:30 UTC</li><li>PPI m/m on 2026-10-15 at 12:30 UTC</li><li>Retail Sales m/m on 2026-10-15 at 12:30 UTC</li><li>Fed Chairman Warsh Speaks on 2026-10-16 at 03:30 UTC</li></ul></div>
+    
+    
+    <h2>Setups (3)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>PTC</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$194.39</td>
+                <td>90.3</td>
+                <td>25.6%</td>
+                <td>1.02x</td>
+                <td>$194.39</td>
+                <td>$204.11</td>
+                <td>$154.75</td>
+                <td>4.08:1</td>
+                <td>10.0</td>
+                <td>58%</td>
+                <td>19</td>
+                <td>30d</td>
+            </tr>
+            
+            <tr>
+                <td>MOS</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$18.85</td>
+                <td>13.7</td>
+                <td>-15.9%</td>
+                <td>1.19x</td>
+                <td>$18.85</td>
+                <td>$17.91</td>
+                <td>$22.42</td>
+                <td>3.79:1</td>
+                <td>8.2</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>22d</td>
+            </tr>
+            
+            <tr>
+                <td>CHTR</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$102.48</td>
+                <td>21.2</td>
+                <td>-11.6%</td>
+                <td>0.53x</td>
+                <td>$102.48</td>
+                <td>$97.36</td>
+                <td>$115.9</td>
+                <td>2.62:1</td>
+                <td>7.3</td>
+                <td>53%</td>
+                <td>19</td>
+                <td>25d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>PTC</h3><img src='charts/PTC_2026-10-12.png' alt='PTC risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>MOS</h3><img src='charts/MOS_2026-10-12.png' alt='MOS risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>CHTR</h3><img src='charts/CHTR_2026-10-12.png' alt='CHTR risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul>
+</body>
+</html>
