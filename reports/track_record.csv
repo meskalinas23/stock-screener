@@ -957,3 +957,7 @@ id,date_flagged,ticker,direction,entry,stop,target,status,date_resolved,days_hel
 956,2026-10-12,PTC,SHORT,194.39,204.11,154.75,open,,,
 957,2026-10-12,MOS,LONG,18.85,17.91,22.42,open,,,
 958,2026-10-12,CHTR,LONG,102.48,97.36,115.9,open,,,
+959,2026-10-13,PTC,SHORT,194.12,203.83,157.82,open,,,
+960,2026-10-13,MOS,LONG,19.23,18.26,22.11,open,,,
+961,2026-10-13,MU,LONG,942.89,895.74,1042.27,open,,,
+962,2026-10-13,INCY,LONG,108.48,103.06,119.49,open,,,
