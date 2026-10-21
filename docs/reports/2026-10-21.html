@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-10-21</p>
+    <div class='warning'><em>No high-impact USD events found this week.</em></div>
+    
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>3 of today's picks are in Information Technology &mdash; likely one shared sector move, not 3 independent opportunities</li></ul></div>
+    <h2>Setups (7)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>KLAC</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$162.96</td>
+                <td>18.5</td>
+                <td>-12.9%</td>
+                <td>0.34x</td>
+                <td>$162.96</td>
+                <td>$154.81</td>
+                <td>$187.03</td>
+                <td>2.95:1</td>
+                <td>4.0</td>
+                <td>62%</td>
+                <td>8</td>
+                <td>7d</td>
+            </tr>
+            
+            <tr>
+                <td>MOS</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$17.7</td>
+                <td>12.3</td>
+                <td>-12.5%</td>
+                <td>0.67x</td>
+                <td>$17.7</td>
+                <td>$16.82</td>
+                <td>$20.23</td>
+                <td>2.85:1</td>
+                <td>8.2</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>13d</td>
+            </tr>
+            
+            <tr>
+                <td>EFX</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$174.37</td>
+                <td>79.9</td>
+                <td>16.3%</td>
+                <td>0.54x</td>
+                <td>$174.37</td>
+                <td>$183.08</td>
+                <td>$149.9</td>
+                <td>2.81:1</td>
+                <td>5.7</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>105d</td>
+            </tr>
+            
+            <tr>
+                <td>AKAM</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$90.39</td>
+                <td>32.7</td>
+                <td>-11.1%</td>
+                <td>0.33x</td>
+                <td>$90.39</td>
+                <td>$85.87</td>
+                <td>$101.69</td>
+                <td>2.5:1</td>
+                <td>10.8</td>
+                <td>73%</td>
+                <td>15</td>
+                <td>15d</td>
+            </tr>
+            
+            <tr>
+                <td>FDS</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$319.61</td>
+                <td>85.8</td>
+                <td>12.4%</td>
+                <td>0.25x</td>
+                <td>$319.61</td>
+                <td>$335.6</td>
+                <td>$284.41</td>
+                <td>2.2:1</td>
+                <td>9.0</td>
+                <td>64%</td>
+                <td>14</td>
+                <td>57d</td>
+            </tr>
+            
+            <tr>
+                <td>CSGP</td>
+                <td>Real Estate</td>
+                <td class="short">SHORT</td>
+                <td>$32.89</td>
+                <td>76.9</td>
+                <td>12.2%</td>
+                <td>0.32x</td>
+                <td>$32.89</td>
+                <td>$34.53</td>
+                <td>$29.31</td>
+                <td>2.18:1</td>
+                <td>12.8</td>
+                <td>57%</td>
+                <td>7</td>
+                <td>6d</td>
+            </tr>
+            
+            <tr>
+                <td>INTU</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$334.38</td>
+                <td>76.9</td>
+                <td>12.1%</td>
+                <td>0.25x</td>
+                <td>$334.38</td>
+                <td>$351.1</td>
+                <td>$298.19</td>
+                <td>2.16:1</td>
+                <td>11.0</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>29d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>KLAC</h3><img src='charts/KLAC_2026-10-21.png' alt='KLAC risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>MOS</h3><img src='charts/MOS_2026-10-21.png' alt='MOS risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>EFX</h3><img src='charts/EFX_2026-10-21.png' alt='EFX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>AKAM</h3><img src='charts/AKAM_2026-10-21.png' alt='AKAM risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>FDS</h3><img src='charts/FDS_2026-10-21.png' alt='FDS risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>CSGP</h3><img src='charts/CSGP_2026-10-21.png' alt='CSGP risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>INTU</h3><img src='charts/INTU_2026-10-21.png' alt='INTU risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul>
+</body>
+</html>
