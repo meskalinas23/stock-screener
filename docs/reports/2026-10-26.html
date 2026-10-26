@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-10-26</p>
+    <div class='warning'><strong>This week's high-impact events:</strong><ul><li>Federal Funds Rate on 2026-10-28 at 18:00 UTC</li><li>FOMC Statement on 2026-10-28 at 18:00 UTC</li><li>FOMC Press Conference on 2026-10-28 at 18:30 UTC</li><li>Advance GDP q/q on 2026-10-29 at 12:30 UTC</li><li>Core PCE Price Index m/m on 2026-10-29 at 12:30 UTC</li></ul></div>
+    
+    
+    <h2>Setups (6)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FIX</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$1244.53</td>
+                <td>27.1</td>
+                <td>-20.0%</td>
+                <td>1.23x</td>
+                <td>$1244.53</td>
+                <td>$1182.3</td>
+                <td>$1555.04</td>
+                <td>4.99:1</td>
+                <td>6.7</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>115d</td>
+            </tr>
+            
+            <tr>
+                <td>LRCX</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$238.98</td>
+                <td>24.5</td>
+                <td>-19.3%</td>
+                <td>0.65x</td>
+                <td>$238.98</td>
+                <td>$227.03</td>
+                <td>$296.16</td>
+                <td>4.79:1</td>
+                <td>5.0</td>
+                <td>57%</td>
+                <td>7</td>
+                <td>93d</td>
+            </tr>
+            
+            <tr>
+                <td>ROP</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$439.07</td>
+                <td>93.9</td>
+                <td>15.7%</td>
+                <td>1.01x</td>
+                <td>$439.07</td>
+                <td>$461.02</td>
+                <td>$379.6</td>
+                <td>2.71:1</td>
+                <td>6.2</td>
+                <td>55%</td>
+                <td>11</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>EFX</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$177.29</td>
+                <td>66.2</td>
+                <td>14.3%</td>
+                <td>0.6x</td>
+                <td>$177.29</td>
+                <td>$186.15</td>
+                <td>$155.17</td>
+                <td>2.5:1</td>
+                <td>5.7</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>100d</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$20.72</td>
+                <td>26.4</td>
+                <td>-10.6%</td>
+                <td>0.78x</td>
+                <td>$20.72</td>
+                <td>$19.68</td>
+                <td>$23.19</td>
+                <td>2.38:1</td>
+                <td>8.4</td>
+                <td>56%</td>
+                <td>16</td>
+                <td>93d</td>
+            </tr>
+            
+            <tr>
+                <td>CBOE</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$334.92</td>
+                <td>73.7</td>
+                <td>12.1%</td>
+                <td>0.54x</td>
+                <td>$334.92</td>
+                <td>$351.67</td>
+                <td>$298.87</td>
+                <td>2.15:1</td>
+                <td>9.8</td>
+                <td>55%</td>
+                <td>20</td>
+                <td>4d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>FIX</h3><img src='charts/FIX_2026-10-26.png' alt='FIX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>LRCX</h3><img src='charts/LRCX_2026-10-26.png' alt='LRCX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>ROP</h3><img src='charts/ROP_2026-10-26.png' alt='ROP risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>EFX</h3><img src='charts/EFX_2026-10-26.png' alt='EFX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>T</h3><img src='charts/T_2026-10-26.png' alt='T risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>CBOE</h3><img src='charts/CBOE_2026-10-26.png' alt='CBOE risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul>
+</body>
+</html>
