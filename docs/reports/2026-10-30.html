@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-10-30</p>
+    <div class='warning'><em>No high-impact USD events found this week.</em></div>
+    
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>7 of today's picks are in Information Technology &mdash; likely one shared sector move, not 7 independent opportunities</li><li>5 of today's picks are in Industrials &mdash; likely one shared sector move, not 5 independent opportunities</li><li>3 of today's picks are in Health Care &mdash; likely one shared sector move, not 3 independent opportunities</li></ul></div>
+    <h2>Setups (22)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FFIV</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$335.46</td>
+                <td>11.8</td>
+                <td>-24.6%</td>
+                <td>1.27x</td>
+                <td>$335.46</td>
+                <td>$318.69</td>
+                <td>$444.95</td>
+                <td>6.53:1</td>
+                <td>8.5</td>
+                <td>50%</td>
+                <td>8</td>
+                <td>88d</td>
+            </tr>
+            
+            <tr>
+                <td>FTNT</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$135.18</td>
+                <td>16.6</td>
+                <td>-23.9%</td>
+                <td>0.93x</td>
+                <td>$135.18</td>
+                <td>$128.43</td>
+                <td>$177.67</td>
+                <td>6.29:1</td>
+                <td>8.9</td>
+                <td>70%</td>
+                <td>10</td>
+                <td>97d</td>
+            </tr>
+            
+            <tr>
+                <td>FIX</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$1224.45</td>
+                <td>31.4</td>
+                <td>-17.1%</td>
+                <td>0.87x</td>
+                <td>$1224.45</td>
+                <td>$1163.23</td>
+                <td>$1477.65</td>
+                <td>4.14:1</td>
+                <td>6.7</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>111d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOGL</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$278.3</td>
+                <td>13.3</td>
+                <td>-16.6%</td>
+                <td>1.34x</td>
+                <td>$278.3</td>
+                <td>$264.38</td>
+                <td>$333.83</td>
+                <td>3.99:1</td>
+                <td>8.3</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>96d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOG</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$276.41</td>
+                <td>13.1</td>
+                <td>-16.4%</td>
+                <td>1.47x</td>
+                <td>$276.41</td>
+                <td>$262.59</td>
+                <td>$330.48</td>
+                <td>3.91:1</td>
+                <td>7.0</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>96d</td>
+            </tr>
+            
+            <tr>
+                <td>LRCX</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$233.99</td>
+                <td>29.8</td>
+                <td>-15.9%</td>
+                <td>0.83x</td>
+                <td>$233.99</td>
+                <td>$222.29</td>
+                <td>$278.24</td>
+                <td>3.78:1</td>
+                <td>5.0</td>
+                <td>57%</td>
+                <td>7</td>
+                <td>89d</td>
+            </tr>
+            
+            <tr>
+                <td>ILMN</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$232.77</td>
+                <td>26.7</td>
+                <td>-14.5%</td>
+                <td>1.43x</td>
+                <td>$232.77</td>
+                <td>$221.13</td>
+                <td>$272.11</td>
+                <td>3.38:1</td>
+                <td>7.0</td>
+                <td>55%</td>
+                <td>11</td>
+                <td>97d</td>
+            </tr>
+            
+            <tr>
+                <td>PNR</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$66.06</td>
+                <td>94.2</td>
+                <td>19.4%</td>
+                <td>0.56x</td>
+                <td>$66.06</td>
+                <td>$69.36</td>
+                <td>$55.32</td>
+                <td>3.25:1</td>
+                <td>9.7</td>
+                <td>60%</td>
+                <td>5</td>
+                <td>95d</td>
+            </tr>
+            
+            <tr>
+                <td>GEN</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$28.6</td>
+                <td>84.6</td>
+                <td>18.0%</td>
+                <td>0.45x</td>
+                <td>$28.6</td>
+                <td>$30.04</td>
+                <td>$24.24</td>
+                <td>3.05:1</td>
+                <td>7.6</td>
+                <td>54%</td>
+                <td>13</td>
+                <td>97d</td>
+            </tr>
+            
+            <tr>
+                <td>KEYS</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$302.35</td>
+                <td>26.9</td>
+                <td>-13.1%</td>
+                <td>0.47x</td>
+                <td>$302.35</td>
+                <td>$287.23</td>
+                <td>$347.87</td>
+                <td>3.01:1</td>
+                <td>6.8</td>
+                <td>62%</td>
+                <td>8</td>
+                <td>20d</td>
+            </tr>
+            
+            <tr>
+                <td>REGN</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$925.53</td>
+                <td>89.3</td>
+                <td>17.3%</td>
+                <td>2.73x &#128293;</td>
+                <td>$925.53</td>
+                <td>$971.81</td>
+                <td>$788.77</td>
+                <td>2.96:1</td>
+                <td>6.2</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>ROP</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$467.21</td>
+                <td>90.2</td>
+                <td>17.2%</td>
+                <td>1.07x</td>
+                <td>$467.21</td>
+                <td>$490.57</td>
+                <td>$398.67</td>
+                <td>2.93:1</td>
+                <td>5.7</td>
+                <td>58%</td>
+                <td>12</td>
+                <td>88d</td>
+            </tr>
+            
+            <tr>
+                <td>GPN</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$95.62</td>
+                <td>81.9</td>
+                <td>14.3%</td>
+                <td>4.97x &#128293;</td>
+                <td>$95.62</td>
+                <td>$100.4</td>
+                <td>$83.63</td>
+                <td>2.51:1</td>
+                <td>10.1</td>
+                <td>71%</td>
+                <td>14</td>
+                <td>6d</td>
+            </tr>
+            
+            <tr>
+                <td>TT</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$410.42</td>
+                <td>22.2</td>
+                <td>-10.8%</td>
+                <td>0.67x</td>
+                <td>$410.42</td>
+                <td>$389.89</td>
+                <td>$460.11</td>
+                <td>2.42:1</td>
+                <td>11.2</td>
+                <td>59%</td>
+                <td>17</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>CHRW</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$123.46</td>
+                <td>21.7</td>
+                <td>-10.6%</td>
+                <td>0.45x</td>
+                <td>$123.46</td>
+                <td>$117.29</td>
+                <td>$138.05</td>
+                <td>2.36:1</td>
+                <td>9.2</td>
+                <td>75%</td>
+                <td>12</td>
+                <td>89d</td>
+            </tr>
+            
+            <tr>
+                <td>FCX</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$61.65</td>
+                <td>19.5</td>
+                <td>-10.5%</td>
+                <td>0.95x</td>
+                <td>$61.65</td>
+                <td>$58.57</td>
+                <td>$68.92</td>
+                <td>2.36:1</td>
+                <td>6.6</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>EFX</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$184.75</td>
+                <td>73.5</td>
+                <td>13.2%</td>
+                <td>0.35x</td>
+                <td>$184.75</td>
+                <td>$193.99</td>
+                <td>$163.14</td>
+                <td>2.34:1</td>
+                <td>5.7</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>96d</td>
+            </tr>
+            
+            <tr>
+                <td>IBKR</td>
+                <td>Financials</td>
+                <td class="long">LONG</td>
+                <td>$75.54</td>
+                <td>26.2</td>
+                <td>-10.4%</td>
+                <td>0.85x</td>
+                <td>$75.54</td>
+                <td>$71.76</td>
+                <td>$84.29</td>
+                <td>2.32:1</td>
+                <td>9.8</td>
+                <td>73%</td>
+                <td>11</td>
+                <td>88d</td>
+            </tr>
+            
+            <tr>
+                <td>NCLH</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$17.45</td>
+                <td>69.6</td>
+                <td>11.8%</td>
+                <td>0.71x</td>
+                <td>$17.45</td>
+                <td>$18.33</td>
+                <td>$15.62</td>
+                <td>2.11:1</td>
+                <td>7.2</td>
+                <td>56%</td>
+                <td>16</td>
+                <td>122d</td>
+            </tr>
+            
+            <tr>
+                <td>GILD</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$172.59</td>
+                <td>84.9</td>
+                <td>11.7%</td>
+                <td>1.02x</td>
+                <td>$172.59</td>
+                <td>$181.22</td>
+                <td>$154.55</td>
+                <td>2.09:1</td>
+                <td>6.8</td>
+                <td>57%</td>
+                <td>14</td>
+                <td>102d</td>
+            </tr>
+            
+            <tr>
+                <td>VST</td>
+                <td>Utilities</td>
+                <td class="long">LONG</td>
+                <td>$136.4</td>
+                <td>32.8</td>
+                <td>-9.5%</td>
+                <td>0.42x</td>
+                <td>$136.4</td>
+                <td>$129.58</td>
+                <td>$150.69</td>
+                <td>2.09:1</td>
+                <td>9.0</td>
+                <td>54%</td>
+                <td>13</td>
+                <td>7d</td>
+            </tr>
+            
+            <tr>
+                <td>KLAC</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$156.85</td>
+                <td>41.4</td>
+                <td>-9.3%</td>
+                <td>0.85x</td>
+                <td>$156.85</td>
+                <td>$149.01</td>
+                <td>$172.87</td>
+                <td>2.04:1</td>
+                <td>4.0</td>
+                <td>62%</td>
+                <td>8</td>
+                <td>90d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>FFIV</h3><img src='charts/FFIV_2026-10-30.png' alt='FFIV risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>FTNT</h3><img src='charts/FTNT_2026-10-30.png' alt='FTNT risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>FIX</h3><img src='charts/FIX_2026-10-30.png' alt='FIX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>GOOGL</h3><img src='charts/GOOGL_2026-10-30.png' alt='GOOGL risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>GOOG</h3><img src='charts/GOOG_2026-10-30.png' alt='GOOG risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>LRCX</h3><img src='charts/LRCX_2026-10-30.png' alt='LRCX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>ILMN</h3><img src='charts/ILMN_2026-10-30.png' alt='ILMN risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>PNR</h3><img src='charts/PNR_2026-10-30.png' alt='PNR risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>GEN</h3><img src='charts/GEN_2026-10-30.png' alt='GEN risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>KEYS</h3><img src='charts/KEYS_2026-10-30.png' alt='KEYS risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>REGN</h3><img src='charts/REGN_2026-10-30.png' alt='REGN risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>ROP</h3><img src='charts/ROP_2026-10-30.png' alt='ROP risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>GPN</h3><img src='charts/GPN_2026-10-30.png' alt='GPN risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>TT</h3><img src='charts/TT_2026-10-30.png' alt='TT risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>CHRW</h3><img src='charts/CHRW_2026-10-30.png' alt='CHRW risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>FCX</h3><img src='charts/FCX_2026-10-30.png' alt='FCX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>EFX</h3><img src='charts/EFX_2026-10-30.png' alt='EFX risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>IBKR</h3><img src='charts/IBKR_2026-10-30.png' alt='IBKR risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>NCLH</h3><img src='charts/NCLH_2026-10-30.png' alt='NCLH risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>GILD</h3><img src='charts/GILD_2026-10-30.png' alt='GILD risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>VST</h3><img src='charts/VST_2026-10-30.png' alt='VST risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul><h3>KLAC</h3><img src='charts/KLAC_2026-10-30.png' alt='KLAC risk/reward chart' style='max-width:100%;'><ul><li>No recent headlines found &mdash; check manually before acting.</li></ul>
+</body>
+</html>

@@ -1,46 +1,50 @@
-# Mean-Reversion Screener — 2026-10-29
+# Mean-Reversion Screener — 2026-10-30
 
-**📅 Today's high-impact events:**
-- Advance GDP q/q on 2026-10-29 at 12:30 UTC
-- Core PCE Price Index m/m on 2026-10-29 at 12:30 UTC
-
-**This week's high-impact events:**
-- Advance GDP q/q on 2026-10-29 at 12:30 UTC
-- Core PCE Price Index m/m on 2026-10-29 at 12:30 UTC
+*No high-impact USD events found this week.*
 
 **Sector concentration warning:**
-- 5 of today's picks are in Information Technology — likely one shared sector move, not 5 independent opportunities
+- 7 of today's picks are in Information Technology — likely one shared sector move, not 7 independent opportunities
 - 5 of today's picks are in Industrials — likely one shared sector move, not 5 independent opportunities
+- 3 of today's picks are in Health Care — likely one shared sector move, not 3 independent opportunities
 
-16 candidate(s) flagged. Highest risk/reward first.
+22 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| FTNT | Information Technology | LONG | $135.74 | 16.9 | -24.5% | 2.91x 🔥 | $135.74 | $128.95 | $179.79 | 6.49:1 | 8.9 | 70% | 10 | 98d |
-| FFIV | Information Technology | LONG | $360.77 | 14.8 | -20.0% | 1.65x 🔥 | $360.77 | $342.73 | $450.75 | 4.99:1 | 8.5 | 50% | 8 | 89d |
-| GOOGL | Communication Services | LONG | $282.27 | 14.2 | -16.2% | 3.58x 🔥 | $282.27 | $268.15 | $337.01 | 3.88:1 | 8.3 | 50% | 14 | 97d |
-| GOOG | Communication Services | LONG | $280.36 | 14.0 | -16.0% | 3.69x 🔥 | $280.36 | $266.34 | $333.58 | 3.8:1 | 7.0 | 50% | 14 | 97d |
-| PNR | Industrials | SHORT | $65.73 | 94.0 | 20.3% | 0.67x | $65.73 | $69.02 | $54.65 | 3.37:1 | 9.7 | 60% | 5 | 96d |
-| NCLH | Consumer Discretionary | SHORT | $18.18 | 85.2 | 17.3% | 2.26x 🔥 | $18.18 | $19.09 | $15.5 | 2.95:1 | 7.2 | 56% | 16 | unknown |
-| FIX | Industrials | LONG | $1310.94 | 39.5 | -12.7% | 0.73x | $1310.94 | $1245.39 | $1502.07 | 2.92:1 | 6.7 | 64% | 11 | 112d |
-| GEN | Information Technology | SHORT | $27.97 | 82.8 | 17.0% | 0.91x | $27.97 | $29.37 | $23.9 | 2.91:1 | 7.6 | 54% | 13 | 98d |
-| LRCX | Information Technology | LONG | $252.15 | 40.7 | -11.2% | 0.53x | $252.15 | $239.54 | $283.81 | 2.51:1 | 5.0 | 57% | 7 | 90d |
-| TXT | Industrials | SHORT | $86.93 | 88.6 | 13.6% | 1.53x 🔥 | $86.93 | $91.28 | $76.55 | 2.39:1 | 7.2 | 50% | 24 | unknown |
-| VLO | Energy | LONG | $380.62 | 23.1 | -10.6% | 0.82x | $380.62 | $361.59 | $425.99 | 2.38:1 | 10.4 | 62% | 8 | 91d |
-| ROP | Information Technology | SHORT | $443.94 | 84.8 | 13.0% | 0.61x | $443.94 | $466.14 | $392.74 | 2.31:1 | 5.7 | 58% | 12 | 89d |
-| LH | Health Care | SHORT | $364.66 | 91.8 | 12.8% | 0.8x | $364.66 | $382.89 | $323.36 | 2.26:1 | 8.8 | 53% | 15 | 117d |
-| CHRW | Industrials | LONG | $126.0 | 24.3 | -9.8% | 0.64x | $126.0 | $119.7 | $139.69 | 2.17:1 | 9.2 | 75% | 12 | 90d |
-| LULU | Consumer Discretionary | SHORT | $109.71 | 73.3 | 12.0% | 0.61x | $109.71 | $115.19 | $97.96 | 2.14:1 | 7.2 | 60% | 10 | 42d |
-| FTV | Industrials | SHORT | $65.53 | 93.0 | 11.3% | 0.77x | $65.53 | $68.81 | $58.9 | 2.02:1 | 4.6 | 78% | 9 | 97d |
+| FFIV | Information Technology | LONG | $335.46 | 11.8 | -24.6% | 1.27x | $335.46 | $318.69 | $444.95 | 6.53:1 | 8.5 | 50% | 8 | 88d |
+| FTNT | Information Technology | LONG | $135.18 | 16.6 | -23.9% | 0.93x | $135.18 | $128.43 | $177.67 | 6.29:1 | 8.9 | 70% | 10 | 97d |
+| FIX | Industrials | LONG | $1224.45 | 31.4 | -17.1% | 0.87x | $1224.45 | $1163.23 | $1477.65 | 4.14:1 | 6.7 | 64% | 11 | 111d |
+| GOOGL | Communication Services | LONG | $278.3 | 13.3 | -16.6% | 1.34x | $278.3 | $264.38 | $333.83 | 3.99:1 | 8.3 | 50% | 14 | 96d |
+| GOOG | Communication Services | LONG | $276.41 | 13.1 | -16.4% | 1.47x | $276.41 | $262.59 | $330.48 | 3.91:1 | 7.0 | 50% | 14 | 96d |
+| LRCX | Information Technology | LONG | $233.99 | 29.8 | -15.9% | 0.83x | $233.99 | $222.29 | $278.24 | 3.78:1 | 5.0 | 57% | 7 | 89d |
+| ILMN | Health Care | LONG | $232.77 | 26.7 | -14.5% | 1.43x | $232.77 | $221.13 | $272.11 | 3.38:1 | 7.0 | 55% | 11 | 97d |
+| PNR | Industrials | SHORT | $66.06 | 94.2 | 19.4% | 0.56x | $66.06 | $69.36 | $55.32 | 3.25:1 | 9.7 | 60% | 5 | 95d |
+| GEN | Information Technology | SHORT | $28.6 | 84.6 | 18.0% | 0.45x | $28.6 | $30.04 | $24.24 | 3.05:1 | 7.6 | 54% | 13 | 97d |
+| KEYS | Information Technology | LONG | $302.35 | 26.9 | -13.1% | 0.47x | $302.35 | $287.23 | $347.87 | 3.01:1 | 6.8 | 62% | 8 | 20d |
+| REGN | Health Care | SHORT | $925.53 | 89.3 | 17.3% | 2.73x 🔥 | $925.53 | $971.81 | $788.77 | 2.96:1 | 6.2 | 50% | 16 | unknown |
+| ROP | Information Technology | SHORT | $467.21 | 90.2 | 17.2% | 1.07x | $467.21 | $490.57 | $398.67 | 2.93:1 | 5.7 | 58% | 12 | 88d |
+| GPN | Financials | SHORT | $95.62 | 81.9 | 14.3% | 4.97x 🔥 | $95.62 | $100.4 | $83.63 | 2.51:1 | 10.1 | 71% | 14 | 6d |
+| TT | Industrials | LONG | $410.42 | 22.2 | -10.8% | 0.67x | $410.42 | $389.89 | $460.11 | 2.42:1 | 11.2 | 59% | 17 | 90d |
+| CHRW | Industrials | LONG | $123.46 | 21.7 | -10.6% | 0.45x | $123.46 | $117.29 | $138.05 | 2.36:1 | 9.2 | 75% | 12 | 89d |
+| FCX | Materials | LONG | $61.65 | 19.5 | -10.5% | 0.95x | $61.65 | $58.57 | $68.92 | 2.36:1 | 6.6 | 50% | 16 | 83d |
+| EFX | Industrials | SHORT | $184.75 | 73.5 | 13.2% | 0.35x | $184.75 | $193.99 | $163.14 | 2.34:1 | 5.7 | 85% | 13 | 96d |
+| IBKR | Financials | LONG | $75.54 | 26.2 | -10.4% | 0.85x | $75.54 | $71.76 | $84.29 | 2.32:1 | 9.8 | 73% | 11 | 88d |
+| NCLH | Consumer Discretionary | SHORT | $17.45 | 69.6 | 11.8% | 0.71x | $17.45 | $18.33 | $15.62 | 2.11:1 | 7.2 | 56% | 16 | 122d |
+| GILD | Health Care | SHORT | $172.59 | 84.9 | 11.7% | 1.02x | $172.59 | $181.22 | $154.55 | 2.09:1 | 6.8 | 57% | 14 | 102d |
+| VST | Utilities | LONG | $136.4 | 32.8 | -9.5% | 0.42x | $136.4 | $129.58 | $150.69 | 2.09:1 | 9.0 | 54% | 13 | 7d |
+| KLAC | Information Technology | LONG | $156.85 | 41.4 | -9.3% | 0.85x | $156.85 | $149.01 | $172.87 | 2.04:1 | 4.0 | 62% | 8 | 90d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
 ## News context
 
+**FFIV**
+- No recent headlines found — check manually before acting.
+
 **FTNT**
 - No recent headlines found — check manually before acting.
 
-**FFIV**
+**FIX**
 - No recent headlines found — check manually before acting.
 
 **GOOGL**
@@ -49,38 +53,53 @@ Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SH
 **GOOG**
 - No recent headlines found — check manually before acting.
 
+**LRCX**
+- No recent headlines found — check manually before acting.
+
+**ILMN**
+- No recent headlines found — check manually before acting.
+
 **PNR**
-- No recent headlines found — check manually before acting.
-
-**NCLH**
-- No recent headlines found — check manually before acting.
-
-**FIX**
 - No recent headlines found — check manually before acting.
 
 **GEN**
 - No recent headlines found — check manually before acting.
 
-**LRCX**
+**KEYS**
 - No recent headlines found — check manually before acting.
 
-**TXT**
-- No recent headlines found — check manually before acting.
-
-**VLO**
+**REGN**
 - No recent headlines found — check manually before acting.
 
 **ROP**
 - No recent headlines found — check manually before acting.
 
-**LH**
+**GPN**
+- No recent headlines found — check manually before acting.
+
+**TT**
 - No recent headlines found — check manually before acting.
 
 **CHRW**
 - No recent headlines found — check manually before acting.
 
-**LULU**
+**FCX**
 - No recent headlines found — check manually before acting.
 
-**FTV**
+**EFX**
+- No recent headlines found — check manually before acting.
+
+**IBKR**
+- No recent headlines found — check manually before acting.
+
+**NCLH**
+- No recent headlines found — check manually before acting.
+
+**GILD**
+- No recent headlines found — check manually before acting.
+
+**VST**
+- No recent headlines found — check manually before acting.
+
+**KLAC**
 - No recent headlines found — check manually before acting.
