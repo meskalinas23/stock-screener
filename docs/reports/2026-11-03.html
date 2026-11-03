@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-11-03</p>
+    <div class='warning'><strong>📅 Today's high-impact events:</strong><ul><li>Congressional Elections on 2026-11-03 at 15:16 UTC</li></ul><strong>This week's high-impact events:</strong><ul><li>Congressional Elections on 2026-11-03 at 15:16 UTC</li><li>Average Hourly Earnings m/m on 2026-11-06 at 13:30 UTC</li><li>Non-Farm Employment Change on 2026-11-06 at 13:30 UTC</li><li>Unemployment Rate on 2026-11-06 at 13:30 UTC</li></ul></div>
+    
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>6 of today's picks are in Information Technology &mdash; likely one shared sector move, not 6 independent opportunities</li><li>6 of today's picks are in Industrials &mdash; likely one shared sector move, not 6 independent opportunities</li><li>4 of today's picks are in Health Care &mdash; likely one shared sector move, not 4 independent opportunities</li></ul></div>
+    <h2>Setups (21)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FTNT</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$127.27</td>
+                <td>15.8</td>
+                <td>-25.8%</td>
+                <td>0.59x</td>
+                <td>$127.27</td>
+                <td>$120.91</td>
+                <td>$171.62</td>
+                <td>6.97:1</td>
+                <td>8.9</td>
+                <td>70%</td>
+                <td>10</td>
+                <td>93d</td>
+            </tr>
+            
+            <tr>
+                <td>FFIV</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$329.72</td>
+                <td>14.9</td>
+                <td>-23.6%</td>
+                <td>0.6x</td>
+                <td>$329.72</td>
+                <td>$313.23</td>
+                <td>$431.39</td>
+                <td>6.17:1</td>
+                <td>8.5</td>
+                <td>50%</td>
+                <td>8</td>
+                <td>84d</td>
+            </tr>
+            
+            <tr>
+                <td>FISV</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$59.1</td>
+                <td>88.1</td>
+                <td>22.1%</td>
+                <td>2.23x &#128293;</td>
+                <td>$59.1</td>
+                <td>$62.06</td>
+                <td>$48.42</td>
+                <td>3.62:1</td>
+                <td>8.6</td>
+                <td>71%</td>
+                <td>7</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>PNR</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$69.21</td>
+                <td>85.6</td>
+                <td>21.3%</td>
+                <td>0.43x</td>
+                <td>$69.21</td>
+                <td>$72.67</td>
+                <td>$57.06</td>
+                <td>3.51:1</td>
+                <td>13.5</td>
+                <td>50%</td>
+                <td>4</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOGL</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$278.46</td>
+                <td>13.3</td>
+                <td>-14.9%</td>
+                <td>0.68x</td>
+                <td>$278.46</td>
+                <td>$264.54</td>
+                <td>$327.07</td>
+                <td>3.49:1</td>
+                <td>8.3</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>IDXX</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$676.07</td>
+                <td>82.3</td>
+                <td>20.9%</td>
+                <td>0.74x</td>
+                <td>$676.07</td>
+                <td>$709.87</td>
+                <td>$559.11</td>
+                <td>3.46:1</td>
+                <td>8.7</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOG</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$277.16</td>
+                <td>13.2</td>
+                <td>-14.4%</td>
+                <td>0.68x</td>
+                <td>$277.16</td>
+                <td>$263.3</td>
+                <td>$323.91</td>
+                <td>3.37:1</td>
+                <td>7.0</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>LRCX</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$228.77</td>
+                <td>28.0</td>
+                <td>-14.4%</td>
+                <td>0.52x</td>
+                <td>$228.77</td>
+                <td>$217.33</td>
+                <td>$267.33</td>
+                <td>3.37:1</td>
+                <td>5.0</td>
+                <td>57%</td>
+                <td>7</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>REGN</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$973.44</td>
+                <td>92.1</td>
+                <td>19.8%</td>
+                <td>0.84x</td>
+                <td>$973.44</td>
+                <td>$1022.11</td>
+                <td>$812.36</td>
+                <td>3.31:1</td>
+                <td>6.2</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>86d</td>
+            </tr>
+            
+            <tr>
+                <td>GEN</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$29.92</td>
+                <td>87.8</td>
+                <td>19.7%</td>
+                <td>0.41x</td>
+                <td>$29.92</td>
+                <td>$31.42</td>
+                <td>$25.0</td>
+                <td>3.29:1</td>
+                <td>7.6</td>
+                <td>54%</td>
+                <td>13</td>
+                <td>93d</td>
+            </tr>
+            
+            <tr>
+                <td>ADM</td>
+                <td>Consumer Staples</td>
+                <td class="long">LONG</td>
+                <td>$70.01</td>
+                <td>12.0</td>
+                <td>-11.9%</td>
+                <td>1.21x</td>
+                <td>$70.01</td>
+                <td>$66.51</td>
+                <td>$79.51</td>
+                <td>2.71:1</td>
+                <td>8.4</td>
+                <td>100%</td>
+                <td>7</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>ROP</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$473.57</td>
+                <td>83.3</td>
+                <td>15.5%</td>
+                <td>0.71x</td>
+                <td>$473.57</td>
+                <td>$497.25</td>
+                <td>$410.01</td>
+                <td>2.68:1</td>
+                <td>6.2</td>
+                <td>55%</td>
+                <td>11</td>
+                <td>84d</td>
+            </tr>
+            
+            <tr>
+                <td>DD</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$153.87</td>
+                <td>92.6</td>
+                <td>14.0%</td>
+                <td>1.94x &#128293;</td>
+                <td>$153.87</td>
+                <td>$161.56</td>
+                <td>$134.98</td>
+                <td>2.46:1</td>
+                <td>10.0</td>
+                <td>57%</td>
+                <td>14</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>FIX</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$1275.0</td>
+                <td>42.2</td>
+                <td>-10.5%</td>
+                <td>0.76x</td>
+                <td>$1275.0</td>
+                <td>$1211.25</td>
+                <td>$1425.27</td>
+                <td>2.36:1</td>
+                <td>6.7</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>107d</td>
+            </tr>
+            
+            <tr>
+                <td>GEHC</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$80.57</td>
+                <td>88.9</td>
+                <td>13.2%</td>
+                <td>0.81x</td>
+                <td>$80.57</td>
+                <td>$84.59</td>
+                <td>$71.15</td>
+                <td>2.34:1</td>
+                <td>8.6</td>
+                <td>75%</td>
+                <td>16</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>ILMN</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$239.24</td>
+                <td>35.6</td>
+                <td>-10.5%</td>
+                <td>0.59x</td>
+                <td>$239.24</td>
+                <td>$227.27</td>
+                <td>$267.2</td>
+                <td>2.34:1</td>
+                <td>7.0</td>
+                <td>55%</td>
+                <td>11</td>
+                <td>93d</td>
+            </tr>
+            
+            <tr>
+                <td>KEYS</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$304.75</td>
+                <td>32.0</td>
+                <td>-10.3%</td>
+                <td>0.42x</td>
+                <td>$304.75</td>
+                <td>$289.51</td>
+                <td>$339.69</td>
+                <td>2.29:1</td>
+                <td>6.8</td>
+                <td>62%</td>
+                <td>8</td>
+                <td>16d</td>
+            </tr>
+            
+            <tr>
+                <td>EFX</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$188.67</td>
+                <td>70.2</td>
+                <td>12.3%</td>
+                <td>0.36x</td>
+                <td>$188.67</td>
+                <td>$198.1</td>
+                <td>$167.93</td>
+                <td>2.2:1</td>
+                <td>5.7</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>TXT</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$87.53</td>
+                <td>75.5</td>
+                <td>11.9%</td>
+                <td>0.53x</td>
+                <td>$87.53</td>
+                <td>$91.9</td>
+                <td>$78.24</td>
+                <td>2.12:1</td>
+                <td>7.2</td>
+                <td>50%</td>
+                <td>24</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>FCX</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$61.55</td>
+                <td>21.7</td>
+                <td>-9.4%</td>
+                <td>0.46x</td>
+                <td>$61.55</td>
+                <td>$58.47</td>
+                <td>$67.94</td>
+                <td>2.08:1</td>
+                <td>6.6</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>79d</td>
+            </tr>
+            
+            <tr>
+                <td>ROL</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$37.54</td>
+                <td>79.8</td>
+                <td>11.4%</td>
+                <td>0.91x</td>
+                <td>$37.54</td>
+                <td>$39.42</td>
+                <td>$33.69</td>
+                <td>2.05:1</td>
+                <td>8.8</td>
+                <td>62%</td>
+                <td>13</td>
+                <td>99d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>FTNT</h3><img src='charts/FTNT_2026-11-03.png' alt='FTNT risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/motorola-solutions-msi-top-10-192310133.html'>Motorola Solutions (MSI): A Top 10 Large Cap Tech Stock Backed by Billionaires</a></li><li><a href='https://finance.yahoo.com/technology/articles/25-billionaire-investors-back-large-192010539.html'>25 Billionaire Investors Back This Large Cap Tech Stock: Is It a Buy?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-te-connectivity-tel-one-191831417.html'>Here’s Why TE Connectivity (TEL) is One of the Best Large Cap Tech Stock to Buy According to Billionaires</a></li></ul><h3>FFIV</h3><img src='charts/FFIV_2026-11-03.png' alt='FFIV risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/peng-vs-ffiv-stock-better-154003443.html'>PENG vs. FFIV: Which Stock Is the Better Value Option?</a></li><li><a href='https://finance.yahoo.com/technology/ai/articles/janus-henderson-sees-ai-infrastructure-200821334.html'>Janus Henderson Sees AI Infrastructure Opportunity in F5, Inc. (FFIV) as Enterprise Demand Grows</a></li><li><a href='https://www.trefis.com/stock/lite/articles/621788/can-lumentum-stock-fall-30/2026-11-02'>Can Lumentum Stock Fall 30%?</a></li></ul><h3>FISV</h3><img src='charts/FISV_2026-11-03.png' alt='FISV risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/fiserv-just-gained-17-in-a-month-take-profits-or-buy-more?ref=yahoofinance&tlnk=yf-261103-f9rfq89g'>Fiserv Just Gained 17% in a Month: Take Profits, or Buy More?</a></li><li><a href='https://app.moby.co/home/research/tools/earningsCalendar/earnings-fiserv-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss'>Fiserv, Inc. Q3 2026 Earnings Call Summary</a></li><li><a href='https://www.marketbeat.com/instant-alerts/transcript-what-fiserv-fisv-said-on-its-q3-earnings-call-2026-11-03/?utm_source=yahoofinance&utm_medium=yahoofinance'>What Fiserv (FISV) Said on Its Q3 Earnings Call</a></li></ul><h3>PNR</h3><img src='charts/PNR_2026-11-03.png' alt='PNR risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/ft-vest-dividend-aristocrats-target-110455696.html'>What FT Vest Dividend Aristocrats Target Income (KNG) Bought: C.H. Robinson Leads on Oct. 30</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/proshares-dividend-aristocrats-nobl-bought-110408938.html'>What ProShares Dividend Aristocrats (NOBL) Bought: Kimberly-Clark Leads on Friday</a></li><li><a href='https://www.trefis.com/stock/hayw/articles/621572/why-are-investors-paying-less-for-haywards-profit/2026-10-31'>Why Are Investors Paying Less For Hayward's Profit?</a></li></ul><h3>GOOGL</h3><img src='charts/GOOGL_2026-11-03.png' alt='GOOGL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-broadcom-avgo-anchors-10-193327821.html'>Why Broadcom (AVGO) Anchors Our 10 Best Tech Stocks for the Next 5 Years</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/big-tech-sheds-billions-meta-193038566.html'>As Big Tech Sheds Billions, Meta (META) Signals a Top Buying Opportunity</a></li><li><a href='https://www.fool.com/investing/2026/11/03/alphabet-stock-tanks-after-earnings-should-investors-buy-the-dip/'>Alphabet Stock Tanks After Earnings: Should Investors Buy the Dip?</a></li></ul><h3>IDXX</h3><img src='charts/IDXX_2026-11-03.png' alt='IDXX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/healthcare/articles/idexx-laboratories-delivered-strong-results-180427992.html'>IDEXX Laboratories Delivered Strong Results Despite Lackluster Vet Visit Backdrop, UBS Says</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/idexx-laboratories-idxx-crossed-above-133002034.html'>Idexx Laboratories (IDXX) Crossed Above the 200-Day Moving Average: What That Means for Investors</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/company-news-nov-3-2026-132200382.html'>Company News for Nov 3, 2026</a></li></ul><h3>GOOG</h3><img src='charts/GOOG_2026-11-03.png' alt='GOOG risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/video/would-you-let-ai-chatbots-smear-your-competitors-191420766.html'>Would you let AI chatbots smear your competitors?</a></li><li><a href='https://finance.yahoo.com/video/ais-100b-data-center-bet-is-riding-on-midterm-ballots-150550554.html'>AI's $100B data-center bet is riding on midterm ballots</a></li><li><a href='https://finance.yahoo.com/technology/article/enterprise-ai-spending-exploded-in-2026-report-140000265.html'>Enterprise AI spending exploded in 2026: Report</a></li></ul><h3>LRCX</h3><img src='charts/LRCX_2026-11-03.png' alt='LRCX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.marketbeat.com/instant-alerts/event-lam-research-sees-strong-2027-growth-as-shareholders-back-board-pay-plan-2026-11-03/?utm_source=yahoofinance&utm_medium=yahoofinance'>Lam Research Sees Strong 2027 Growth as Shareholders Back Board, Pay Plan</a></li><li><a href='https://decrypt.co/382458/elon-musk-tesla-spacex-block-okx-ice-tokenized-stock'>Elon Musk’s Tesla and SpaceX Block Their Stock From OKX-ICE Tokenized Venue</a></li><li><a href='https://finance.yahoo.com/video/binance-deposits-overtake-withdrawals-sec-170000882.html'>Binance deposits overtake withdrawals, and the SEC creates crypto FAQs on governance</a></li></ul><h3>REGN</h3><img src='charts/REGN_2026-11-03.png' alt='REGN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/healthcare/articles/bayry-q3-earnings-revenues-miss-181200425.html'>BAYRY Q3 Earnings and Revenues Miss Estimates, Pharma Performs Well</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/regn-q3-deep-dive-pipeline-193336375.html'>REGN Q3 deep dive: pipeline progress and core brands drive outperformance</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/regeneron-apos-apos-strong-commercial-164005831.html'>Regeneron's 'Strong Commercial' Q3 Underscores Core Business Health, RBC Capital Markets Says</a></li></ul><h3>GEN</h3><img src='charts/GEN_2026-11-03.png' alt='GEN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/3-underowned-p-500-stocks-171435079.html'>3 Underowned S&P 500 Stocks as Investors Rotate Beyond AI</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-gen-124002175.html'>Are Business Services Stocks Lagging  GEN DIGITAL INC (GEN) This Year?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-stock-repriced-011138232.html'>Gen Digital (GEN) Stock Repriced After Q2 Earnings Put Margins Center Stage</a></li></ul><h3>ADM</h3><img src='charts/ADM_2026-11-03.png' alt='ADM risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/archer-daniels-q3-earnings-beat-153900435.html'>Archer Daniels Q3 Earnings Beat on Biofuel Strength, Revenues Miss</a></li><li><a href='https://investorshub.advfn.com/market-news/article/39178/adm-raises-2026-earnings-outlook-as-q3-profit-beats-forecasts-despite-revenue-miss'>ADM Raises 2026 Earnings Outlook as Q3 Profit Beats Forecasts Despite Revenue Miss</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/q3-earnings-jolts-report-midterm-143700208.html'>Q3 Earnings & JOLTS Report on Midterm Voting Day</a></li></ul><h3>ROP</h3><img src='charts/ROP_2026-11-03.png' alt='ROP risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-roper-technologies-110305092.html'>ETFs Are Net Sellers of Roper Technologies (ROP) on Friday</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/roche-holding-swx-rop-expands-140538138.html'>Roche Holding (SWX:ROP) Expands ADC Pipeline As Late Stage Trial Results Impress</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/roche-holding-swx-rop-could-071500884.html'>Roche Holding (SWX:ROP) Could Be 55% Undervalued Following Its Global BAP1 Test Launch</a></li></ul><h3>DD</h3><img src='charts/DD_2026-11-03.png' alt='DD risk/reward chart' style='max-width:100%;'><ul><li><a href='https://app.moby.co/home/research/tools/earningsCalendar/earnings-dupont-de-nemours-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss'>DuPont de Nemours, Inc. Q3 2026 Earnings Call Summary</a></li><li><a href='https://www.trefis.com/stock/apd/articles/622155/how-will-air-products-and-chemicals-stock-react-to-its-upcoming-earnings-2/2026-11-03'>How Will Air Products and Chemicals Stock React To Its Upcoming Earnings?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/dd-q3-earnings-beat-organic-141400761.html'>DD Q3 Earnings Beat on Organic Growth, Raises 2026 Outlook</a></li></ul><h3>FIX</h3><img src='charts/FIX_2026-11-03.png' alt='FIX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/90-backlog-jump-enough-lift-142600533.html'>Is a 90% Backlog Jump Enough to Lift Comfort Systems' 2027 Growth?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/comfort-systems-pultegroup-highlighted-zacks-123400918.html'>Comfort Systems and PulteGroup have been highlighted as Zacks Bull and Bear of the Day</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/bull-day-comfort-systems-usa-101200813.html'>Bull of the Day: Comfort Systems USA (FIX)</a></li></ul><h3>GEHC</h3><img src='charts/GEHC_2026-11-03.png' alt='GEHC risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/hsic-q3-earnings-beat-revenues-131800276.html'>HSIC Q3 Earnings Beat, Revenues Match, '26 EPS View Up, Stock Down</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/idxx-q3-earnings-revenues-surpass-131700525.html'>IDXX Q3 Earnings & Revenues Surpass Estimates, Stock Up in Pre-Market</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/isrg-sales-jump-22-growth-145900671.html'>ISRG Sales Jump 22%: Can Growth Stay Ahead of Procedure Volumes?</a></li></ul><h3>ILMN</h3><img src='charts/ILMN_2026-11-03.png' alt='ILMN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/options/articles/cboe-global-markets-inc-cboe-184500637.html'>Cboe Global Markets, Inc. (CBOE) Could Benefit From the Growing Options Trading Market: Here’s Why</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/unitedhealth-group-incorporated-unh-rebounded-184449658.html'>UnitedHealth Group Incorporated (UNH) Rebounded After Better-Than-Expected Results: Mott Capital’s Take</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/microsoft-corporation-msft-delivered-strong-184429966.html'>Microsoft Corporation (MSFT) Delivered Strong Fiscal Fourth-Quarter Results: Mott Capital’s Take</a></li></ul><h3>KEYS</h3><img src='charts/KEYS_2026-11-03.png' alt='KEYS risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-keysight-technologies-keys-shares-171143940.html'>Why Keysight Technologies (KEYS) Shares Dropped And What Investors Are Weighing</a></li><li><a href='https://www.trefis.com/stock/snps/articles/622309/what-is-the-one-risk-every-synopsys-investor-should-know/2026-11-03'>What Is The One Risk Every Synopsys Investor Should Know?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/1-growth-stock-add-roster-115736291.html'>1 growth stock to add to your roster and 2 we turn down</a></li></ul><h3>EFX</h3><img src='charts/EFX_2026-11-03.png' alt='EFX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/aptiv-q3-earnings-surpass-estimates-163000001.html'>Aptiv Q3 Earnings Surpass Estimates Amid Non-Auto Growth</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/brs-q1-earnings-beat-estimates-162500320.html'>BR's Q1 Earnings Beat Estimates on Strong Recurring Revenue Growth</a></li><li><a href='https://247wallst.com/personal-finance/2026/11/01/her-mother-has-dementia-she-can-freeze-her-mothers-credit-at-all-three-bureaus-for-free-before-a-scammer-opens-an-account-in-her-name/'>Her Mother Has Dementia. She Can Freeze Her Mother’s Credit at All Three Bureaus, for Free, Before a Scammer Opens an Account in Her Name</a></li></ul><h3>TXT</h3><img src='charts/TXT_2026-11-03.png' alt='TXT risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/textron-txt-just-reclaimed-200-133002894.html'>Textron (TXT) Just Reclaimed the 200-Day Moving Average</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/txt-q3-deep-dive-aviation-002700932.html'>TXT Q3 deep dive: aviation growth, defense contract milestones, and supply chain initiatives</a></li><li><a href='https://www.marketbeat.com/instant-alerts/transcript-textron-q3-earnings-call-highlights-2026-10-31/?utm_source=yahoofinance&utm_medium=yahoofinance'>Textron Q3 Earnings Call Highlights</a></li></ul><h3>FCX</h3><img src='charts/FCX_2026-11-03.png' alt='FCX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/commodities/articles/jpmorgan-highlights-top-copper-stocks-164241106.html'>JPMorgan Highlights Top Copper Stocks Amid U.S. Supply Push</a></li><li><a href='https://www.barchart.com/story/news/8590598/freeport-mcmoran-stock-analyst-estimates-ratings'>Freeport-McMoRan Stock: Analyst Estimates & Ratings</a></li><li><a href='https://finance.yahoo.com/markets/commodities/articles/zacks-industry-outlook-highlights-southern-091900618.html'>Zacks Industry Outlook Highlights Southern Copper, Freeport-McMoRan, First Quantum Minerals, Lundin Mining and Centrus Energy</a></li></ul><h3>ROL</h3><img src='charts/ROL_2026-11-03.png' alt='ROL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/rollins-rol-misses-quarterly-estimates-141928105.html'>Rollins (ROL) Misses Quarterly Estimates and Trims Full-Year Organic Growth Outlook</a></li><li><a href='https://247wallst.com/investing/2026/11/01/rollins-has-grown-revenue-for-100-straight-quarters-here-are-3-more-boring-businesses-to-watch/'>Rollins Has Grown Revenue for 100 Straight Quarters. Here Are 3 More Boring Businesses to Watch</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/rollins-rol-stock-may-22-051650643.html'>Rollins (ROL) Stock May Be 22% Below Fair Value As Q3 Miss Raises Questions</a></li></ul>
+</body>
+</html>

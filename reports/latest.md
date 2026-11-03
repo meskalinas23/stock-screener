@@ -1,4 +1,7 @@
-# Mean-Reversion Screener — 2026-11-02
+# Mean-Reversion Screener — 2026-11-03
+
+**📅 Today's high-impact events:**
+- Congressional Elections on 2026-11-03 at 15:16 UTC
 
 **This week's high-impact events:**
 - Congressional Elections on 2026-11-03 at 15:16 UTC
@@ -7,137 +10,141 @@
 - Unemployment Rate on 2026-11-06 at 13:30 UTC
 
 **Sector concentration warning:**
-- 8 of today's picks are in Information Technology — likely one shared sector move, not 8 independent opportunities
-- 7 of today's picks are in Industrials — likely one shared sector move, not 7 independent opportunities
+- 6 of today's picks are in Information Technology — likely one shared sector move, not 6 independent opportunities
+- 6 of today's picks are in Industrials — likely one shared sector move, not 6 independent opportunities
 - 4 of today's picks are in Health Care — likely one shared sector move, not 4 independent opportunities
-- 3 of today's picks are in Consumer Discretionary — likely one shared sector move, not 3 independent opportunities
-- 3 of today's picks are in Financials — likely one shared sector move, not 3 independent opportunities
 
-30 candidate(s) flagged. Highest risk/reward first.
+21 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| FTNT | Information Technology | LONG | $126.21 | 14.0 | -27.8% | 2.19x 🔥 | $126.21 | $119.9 | $174.82 | 7.7:1 | 8.9 | 70% | 10 | 94d |
-| FFIV | Information Technology | LONG | $324.55 | 10.7 | -26.0% | 1.69x 🔥 | $324.55 | $308.32 | $438.4 | 7.02:1 | 8.5 | 50% | 8 | 85d |
-| FIX | Industrials | LONG | $1200.14 | 29.4 | -17.4% | 0.93x | $1200.14 | $1140.13 | $1452.42 | 4.2:1 | 6.7 | 64% | 11 | 108d |
-| PNR | Industrials | SHORT | $70.56 | 96.2 | 25.5% | 1.54x 🔥 | $70.56 | $74.09 | $56.23 | 4.06:1 | 9.7 | 60% | 5 | 92d |
-| LRCX | Information Technology | LONG | $227.56 | 26.5 | -16.5% | 1.03x | $227.56 | $216.18 | $272.59 | 3.96:1 | 5.0 | 57% | 7 | 86d |
-| ILMN | Health Care | LONG | $226.58 | 24.6 | -15.7% | 1.21x | $226.58 | $215.25 | $268.92 | 3.74:1 | 7.0 | 55% | 11 | 94d |
-| GOOGL | Communication Services | LONG | $278.99 | 13.4 | -15.6% | 1.41x | $278.99 | $265.04 | $330.53 | 3.69:1 | 8.3 | 50% | 14 | 93d |
-| IDXX | Health Care | SHORT | $671.64 | 81.8 | 21.9% | 3.09x 🔥 | $671.64 | $705.22 | $551.08 | 3.59:1 | 8.7 | 64% | 11 | unknown |
-| GOOG | Communication Services | LONG | $278.04 | 13.4 | -15.0% | 1.3x | $278.04 | $264.14 | $327.28 | 3.54:1 | 7.0 | 50% | 14 | 93d |
-| GEN | Information Technology | SHORT | $29.89 | 87.8 | 21.3% | 1.23x | $29.89 | $31.38 | $24.65 | 3.51:1 | 7.6 | 54% | 13 | 94d |
-| REGN | Health Care | SHORT | $961.26 | 91.5 | 20.1% | 2.09x 🔥 | $961.26 | $1009.32 | $800.63 | 3.34:1 | 6.2 | 50% | 16 | 87d |
-| ROP | Information Technology | SHORT | $479.54 | 92.0 | 18.6% | 1.21x | $479.54 | $503.52 | $404.45 | 3.13:1 | 6.2 | 55% | 11 | 85d |
-| KEYS | Information Technology | LONG | $298.94 | 25.3 | -13.1% | 1.15x | $298.94 | $283.99 | $343.85 | 3.0:1 | 6.8 | 62% | 8 | 17d |
-| EFX | Industrials | SHORT | $192.51 | 79.7 | 16.2% | 1.07x | $192.51 | $202.14 | $165.62 | 2.79:1 | 5.7 | 85% | 13 | 93d |
-| MU | Information Technology | LONG | $833.59 | 32.5 | -11.2% | 1.1x | $833.59 | $791.91 | $939.04 | 2.53:1 | 9.0 | 64% | 11 | 51d |
-| TXT | Industrials | SHORT | $88.53 | 81.7 | 14.0% | 1.0x | $88.53 | $92.96 | $77.64 | 2.46:1 | 7.2 | 50% | 24 | 86d |
-| NCLH | Consumer Discretionary | SHORT | $17.94 | 74.3 | 13.7% | 1.23x | $17.94 | $18.84 | $15.78 | 2.41:1 | 7.5 | 53% | 15 | 119d |
-| LEN | Consumer Discretionary | SHORT | $91.02 | 80.5 | 13.6% | 0.97x | $91.02 | $95.57 | $80.11 | 2.4:1 | 9.8 | 82% | 11 | 43d |
-| CPRT | Industrials | SHORT | $31.93 | 87.1 | 13.5% | 1.0x | $31.93 | $33.53 | $28.13 | 2.38:1 | 9.4 | 71% | 14 | 17d |
-| IBKR | Financials | LONG | $74.83 | 24.6 | -10.5% | 1.69x 🔥 | $74.83 | $71.09 | $83.65 | 2.36:1 | 9.8 | 73% | 11 | 85d |
-| VST | Utilities | LONG | $134.61 | 30.3 | -10.4% | 0.68x | $134.61 | $127.88 | $150.28 | 2.33:1 | 9.0 | 54% | 13 | 4d |
-| GEHC | Health Care | SHORT | $79.55 | 87.6 | 13.1% | 1.22x | $79.55 | $83.53 | $70.36 | 2.31:1 | 8.6 | 75% | 16 | 93d |
-| KLAC | Information Technology | LONG | $153.11 | 37.5 | -10.1% | 1.21x | $153.11 | $145.45 | $170.24 | 2.24:1 | 4.0 | 62% | 8 | 87d |
-| VLO | Energy | LONG | $381.46 | 31.1 | -10.0% | 1.53x 🔥 | $381.46 | $362.39 | $423.96 | 2.23:1 | 10.4 | 62% | 8 | 87d |
-| FDS | Financials | SHORT | $343.74 | 75.6 | 12.1% | 1.26x | $343.74 | $360.93 | $306.62 | 2.16:1 | 9.0 | 64% | 14 | 45d |
-| TT | Industrials | LONG | $413.33 | 25.7 | -9.6% | 1.3x | $413.33 | $392.66 | $457.21 | 2.12:1 | 11.2 | 59% | 17 | 87d |
-| FTV | Industrials | SHORT | $66.84 | 88.1 | 11.8% | 1.42x | $66.84 | $70.18 | $59.78 | 2.11:1 | 4.6 | 78% | 9 | 93d |
-| LOW | Consumer Discretionary | SHORT | $218.15 | 85.3 | 11.7% | 1.15x | $218.15 | $229.06 | $195.3 | 2.09:1 | 10.2 | 67% | 9 | 16d |
-| VMC | Materials | SHORT | $289.14 | 87.3 | 11.7% | 1.12x | $289.14 | $303.6 | $258.92 | 2.09:1 | 8.4 | 57% | 14 | 106d |
-| CBOE | Financials | SHORT | $349.22 | 72.2 | 11.6% | 0.99x | $349.22 | $366.68 | $312.95 | 2.08:1 | 9.8 | 55% | 20 | 95d |
+| FTNT | Information Technology | LONG | $127.27 | 15.8 | -25.8% | 0.59x | $127.27 | $120.91 | $171.62 | 6.97:1 | 8.9 | 70% | 10 | 93d |
+| FFIV | Information Technology | LONG | $329.72 | 14.9 | -23.6% | 0.6x | $329.72 | $313.23 | $431.39 | 6.17:1 | 8.5 | 50% | 8 | 84d |
+| FISV | Financials | SHORT | $59.1 | 88.1 | 22.1% | 2.23x 🔥 | $59.1 | $62.06 | $48.42 | 3.62:1 | 8.6 | 71% | 7 | unknown |
+| PNR | Industrials | SHORT | $69.21 | 85.6 | 21.3% | 0.43x | $69.21 | $72.67 | $57.06 | 3.51:1 | 13.5 | 50% | 4 | 91d |
+| GOOGL | Communication Services | LONG | $278.46 | 13.3 | -14.9% | 0.68x | $278.46 | $264.54 | $327.07 | 3.49:1 | 8.3 | 50% | 14 | 92d |
+| IDXX | Health Care | SHORT | $676.07 | 82.3 | 20.9% | 0.74x | $676.07 | $709.87 | $559.11 | 3.46:1 | 8.7 | 64% | 11 | 90d |
+| GOOG | Communication Services | LONG | $277.16 | 13.2 | -14.4% | 0.68x | $277.16 | $263.3 | $323.91 | 3.37:1 | 7.0 | 50% | 14 | 92d |
+| LRCX | Information Technology | LONG | $228.77 | 28.0 | -14.4% | 0.52x | $228.77 | $217.33 | $267.33 | 3.37:1 | 5.0 | 57% | 7 | 85d |
+| REGN | Health Care | SHORT | $973.44 | 92.1 | 19.8% | 0.84x | $973.44 | $1022.11 | $812.36 | 3.31:1 | 6.2 | 50% | 16 | 86d |
+| GEN | Information Technology | SHORT | $29.92 | 87.8 | 19.7% | 0.41x | $29.92 | $31.42 | $25.0 | 3.29:1 | 7.6 | 54% | 13 | 93d |
+| ADM | Consumer Staples | LONG | $70.01 | 12.0 | -11.9% | 1.21x | $70.01 | $66.51 | $79.51 | 2.71:1 | 8.4 | 100% | 7 | unknown |
+| ROP | Information Technology | SHORT | $473.57 | 83.3 | 15.5% | 0.71x | $473.57 | $497.25 | $410.01 | 2.68:1 | 6.2 | 55% | 11 | 84d |
+| DD | Industrials | SHORT | $153.87 | 92.6 | 14.0% | 1.94x 🔥 | $153.87 | $161.56 | $134.98 | 2.46:1 | 10.0 | 57% | 14 | unknown |
+| FIX | Industrials | LONG | $1275.0 | 42.2 | -10.5% | 0.76x | $1275.0 | $1211.25 | $1425.27 | 2.36:1 | 6.7 | 64% | 11 | 107d |
+| GEHC | Health Care | SHORT | $80.57 | 88.9 | 13.2% | 0.81x | $80.57 | $84.59 | $71.15 | 2.34:1 | 8.6 | 75% | 16 | 92d |
+| ILMN | Health Care | LONG | $239.24 | 35.6 | -10.5% | 0.59x | $239.24 | $227.27 | $267.2 | 2.34:1 | 7.0 | 55% | 11 | 93d |
+| KEYS | Information Technology | LONG | $304.75 | 32.0 | -10.3% | 0.42x | $304.75 | $289.51 | $339.69 | 2.29:1 | 6.8 | 62% | 8 | 16d |
+| EFX | Industrials | SHORT | $188.67 | 70.2 | 12.3% | 0.36x | $188.67 | $198.1 | $167.93 | 2.2:1 | 5.7 | 85% | 13 | 92d |
+| TXT | Industrials | SHORT | $87.53 | 75.5 | 11.9% | 0.53x | $87.53 | $91.9 | $78.24 | 2.12:1 | 7.2 | 50% | 24 | 85d |
+| FCX | Materials | LONG | $61.55 | 21.7 | -9.4% | 0.46x | $61.55 | $58.47 | $67.94 | 2.08:1 | 6.6 | 50% | 16 | 79d |
+| ROL | Industrials | SHORT | $37.54 | 79.8 | 11.4% | 0.91x | $37.54 | $39.42 | $33.69 | 2.05:1 | 8.8 | 62% | 13 | 99d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
 ## News context
 
 **FTNT**
-- No recent headlines found — check manually before acting.
+- [Motorola Solutions (MSI): A Top 10 Large Cap Tech Stock Backed by Billionaires](https://finance.yahoo.com/markets/stocks/articles/motorola-solutions-msi-top-10-192310133.html)
+- [25 Billionaire Investors Back This Large Cap Tech Stock: Is It a Buy?](https://finance.yahoo.com/technology/articles/25-billionaire-investors-back-large-192010539.html)
+- [Here’s Why TE Connectivity (TEL) is One of the Best Large Cap Tech Stock to Buy According to Billionaires](https://finance.yahoo.com/markets/stocks/articles/why-te-connectivity-tel-one-191831417.html)
 
 **FFIV**
-- No recent headlines found — check manually before acting.
+- [PENG vs. FFIV: Which Stock Is the Better Value Option?](https://finance.yahoo.com/markets/stocks/articles/peng-vs-ffiv-stock-better-154003443.html)
+- [Janus Henderson Sees AI Infrastructure Opportunity in F5, Inc. (FFIV) as Enterprise Demand Grows](https://finance.yahoo.com/technology/ai/articles/janus-henderson-sees-ai-infrastructure-200821334.html)
+- [Can Lumentum Stock Fall 30%?](https://www.trefis.com/stock/lite/articles/621788/can-lumentum-stock-fall-30/2026-11-02)
 
-**FIX**
-- No recent headlines found — check manually before acting.
+**FISV**
+- [Fiserv Just Gained 17% in a Month: Take Profits, or Buy More?](https://www.tikr.com/blog/fiserv-just-gained-17-in-a-month-take-profits-or-buy-more?ref=yahoofinance&tlnk=yf-261103-f9rfq89g)
+- [Fiserv, Inc. Q3 2026 Earnings Call Summary](https://app.moby.co/home/research/tools/earningsCalendar/earnings-fiserv-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss)
+- [What Fiserv (FISV) Said on Its Q3 Earnings Call](https://www.marketbeat.com/instant-alerts/transcript-what-fiserv-fisv-said-on-its-q3-earnings-call-2026-11-03/?utm_source=yahoofinance&utm_medium=yahoofinance)
 
 **PNR**
-- No recent headlines found — check manually before acting.
-
-**LRCX**
-- No recent headlines found — check manually before acting.
-
-**ILMN**
-- No recent headlines found — check manually before acting.
+- [What FT Vest Dividend Aristocrats Target Income (KNG) Bought: C.H. Robinson Leads on Oct. 30](https://finance.yahoo.com/markets/stocks/articles/ft-vest-dividend-aristocrats-target-110455696.html)
+- [What ProShares Dividend Aristocrats (NOBL) Bought: Kimberly-Clark Leads on Friday](https://finance.yahoo.com/markets/stocks/articles/proshares-dividend-aristocrats-nobl-bought-110408938.html)
+- [Why Are Investors Paying Less For Hayward's Profit?](https://www.trefis.com/stock/hayw/articles/621572/why-are-investors-paying-less-for-haywards-profit/2026-10-31)
 
 **GOOGL**
-- No recent headlines found — check manually before acting.
+- [Why Broadcom (AVGO) Anchors Our 10 Best Tech Stocks for the Next 5 Years](https://finance.yahoo.com/markets/stocks/articles/why-broadcom-avgo-anchors-10-193327821.html)
+- [As Big Tech Sheds Billions, Meta (META) Signals a Top Buying Opportunity](https://finance.yahoo.com/markets/stocks/articles/big-tech-sheds-billions-meta-193038566.html)
+- [Alphabet Stock Tanks After Earnings: Should Investors Buy the Dip?](https://www.fool.com/investing/2026/11/03/alphabet-stock-tanks-after-earnings-should-investors-buy-the-dip/)
 
 **IDXX**
-- No recent headlines found — check manually before acting.
+- [IDEXX Laboratories Delivered Strong Results Despite Lackluster Vet Visit Backdrop, UBS Says](https://finance.yahoo.com/healthcare/articles/idexx-laboratories-delivered-strong-results-180427992.html)
+- [Idexx Laboratories (IDXX) Crossed Above the 200-Day Moving Average: What That Means for Investors](https://finance.yahoo.com/markets/stocks/articles/idexx-laboratories-idxx-crossed-above-133002034.html)
+- [Company News for Nov 3, 2026](https://finance.yahoo.com/markets/stocks/articles/company-news-nov-3-2026-132200382.html)
 
 **GOOG**
-- No recent headlines found — check manually before acting.
+- [Would you let AI chatbots smear your competitors?](https://finance.yahoo.com/video/would-you-let-ai-chatbots-smear-your-competitors-191420766.html)
+- [AI's $100B data-center bet is riding on midterm ballots](https://finance.yahoo.com/video/ais-100b-data-center-bet-is-riding-on-midterm-ballots-150550554.html)
+- [Enterprise AI spending exploded in 2026: Report](https://finance.yahoo.com/technology/article/enterprise-ai-spending-exploded-in-2026-report-140000265.html)
 
-**GEN**
-- No recent headlines found — check manually before acting.
+**LRCX**
+- [Lam Research Sees Strong 2027 Growth as Shareholders Back Board, Pay Plan](https://www.marketbeat.com/instant-alerts/event-lam-research-sees-strong-2027-growth-as-shareholders-back-board-pay-plan-2026-11-03/?utm_source=yahoofinance&utm_medium=yahoofinance)
+- [Elon Musk’s Tesla and SpaceX Block Their Stock From OKX-ICE Tokenized Venue](https://decrypt.co/382458/elon-musk-tesla-spacex-block-okx-ice-tokenized-stock)
+- [Binance deposits overtake withdrawals, and the SEC creates crypto FAQs on governance](https://finance.yahoo.com/video/binance-deposits-overtake-withdrawals-sec-170000882.html)
 
 **REGN**
-- No recent headlines found — check manually before acting.
+- [BAYRY Q3 Earnings and Revenues Miss Estimates, Pharma Performs Well](https://finance.yahoo.com/healthcare/articles/bayry-q3-earnings-revenues-miss-181200425.html)
+- [REGN Q3 deep dive: pipeline progress and core brands drive outperformance](https://finance.yahoo.com/healthcare/articles/regn-q3-deep-dive-pipeline-193336375.html)
+- [Regeneron's 'Strong Commercial' Q3 Underscores Core Business Health, RBC Capital Markets Says](https://finance.yahoo.com/healthcare/articles/regeneron-apos-apos-strong-commercial-164005831.html)
+
+**GEN**
+- [3 Underowned S&P 500 Stocks as Investors Rotate Beyond AI](https://finance.yahoo.com/markets/stocks/articles/3-underowned-p-500-stocks-171435079.html)
+- [Are Business Services Stocks Lagging  GEN DIGITAL INC (GEN) This Year?](https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-gen-124002175.html)
+- [Gen Digital (GEN) Stock Repriced After Q2 Earnings Put Margins Center Stage](https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-stock-repriced-011138232.html)
+
+**ADM**
+- [Archer Daniels Q3 Earnings Beat on Biofuel Strength, Revenues Miss](https://finance.yahoo.com/markets/stocks/articles/archer-daniels-q3-earnings-beat-153900435.html)
+- [ADM Raises 2026 Earnings Outlook as Q3 Profit Beats Forecasts Despite Revenue Miss](https://investorshub.advfn.com/market-news/article/39178/adm-raises-2026-earnings-outlook-as-q3-profit-beats-forecasts-despite-revenue-miss)
+- [Q3 Earnings & JOLTS Report on Midterm Voting Day](https://finance.yahoo.com/markets/stocks/articles/q3-earnings-jolts-report-midterm-143700208.html)
 
 **ROP**
-- No recent headlines found — check manually before acting.
+- [ETFs Are Net Sellers of Roper Technologies (ROP) on Friday](https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-roper-technologies-110305092.html)
+- [Roche Holding (SWX:ROP) Expands ADC Pipeline As Late Stage Trial Results Impress](https://finance.yahoo.com/healthcare/articles/roche-holding-swx-rop-expands-140538138.html)
+- [Roche Holding (SWX:ROP) Could Be 55% Undervalued Following Its Global BAP1 Test Launch](https://finance.yahoo.com/markets/stocks/articles/roche-holding-swx-rop-could-071500884.html)
 
-**KEYS**
-- No recent headlines found — check manually before acting.
+**DD**
+- [DuPont de Nemours, Inc. Q3 2026 Earnings Call Summary](https://app.moby.co/home/research/tools/earningsCalendar/earnings-dupont-de-nemours-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss)
+- [How Will Air Products and Chemicals Stock React To Its Upcoming Earnings?](https://www.trefis.com/stock/apd/articles/622155/how-will-air-products-and-chemicals-stock-react-to-its-upcoming-earnings-2/2026-11-03)
+- [DD Q3 Earnings Beat on Organic Growth, Raises 2026 Outlook](https://finance.yahoo.com/markets/stocks/articles/dd-q3-earnings-beat-organic-141400761.html)
 
-**EFX**
-- No recent headlines found — check manually before acting.
-
-**MU**
-- No recent headlines found — check manually before acting.
-
-**TXT**
-- No recent headlines found — check manually before acting.
-
-**NCLH**
-- No recent headlines found — check manually before acting.
-
-**LEN**
-- No recent headlines found — check manually before acting.
-
-**CPRT**
-- No recent headlines found — check manually before acting.
-
-**IBKR**
-- No recent headlines found — check manually before acting.
-
-**VST**
-- No recent headlines found — check manually before acting.
+**FIX**
+- [Is a 90% Backlog Jump Enough to Lift Comfort Systems' 2027 Growth?](https://finance.yahoo.com/markets/stocks/articles/90-backlog-jump-enough-lift-142600533.html)
+- [Comfort Systems and PulteGroup have been highlighted as Zacks Bull and Bear of the Day](https://finance.yahoo.com/markets/stocks/articles/comfort-systems-pultegroup-highlighted-zacks-123400918.html)
+- [Bull of the Day: Comfort Systems USA (FIX)](https://finance.yahoo.com/markets/stocks/articles/bull-day-comfort-systems-usa-101200813.html)
 
 **GEHC**
-- No recent headlines found — check manually before acting.
+- [HSIC Q3 Earnings Beat, Revenues Match, '26 EPS View Up, Stock Down](https://finance.yahoo.com/markets/stocks/articles/hsic-q3-earnings-beat-revenues-131800276.html)
+- [IDXX Q3 Earnings & Revenues Surpass Estimates, Stock Up in Pre-Market](https://finance.yahoo.com/markets/stocks/articles/idxx-q3-earnings-revenues-surpass-131700525.html)
+- [ISRG Sales Jump 22%: Can Growth Stay Ahead of Procedure Volumes?](https://finance.yahoo.com/healthcare/articles/isrg-sales-jump-22-growth-145900671.html)
 
-**KLAC**
-- No recent headlines found — check manually before acting.
+**ILMN**
+- [Cboe Global Markets, Inc. (CBOE) Could Benefit From the Growing Options Trading Market: Here’s Why](https://finance.yahoo.com/markets/options/articles/cboe-global-markets-inc-cboe-184500637.html)
+- [UnitedHealth Group Incorporated (UNH) Rebounded After Better-Than-Expected Results: Mott Capital’s Take](https://finance.yahoo.com/healthcare/articles/unitedhealth-group-incorporated-unh-rebounded-184449658.html)
+- [Microsoft Corporation (MSFT) Delivered Strong Fiscal Fourth-Quarter Results: Mott Capital’s Take](https://finance.yahoo.com/markets/stocks/articles/microsoft-corporation-msft-delivered-strong-184429966.html)
 
-**VLO**
-- No recent headlines found — check manually before acting.
+**KEYS**
+- [Why Keysight Technologies (KEYS) Shares Dropped And What Investors Are Weighing](https://finance.yahoo.com/markets/stocks/articles/why-keysight-technologies-keys-shares-171143940.html)
+- [What Is The One Risk Every Synopsys Investor Should Know?](https://www.trefis.com/stock/snps/articles/622309/what-is-the-one-risk-every-synopsys-investor-should-know/2026-11-03)
+- [1 growth stock to add to your roster and 2 we turn down](https://finance.yahoo.com/markets/stocks/articles/1-growth-stock-add-roster-115736291.html)
 
-**FDS**
-- No recent headlines found — check manually before acting.
+**EFX**
+- [Aptiv Q3 Earnings Surpass Estimates Amid Non-Auto Growth](https://finance.yahoo.com/markets/stocks/articles/aptiv-q3-earnings-surpass-estimates-163000001.html)
+- [BR's Q1 Earnings Beat Estimates on Strong Recurring Revenue Growth](https://finance.yahoo.com/markets/stocks/articles/brs-q1-earnings-beat-estimates-162500320.html)
+- [Her Mother Has Dementia. She Can Freeze Her Mother’s Credit at All Three Bureaus, for Free, Before a Scammer Opens an Account in Her Name](https://247wallst.com/personal-finance/2026/11/01/her-mother-has-dementia-she-can-freeze-her-mothers-credit-at-all-three-bureaus-for-free-before-a-scammer-opens-an-account-in-her-name/)
 
-**TT**
-- No recent headlines found — check manually before acting.
+**TXT**
+- [Textron (TXT) Just Reclaimed the 200-Day Moving Average](https://finance.yahoo.com/markets/stocks/articles/textron-txt-just-reclaimed-200-133002894.html)
+- [TXT Q3 deep dive: aviation growth, defense contract milestones, and supply chain initiatives](https://finance.yahoo.com/markets/stocks/articles/txt-q3-deep-dive-aviation-002700932.html)
+- [Textron Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-textron-q3-earnings-call-highlights-2026-10-31/?utm_source=yahoofinance&utm_medium=yahoofinance)
 
-**FTV**
-- No recent headlines found — check manually before acting.
+**FCX**
+- [JPMorgan Highlights Top Copper Stocks Amid U.S. Supply Push](https://finance.yahoo.com/markets/commodities/articles/jpmorgan-highlights-top-copper-stocks-164241106.html)
+- [Freeport-McMoRan Stock: Analyst Estimates & Ratings](https://www.barchart.com/story/news/8590598/freeport-mcmoran-stock-analyst-estimates-ratings)
+- [Zacks Industry Outlook Highlights Southern Copper, Freeport-McMoRan, First Quantum Minerals, Lundin Mining and Centrus Energy](https://finance.yahoo.com/markets/commodities/articles/zacks-industry-outlook-highlights-southern-091900618.html)
 
-**LOW**
-- No recent headlines found — check manually before acting.
-
-**VMC**
-- No recent headlines found — check manually before acting.
-
-**CBOE**
-- No recent headlines found — check manually before acting.
+**ROL**
+- [Rollins (ROL) Misses Quarterly Estimates and Trims Full-Year Organic Growth Outlook](https://finance.yahoo.com/markets/stocks/articles/rollins-rol-misses-quarterly-estimates-141928105.html)
+- [Rollins Has Grown Revenue for 100 Straight Quarters. Here Are 3 More Boring Businesses to Watch](https://247wallst.com/investing/2026/11/01/rollins-has-grown-revenue-for-100-straight-quarters-here-are-3-more-boring-businesses-to-watch/)
+- [Rollins (ROL) Stock May Be 22% Below Fair Value As Q3 Miss Raises Questions](https://finance.yahoo.com/markets/stocks/articles/rollins-rol-stock-may-22-051650643.html)
