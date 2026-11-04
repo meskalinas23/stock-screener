@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-11-04</p>
+    <div class='warning'><strong>This week's high-impact events:</strong><ul><li>Average Hourly Earnings m/m on 2026-11-06 at 13:30 UTC</li><li>Non-Farm Employment Change on 2026-11-06 at 13:30 UTC</li><li>Unemployment Rate on 2026-11-06 at 13:30 UTC</li></ul></div>
+    
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>10 of today's picks are in Information Technology &mdash; likely one shared sector move, not 10 independent opportunities</li><li>10 of today's picks are in Industrials &mdash; likely one shared sector move, not 10 independent opportunities</li><li>5 of today's picks are in Financials &mdash; likely one shared sector move, not 5 independent opportunities</li><li>8 of today's picks are in Health Care &mdash; likely one shared sector move, not 8 independent opportunities</li><li>3 of today's picks are in Energy &mdash; likely one shared sector move, not 3 independent opportunities</li><li>8 of today's picks are in Consumer Discretionary &mdash; likely one shared sector move, not 8 independent opportunities</li></ul></div>
+    <h2>Setups (53)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Win Rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>FTNT</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$129.52</td>
+                <td>19.7</td>
+                <td>-23.2%</td>
+                <td>0.61x</td>
+                <td>$129.52</td>
+                <td>$123.04</td>
+                <td>$168.68</td>
+                <td>6.05:1</td>
+                <td>8.9</td>
+                <td>70%</td>
+                <td>10</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>FFIV</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$329.99</td>
+                <td>15.9</td>
+                <td>-22.3%</td>
+                <td>0.6x</td>
+                <td>$329.99</td>
+                <td>$313.5</td>
+                <td>$424.63</td>
+                <td>5.74:1</td>
+                <td>8.5</td>
+                <td>50%</td>
+                <td>8</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>FIX</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$1083.59</td>
+                <td>28.0</td>
+                <td>-22.2%</td>
+                <td>2.18x &#128293;</td>
+                <td>$1083.59</td>
+                <td>$1029.41</td>
+                <td>$1392.89</td>
+                <td>5.71:1</td>
+                <td>6.7</td>
+                <td>58%</td>
+                <td>12</td>
+                <td>106d</td>
+            </tr>
+            
+            <tr>
+                <td>FISV</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$62.25</td>
+                <td>90.7</td>
+                <td>26.4%</td>
+                <td>1.71x &#128293;</td>
+                <td>$62.25</td>
+                <td>$65.36</td>
+                <td>$49.23</td>
+                <td>4.18:1</td>
+                <td>8.6</td>
+                <td>71%</td>
+                <td>7</td>
+                <td>98d</td>
+            </tr>
+            
+            <tr>
+                <td>PNR</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$72.29</td>
+                <td>91.6</td>
+                <td>24.4%</td>
+                <td>0.57x</td>
+                <td>$72.29</td>
+                <td>$75.9</td>
+                <td>$58.1</td>
+                <td>3.93:1</td>
+                <td>13.5</td>
+                <td>50%</td>
+                <td>4</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>IDXX</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$703.74</td>
+                <td>85.3</td>
+                <td>23.7%</td>
+                <td>1.45x</td>
+                <td>$703.74</td>
+                <td>$738.93</td>
+                <td>$568.76</td>
+                <td>3.84:1</td>
+                <td>8.7</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>89d</td>
+            </tr>
+            
+            <tr>
+                <td>LRCX</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$220.21</td>
+                <td>25.2</td>
+                <td>-15.9%</td>
+                <td>0.82x</td>
+                <td>$220.21</td>
+                <td>$209.2</td>
+                <td>$261.96</td>
+                <td>3.79:1</td>
+                <td>5.0</td>
+                <td>57%</td>
+                <td>7</td>
+                <td>84d</td>
+            </tr>
+            
+            <tr>
+                <td>MPC</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$386.46</td>
+                <td>20.6</td>
+                <td>-15.0%</td>
+                <td>1.28x</td>
+                <td>$386.46</td>
+                <td>$367.14</td>
+                <td>$454.81</td>
+                <td>3.54:1</td>
+                <td>10.4</td>
+                <td>73%</td>
+                <td>11</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>GEN</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$30.82</td>
+                <td>87.8</td>
+                <td>21.3%</td>
+                <td>0.82x</td>
+                <td>$30.82</td>
+                <td>$32.36</td>
+                <td>$25.42</td>
+                <td>3.51:1</td>
+                <td>7.6</td>
+                <td>54%</td>
+                <td>13</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>KEYS</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$285.58</td>
+                <td>24.0</td>
+                <td>-14.7%</td>
+                <td>1.03x</td>
+                <td>$285.58</td>
+                <td>$271.31</td>
+                <td>$334.91</td>
+                <td>3.45:1</td>
+                <td>8.8</td>
+                <td>67%</td>
+                <td>9</td>
+                <td>15d</td>
+            </tr>
+            
+            <tr>
+                <td>ILMN</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$227.13</td>
+                <td>30.3</td>
+                <td>-14.3%</td>
+                <td>0.94x</td>
+                <td>$227.13</td>
+                <td>$215.77</td>
+                <td>$265.12</td>
+                <td>3.35:1</td>
+                <td>7.0</td>
+                <td>55%</td>
+                <td>11</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>GEHC</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$86.55</td>
+                <td>93.6</td>
+                <td>19.8%</td>
+                <td>1.62x &#128293;</td>
+                <td>$86.55</td>
+                <td>$90.88</td>
+                <td>$72.25</td>
+                <td>3.3:1</td>
+                <td>8.6</td>
+                <td>75%</td>
+                <td>16</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>NRG</td>
+                <td>Utilities</td>
+                <td class="long">LONG</td>
+                <td>$84.79</td>
+                <td>23.2</td>
+                <td>-13.7%</td>
+                <td>2.2x &#128293;</td>
+                <td>$84.79</td>
+                <td>$80.55</td>
+                <td>$98.29</td>
+                <td>3.18:1</td>
+                <td>5.9</td>
+                <td>71%</td>
+                <td>17</td>
+                <td>5d</td>
+            </tr>
+            
+            <tr>
+                <td>VLO</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$361.83</td>
+                <td>26.2</td>
+                <td>-13.7%</td>
+                <td>1.48x</td>
+                <td>$361.83</td>
+                <td>$343.74</td>
+                <td>$419.27</td>
+                <td>3.17:1</td>
+                <td>10.4</td>
+                <td>71%</td>
+                <td>7</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>ROP</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$494.16</td>
+                <td>87.9</td>
+                <td>18.6%</td>
+                <td>0.96x</td>
+                <td>$494.16</td>
+                <td>$518.87</td>
+                <td>$416.79</td>
+                <td>3.13:1</td>
+                <td>7.2</td>
+                <td>50%</td>
+                <td>10</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>MU</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$797.88</td>
+                <td>30.2</td>
+                <td>-12.8%</td>
+                <td>1.03x</td>
+                <td>$797.88</td>
+                <td>$757.99</td>
+                <td>$915.03</td>
+                <td>2.94:1</td>
+                <td>9.0</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>49d</td>
+            </tr>
+            
+            <tr>
+                <td>NCLH</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$18.51</td>
+                <td>73.1</td>
+                <td>15.4%</td>
+                <td>1.01x</td>
+                <td>$18.51</td>
+                <td>$19.44</td>
+                <td>$16.04</td>
+                <td>2.67:1</td>
+                <td>7.5</td>
+                <td>53%</td>
+                <td>15</td>
+                <td>117d</td>
+            </tr>
+            
+            <tr>
+                <td>ZBH</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$110.35</td>
+                <td>83.1</td>
+                <td>15.4%</td>
+                <td>1.77x &#128293;</td>
+                <td>$110.35</td>
+                <td>$115.87</td>
+                <td>$95.66</td>
+                <td>2.66:1</td>
+                <td>9.0</td>
+                <td>71%</td>
+                <td>14</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>CLX</td>
+                <td>Consumer Staples</td>
+                <td class="short">SHORT</td>
+                <td>$99.76</td>
+                <td>87.2</td>
+                <td>15.3%</td>
+                <td>1.22x</td>
+                <td>$99.76</td>
+                <td>$104.75</td>
+                <td>$86.55</td>
+                <td>2.65:1</td>
+                <td>9.3</td>
+                <td>83%</td>
+                <td>12</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>MOS</td>
+                <td>Materials</td>
+                <td class="short">SHORT</td>
+                <td>$21.37</td>
+                <td>75.1</td>
+                <td>14.9%</td>
+                <td>1.42x</td>
+                <td>$21.37</td>
+                <td>$22.44</td>
+                <td>$18.61</td>
+                <td>2.59:1</td>
+                <td>7.8</td>
+                <td>53%</td>
+                <td>17</td>
+                <td>111d</td>
+            </tr>
+            
+            <tr>
+                <td>CMG</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$34.94</td>
+                <td>83.1</td>
+                <td>14.8%</td>
+                <td>0.53x</td>
+                <td>$34.94</td>
+                <td>$36.69</td>
+                <td>$30.43</td>
+                <td>2.58:1</td>
+                <td>9.7</td>
+                <td>68%</td>
+                <td>19</td>
+                <td>97d</td>
+            </tr>
+            
+            <tr>
+                <td>LOW</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$228.68</td>
+                <td>82.2</td>
+                <td>14.8%</td>
+                <td>0.94x</td>
+                <td>$228.68</td>
+                <td>$240.12</td>
+                <td>$199.26</td>
+                <td>2.57:1</td>
+                <td>10.2</td>
+                <td>67%</td>
+                <td>9</td>
+                <td>14d</td>
+            </tr>
+            
+            <tr>
+                <td>REGN</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$942.97</td>
+                <td>75.4</td>
+                <td>14.7%</td>
+                <td>1.02x</td>
+                <td>$942.97</td>
+                <td>$990.12</td>
+                <td>$822.4</td>
+                <td>2.56:1</td>
+                <td>6.2</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>SYK</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$342.17</td>
+                <td>77.3</td>
+                <td>14.5%</td>
+                <td>1.48x</td>
+                <td>$342.17</td>
+                <td>$359.28</td>
+                <td>$298.89</td>
+                <td>2.53:1</td>
+                <td>7.4</td>
+                <td>91%</td>
+                <td>11</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>TYL</td>
+                <td>Information Technology</td>
+                <td class="short">SHORT</td>
+                <td>$424.24</td>
+                <td>79.7</td>
+                <td>14.0%</td>
+                <td>0.8x</td>
+                <td>$424.24</td>
+                <td>$445.45</td>
+                <td>$372.21</td>
+                <td>2.45:1</td>
+                <td>12.7</td>
+                <td>78%</td>
+                <td>9</td>
+                <td>98d</td>
+            </tr>
+            
+            <tr>
+                <td>CPRT</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$32.62</td>
+                <td>78.9</td>
+                <td>13.9%</td>
+                <td>0.6x</td>
+                <td>$32.62</td>
+                <td>$34.25</td>
+                <td>$28.64</td>
+                <td>2.44:1</td>
+                <td>9.3</td>
+                <td>69%</td>
+                <td>13</td>
+                <td>15d</td>
+            </tr>
+            
+            <tr>
+                <td>EFX</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$194.13</td>
+                <td>74.0</td>
+                <td>13.9%</td>
+                <td>0.38x</td>
+                <td>$194.13</td>
+                <td>$203.84</td>
+                <td>$170.47</td>
+                <td>2.44:1</td>
+                <td>5.7</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>ROL</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$38.8</td>
+                <td>84.0</td>
+                <td>13.8%</td>
+                <td>0.71x</td>
+                <td>$38.8</td>
+                <td>$40.74</td>
+                <td>$34.08</td>
+                <td>2.43:1</td>
+                <td>8.8</td>
+                <td>62%</td>
+                <td>13</td>
+                <td>98d</td>
+            </tr>
+            
+            <tr>
+                <td>LEN</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$92.62</td>
+                <td>70.4</td>
+                <td>13.8%</td>
+                <td>1.13x</td>
+                <td>$92.62</td>
+                <td>$97.25</td>
+                <td>$81.39</td>
+                <td>2.42:1</td>
+                <td>9.8</td>
+                <td>82%</td>
+                <td>11</td>
+                <td>41d</td>
+            </tr>
+            
+            <tr>
+                <td>MMM</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$194.19</td>
+                <td>83.1</td>
+                <td>13.6%</td>
+                <td>1.67x &#128293;</td>
+                <td>$194.19</td>
+                <td>$203.9</td>
+                <td>$170.87</td>
+                <td>2.4:1</td>
+                <td>10.1</td>
+                <td>70%</td>
+                <td>20</td>
+                <td>76d</td>
+            </tr>
+            
+            <tr>
+                <td>XYZ</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$87.89</td>
+                <td>81.2</td>
+                <td>13.6%</td>
+                <td>2.71x &#128293;</td>
+                <td>$87.89</td>
+                <td>$92.28</td>
+                <td>$77.39</td>
+                <td>2.39:1</td>
+                <td>4.6</td>
+                <td>62%</td>
+                <td>13</td>
+                <td>117d</td>
+            </tr>
+            
+            <tr>
+                <td>DD</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$154.0</td>
+                <td>92.7</td>
+                <td>13.2%</td>
+                <td>1.23x</td>
+                <td>$154.0</td>
+                <td>$161.7</td>
+                <td>$136.1</td>
+                <td>2.32:1</td>
+                <td>10.0</td>
+                <td>57%</td>
+                <td>14</td>
+                <td>97d</td>
+            </tr>
+            
+            <tr>
+                <td>ADM</td>
+                <td>Consumer Staples</td>
+                <td class="long">LONG</td>
+                <td>$70.86</td>
+                <td>15.1</td>
+                <td>-10.3%</td>
+                <td>1.1x</td>
+                <td>$70.86</td>
+                <td>$67.32</td>
+                <td>$79.01</td>
+                <td>2.3:1</td>
+                <td>8.4</td>
+                <td>100%</td>
+                <td>7</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>VMC</td>
+                <td>Materials</td>
+                <td class="short">SHORT</td>
+                <td>$297.48</td>
+                <td>83.0</td>
+                <td>13.0%</td>
+                <td>0.71x</td>
+                <td>$297.48</td>
+                <td>$312.36</td>
+                <td>$263.38</td>
+                <td>2.29:1</td>
+                <td>8.4</td>
+                <td>57%</td>
+                <td>14</td>
+                <td>104d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOGL</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$291.15</td>
+                <td>33.5</td>
+                <td>-10.2%</td>
+                <td>1.07x</td>
+                <td>$291.15</td>
+                <td>$276.6</td>
+                <td>$324.18</td>
+                <td>2.27:1</td>
+                <td>8.3</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>EXR</td>
+                <td>Real Estate</td>
+                <td class="short">SHORT</td>
+                <td>$161.26</td>
+                <td>94.9</td>
+                <td>12.8%</td>
+                <td>0.83x</td>
+                <td>$161.26</td>
+                <td>$169.32</td>
+                <td>$143.0</td>
+                <td>2.26:1</td>
+                <td>10.1</td>
+                <td>69%</td>
+                <td>13</td>
+                <td>106d</td>
+            </tr>
+            
+            <tr>
+                <td>MSCI</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$674.48</td>
+                <td>87.5</td>
+                <td>12.7%</td>
+                <td>0.92x</td>
+                <td>$674.48</td>
+                <td>$708.2</td>
+                <td>$598.68</td>
+                <td>2.25:1</td>
+                <td>9.3</td>
+                <td>75%</td>
+                <td>12</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>FTV</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$68.51</td>
+                <td>90.6</td>
+                <td>12.6%</td>
+                <td>0.97x</td>
+                <td>$68.51</td>
+                <td>$71.94</td>
+                <td>$60.82</td>
+                <td>2.24:1</td>
+                <td>4.6</td>
+                <td>78%</td>
+                <td>9</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>ETN</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$352.57</td>
+                <td>34.3</td>
+                <td>-10.0%</td>
+                <td>1.49x</td>
+                <td>$352.57</td>
+                <td>$334.94</td>
+                <td>$391.86</td>
+                <td>2.23:1</td>
+                <td>11.8</td>
+                <td>63%</td>
+                <td>19</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>KLAC</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$149.33</td>
+                <td>35.1</td>
+                <td>-9.9%</td>
+                <td>0.66x</td>
+                <td>$149.33</td>
+                <td>$141.86</td>
+                <td>$165.8</td>
+                <td>2.21:1</td>
+                <td>4.0</td>
+                <td>62%</td>
+                <td>8</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>JKHY</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$177.1</td>
+                <td>83.9</td>
+                <td>12.3%</td>
+                <td>1.06x</td>
+                <td>$177.1</td>
+                <td>$185.96</td>
+                <td>$157.66</td>
+                <td>2.2:1</td>
+                <td>7.8</td>
+                <td>50%</td>
+                <td>16</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>MCD</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$279.47</td>
+                <td>87.1</td>
+                <td>12.3%</td>
+                <td>1.52x &#128293;</td>
+                <td>$279.47</td>
+                <td>$293.44</td>
+                <td>$248.92</td>
+                <td>2.19:1</td>
+                <td>9.6</td>
+                <td>85%</td>
+                <td>13</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>UPS</td>
+                <td>Industrials</td>
+                <td class="short">SHORT</td>
+                <td>$113.93</td>
+                <td>89.2</td>
+                <td>12.3%</td>
+                <td>1.1x</td>
+                <td>$113.93</td>
+                <td>$119.62</td>
+                <td>$101.42</td>
+                <td>2.19:1</td>
+                <td>7.2</td>
+                <td>50%</td>
+                <td>18</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>GOOG</td>
+                <td>Communication Services</td>
+                <td class="long">LONG</td>
+                <td>$289.45</td>
+                <td>33.5</td>
+                <td>-9.8%</td>
+                <td>0.98x</td>
+                <td>$289.45</td>
+                <td>$274.98</td>
+                <td>$321.07</td>
+                <td>2.18:1</td>
+                <td>7.0</td>
+                <td>50%</td>
+                <td>14</td>
+                <td>91d</td>
+            </tr>
+            
+            <tr>
+                <td>HD</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$353.88</td>
+                <td>79.9</td>
+                <td>12.1%</td>
+                <td>1.09x</td>
+                <td>$353.88</td>
+                <td>$371.57</td>
+                <td>$315.66</td>
+                <td>2.16:1</td>
+                <td>13.3</td>
+                <td>60%</td>
+                <td>10</td>
+                <td>13d</td>
+            </tr>
+            
+            <tr>
+                <td>BKR</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$49.9</td>
+                <td>26.3</td>
+                <td>-9.5%</td>
+                <td>1.11x</td>
+                <td>$49.9</td>
+                <td>$47.41</td>
+                <td>$55.16</td>
+                <td>2.11:1</td>
+                <td>11.7</td>
+                <td>50%</td>
+                <td>12</td>
+                <td>82d</td>
+            </tr>
+            
+            <tr>
+                <td>PODD</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$162.32</td>
+                <td>84.5</td>
+                <td>11.7%</td>
+                <td>1.09x</td>
+                <td>$162.32</td>
+                <td>$170.43</td>
+                <td>$145.31</td>
+                <td>2.1:1</td>
+                <td>5.8</td>
+                <td>67%</td>
+                <td>9</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>AJG</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$287.92</td>
+                <td>76.8</td>
+                <td>11.7%</td>
+                <td>0.84x</td>
+                <td>$287.92</td>
+                <td>$302.32</td>
+                <td>$257.8</td>
+                <td>2.09:1</td>
+                <td>7.7</td>
+                <td>50%</td>
+                <td>12</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>MGM</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$32.69</td>
+                <td>76.9</td>
+                <td>11.6%</td>
+                <td>0.99x</td>
+                <td>$32.69</td>
+                <td>$34.33</td>
+                <td>$29.29</td>
+                <td>2.09:1</td>
+                <td>8.0</td>
+                <td>64%</td>
+                <td>11</td>
+                <td>92d</td>
+            </tr>
+            
+            <tr>
+                <td>LULU</td>
+                <td>Consumer Discretionary</td>
+                <td class="short">SHORT</td>
+                <td>$112.57</td>
+                <td>72.7</td>
+                <td>11.4%</td>
+                <td>0.84x</td>
+                <td>$112.57</td>
+                <td>$118.19</td>
+                <td>$101.04</td>
+                <td>2.05:1</td>
+                <td>7.2</td>
+                <td>67%</td>
+                <td>9</td>
+                <td>36d</td>
+            </tr>
+            
+            <tr>
+                <td>ABT</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$115.88</td>
+                <td>83.5</td>
+                <td>11.3%</td>
+                <td>0.84x</td>
+                <td>$115.88</td>
+                <td>$121.67</td>
+                <td>$104.1</td>
+                <td>2.03:1</td>
+                <td>7.7</td>
+                <td>59%</td>
+                <td>17</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>PSA</td>
+                <td>Real Estate</td>
+                <td class="short">SHORT</td>
+                <td>$340.89</td>
+                <td>88.6</td>
+                <td>11.2%</td>
+                <td>1.67x &#128293;</td>
+                <td>$340.89</td>
+                <td>$357.93</td>
+                <td>$306.43</td>
+                <td>2.02:1</td>
+                <td>12.7</td>
+                <td>67%</td>
+                <td>9</td>
+                <td>99d</td>
+            </tr>
+            
+            <tr>
+                <td>JBL</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$258.27</td>
+                <td>30.8</td>
+                <td>-9.1%</td>
+                <td>0.71x</td>
+                <td>$258.27</td>
+                <td>$245.36</td>
+                <td>$284.15</td>
+                <td>2.0:1</td>
+                <td>8.3</td>
+                <td>58%</td>
+                <td>12</td>
+                <td>42d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>News context</h2><h3>FTNT</h3><img src='charts/FTNT_2026-11-04.png' alt='FTNT risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/twlo/articles/622283/should-twilio-stock-holders-look-at-fortinet-instead/2026-11-04'>Should Twilio Stock Holders Look At Fortinet Instead?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/5-large-cap-tech-stocks-175941681.html'>5 Large Cap Tech Stocks to Buy According to Billionaires</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/zscaler-lags-cybersecurity-peers-investors-144500471.html'>Zscaler Lags Cybersecurity Peers: Should Investors Hold the Stock?</a></li></ul><h3>FFIV</h3><img src='charts/FFIV_2026-11-04.png' alt='FFIV risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/lite/articles/622215/what-just-happened-to-lumentum-shares/2026-11-03'>What Just Happened To Lumentum Shares?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/peng-vs-ffiv-stock-better-154003443.html'>PENG vs. FFIV: Which Stock Is the Better Value Option?</a></li><li><a href='https://finance.yahoo.com/technology/ai/articles/janus-henderson-sees-ai-infrastructure-200821334.html'>Janus Henderson Sees AI Infrastructure Opportunity in F5, Inc. (FFIV) as Enterprise Demand Grows</a></li></ul><h3>FIX</h3><img src='charts/FIX_2026-11-04.png' alt='FIX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.fool.com/investing/2026/11/04/data-center-stocks-just-plunged-after-the-midterms-is-it-time-to-buy-the-dip/'>Data Center Stocks Just Plunged After the Midterms. Is It Time to Buy the Dip?</a></li><li><a href='https://www.tikr.com/blog/caterpillar-sinks-6-as-democrats-win-congress-caught-up-in-this-ai-trade?ref=yahoofinance&tlnk=yf-261104-54gx3cr9'>Caterpillar Sinks 6% as Democrats Win Congress: “Caught Up in This AI Trade”</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/fluor-gears-report-q3-earnings-161300139.html'>Fluor Gears Up to Report Q3 Earnings: Key Factors to Watch</a></li></ul><h3>FISV</h3><img src='charts/FISV_2026-11-04.png' alt='FISV risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/clean-harbors-stock-slides-6-173600683.html'>Clean Harbors Stock Slides 6% Since Posting Q3 Earnings & Revenue Beat</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/norwegian-cruise-downgrade-duolingo-upgraded-133748798.html'>Adobe downgraded, Constellation upgraded: Wall Street's top analyst calls</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-130949203.html'>US Stock Market Today: S&P 500 Futures Edge Higher On Strong Factory And Freight Data</a></li></ul><h3>PNR</h3><img src='charts/PNR_2026-11-04.png' alt='PNR risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/ft-vest-dividend-aristocrats-target-110455696.html'>What FT Vest Dividend Aristocrats Target Income (KNG) Bought: C.H. Robinson Leads on Oct. 30</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/proshares-dividend-aristocrats-nobl-bought-110408938.html'>What ProShares Dividend Aristocrats (NOBL) Bought: Kimberly-Clark Leads on Friday</a></li><li><a href='https://www.trefis.com/stock/hayw/articles/621572/why-are-investors-paying-less-for-haywards-profit/2026-10-31'>Why Are Investors Paying Less For Hayward's Profit?</a></li></ul><h3>IDXX</h3><img src='charts/IDXX_2026-11-04.png' alt='IDXX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/idexx-laboratories-idxx-q3-earnings-232237894.html'>IDEXX Laboratories (IDXX) Q3 Earnings Leave Its Premium Valuation In Focus</a></li><li><a href='https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks'>Earnings Calendar and Analysis for This Week</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/idexx-laboratories-delivered-strong-results-180427992.html'>IDEXX Laboratories Delivered Strong Results Despite Lackluster Vet Visit Backdrop, UBS Says</a></li></ul><h3>LRCX</h3><img src='charts/LRCX_2026-11-04.png' alt='LRCX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/klac/articles/622549/what-could-derail-kla-stock/2026-11-04'>What Could Derail KLA Stock?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/cautious-guidance-require-action-lam-021419662.html'>Should Cautious Guidance Require Action From Lam Research (LRCX) Investors?</a></li><li><a href='https://www.thestreet.com/crypto/markets/elon-musks-tesla-and-spacex-protest-nyse-parents-new-plan'>Elon Musk’s Tesla and SpaceX protest NYSE parent's new plan</a></li></ul><h3>MPC</h3><img src='charts/MPC_2026-11-04.png' alt='MPC risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/04/the-10-year-treasury-yields-4-91-these-4-dividend-stocks-pay-more/'>The 10-Year Treasury Yields 4.91%. These 4 Dividend Stocks Pay More</a></li><li><a href='https://finance.yahoo.com/energy/articles/mpc-q3-earnings-beat-estimates-162400083.html'>MPC Q3 Earnings Beat Estimates on Strong Refining Margins</a></li><li><a href='https://finance.yahoo.com/energy/articles/exxonmobils-100-000-bpd-diesel-152900784.html'>Will ExxonMobil's 100,000-BPD Diesel Expansion Boost Refining Profit?</a></li></ul><h3>GEN</h3><img src='charts/GEN_2026-11-04.png' alt='GEN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/3-underowned-p-500-stocks-171435079.html'>3 Underowned S&P 500 Stocks as Investors Rotate Beyond AI</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-gen-124002175.html'>Are Business Services Stocks Lagging  GEN DIGITAL INC (GEN) This Year?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-stock-repriced-011138232.html'>Gen Digital (GEN) Stock Repriced After Q2 Earnings Put Margins Center Stage</a></li></ul><h3>KEYS</h3><img src='charts/KEYS_2026-11-04.png' alt='KEYS risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/cdns/articles/622633/has-cadence-stock-fallen-like-this-before/2026-11-04'>Has Cadence Stock Fallen Like This Before?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/camtek-camt-q3-earnings-revenues-121002283.html'>Camtek (CAMT) Q3 Earnings and Revenues Surpass Estimates</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/electronica-2026-unveilings-change-keysight-002342500.html'>Will Electronica 2026 Unveilings Change Keysight Stock Narrative</a></li></ul><h3>ILMN</h3><img src='charts/ILMN_2026-11-04.png' alt='ILMN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/regn-vs-ilmn-stock-better-154001705.html'>REGN vs. ILMN: Which Stock Is the Better Value Option?</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/illumina-ilmn-selected-singapore-genome-211630754.html'>Illumina (ILMN) Selected For Singapore Genome Sequencing Program Covering 450,000 People</a></li><li><a href='https://finance.yahoo.com/markets/options/articles/cboe-global-markets-inc-cboe-184500637.html'>Cboe Global Markets, Inc. (CBOE) Could Benefit From the Growing Options Trading Market: Here’s Why</a></li></ul><h3>GEHC</h3><img src='charts/GEHC_2026-11-04.png' alt='GEHC risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/healthcare/articles/gehc-q3-earnings-call-highlights-140000446.html'>GEHC Q3 Earnings Call Highlights Raised Outlook and Margin Risks</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/zimmer-biomet-stock-q3-earnings-134000861.html'>Zimmer Biomet Stock Up on Q3 Earnings & Revenue Beat, '26 View Up</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/earnings-ai-product-launches-change-021416913.html'>Will Earnings And AI Product Launches Change GE HealthCare's (GEHC) Narrative</a></li></ul><h3>NRG</h3><img src='charts/NRG_2026-11-04.png' alt='NRG risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/nrg-energy-inc-nrg-trending-130002390.html'>NRG Energy, Inc. (NRG) Is a Trending Stock: Facts to Know Before Betting on It</a></li><li><a href='https://finance.yahoo.com/markets/options/articles/options-traders-know-something-nrg-125000781.html'>Do Options Traders Know Something About NRG Energy Stock We Don't?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/nrg-energy-nrg-suffers-larger-215002722.html'>NRG Energy (NRG) Suffers a Larger Drop Than the General Market: Key Insights</a></li></ul><h3>VLO</h3><img src='charts/VLO_2026-11-04.png' alt='VLO risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/marathon-petroleum-sinks-10-valero-down-8-as-oil-stocks-slide-after-democrats-win-the-senate?ref=yahoofinance&tlnk=yf-261104-8q784wxp'>Marathon Petroleum Sinks 10%, Valero Down 8% as Oil Stocks Slide After Democrats Win the Senate</a></li><li><a href='https://finance.yahoo.com/energy/articles/mpc-q3-earnings-beat-estimates-162400083.html'>MPC Q3 Earnings Beat Estimates on Strong Refining Margins</a></li><li><a href='https://finance.yahoo.com/energy/articles/exxonmobils-100-000-bpd-diesel-152900784.html'>Will ExxonMobil's 100,000-BPD Diesel Expansion Boost Refining Profit?</a></li></ul><h3>ROP</h3><img src='charts/ROP_2026-11-04.png' alt='ROP risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/04/3-dividend-aristocrats-with-the-most-room-to-keep-raising-their-dividends/'>3 Dividend Aristocrats With the Most Room to Keep Raising Their Dividends</a></li><li><a href='https://www.trefis.com/stock/ftv/articles/622506/is-ingersoll-rand-a-better-way-than-fortive-to-own-industrial-demand/2026-11-04'>Is Ingersoll Rand A Better Way Than Fortive To Own Industrial Demand?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-roper-technologies-110305092.html'>ETFs Are Net Sellers of Roper Technologies (ROP) on Friday</a></li></ul><h3>MU</h3><img src='charts/MU_2026-11-04.png' alt='MU risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/live/stock-market-today-dow-rallies-1500-points-sp-500-nasdaq-midterm-elections-democrats-sweep-201207340.html'>Stock market today: Dow rallies 1,500 points, S&P 500 and Nasdaq gain after Democrats win control of Congress</a></li><li><a href='https://www.tikr.com/blog/micron-sinks-6-as-democratic-sweep-stokes-fears-of-an-ai-slowdown-in-build?ref=yahoofinance&tlnk=yf-261104-99f4g74r'>Micron Sinks 6% as Democratic Sweep Stokes Fears of an AI “Slowdown in Build”</a></li><li><a href='https://www.barrons.com/articles/micron-stock-price-memory-warning-democrats-6ab3cf2f?siteid=yhoof2&yptr=yahoo'>Micron Stock Faces a Memory Price Conundrum in the Wake of Democrat Success</a></li></ul><h3>NCLH</h3><img src='charts/NCLH_2026-11-04.png' alt='NCLH risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/norwegian-cruise-line-holdings-ltd-130003237.html'>Norwegian Cruise Line Holdings Ltd. (NCLH) is Attracting Investor Attention: Here is What You Should Know</a></li><li><a href='https://www.trefis.com/stock/rcl/articles/622570/is-royal-caribbean-stock-increasing-your-market-risk/2026-11-04'>Is Royal Caribbean Stock Increasing Your Market Risk?</a></li><li><a href='https://www.barchart.com/story/news/8639888/norwegian-cruise-line-stock-is-wall-street-bullish-or-bearish'>Norwegian Cruise Line Stock: Is Wall Street Bullish or Bearish?</a></li></ul><h3>ZBH</h3><img src='charts/ZBH_2026-11-04.png' alt='ZBH risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.fool.com/earnings/call-transcripts/2026/11/04/zimmer-biomet-zbh-q3-2026-earnings-call-transcript/'>Zimmer Biomet (ZBH) Q3 2026 Earnings Call Transcript</a></li><li><a href='https://www.medtechdive.com/news/zimmer-raises-sales-forecast-despite-slower-knee-business/873760/'>Zimmer raises sales forecast despite slower knee business</a></li><li><a href='https://www.medicaldevice-network.com/news/zimmer-biomet-stock-rises-9-after-reporting-positive-q3/'>Zimmer Biomet stock rises 9% after reporting positive Q3</a></li></ul><h3>CLX</h3><img src='charts/CLX_2026-11-04.png' alt='CLX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-clorox-clx-110321066.html'>ETFs Are Net Sellers of Clorox (CLX) on Nov. 2</a></li><li><a href='https://www.thestreet.com/economy/clorox-ceo-economic-warning-consumer-spending'>Clorox CEO reveals troubling sign for U.S. economy</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/clorox-clx-stock-rebounds-q4-222208258.html'>Clorox (CLX) Stock Rebounds As Q4 Earnings Face Margin Strain</a></li></ul><h3>MOS</h3><img src='charts/MOS_2026-11-04.png' alt='MOS risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/mos-q3-earnings-miss-estimates-125700337.html'>MOS Q3 Earnings Miss Estimates on Higher Costs, Lower Volumes</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/mosaic-mos-q3-earnings-taking-223002911.html'>Mosaic (MOS) Q3 Earnings: Taking a Look at Key Metrics Versus Estimates</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/mosaic-mos-reports-q3-loss-215006585.html'>Mosaic (MOS) Reports Q3 Loss, Tops Revenue Estimates</a></li></ul><h3>CMG</h3><img src='charts/CMG_2026-11-04.png' alt='CMG risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/mcdonalds-soars-6-on-earnings-beat-as-ceo-calls-entry-level-value-the-final-piece-thats-missing?ref=yahoofinance&tlnk=yf-261104-3g26v5wc'>McDonald’s Soars 6% on Earnings Beat as CEO Calls Entry-Level Value the “Final Piece That’s Missing”</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/mcdonalds-q3-earnings-beat-franchised-161700300.html'>McDonald's Q3 Earnings Beat on Franchised Margins, Revenues Miss</a></li><li><a href='https://247wallst.com/investing/2026/11/04/mcdonalds-rises-5-as-earnings-beat-outweighs-u-s-sales-dip-chipotle-climbs-4-starbucks-gains-3/'>McDonald’s Rises 5% as Earnings Beat Outweighs U.S. Sales Dip; Chipotle Climbs 4%, Starbucks Gains 3%</a></li></ul><h3>LOW</h3><img src='charts/LOW_2026-11-04.png' alt='LOW risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/economy/article/housing-stocks-rally-following-midterm-elections-treasury-yields-dip-lower-171937967.html'>Housing stocks rally following midterm elections, Treasury yields dip lower</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/home-depots-margin-outlook-faces-173300640.html'>Home Depot's Margin Outlook Faces Inflationary Headwinds</a></li><li><a href='https://www.trefis.com/stock/low/articles/622561/what-could-stop-lowes-stock-over-the-next-six-months/2026-11-04'>What Could Stop Lowe's Stock Over The Next Six Months?</a></li></ul><h3>REGN</h3><img src='charts/REGN_2026-11-04.png' alt='REGN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/moderna-soars-8-on-early-multiple-myeloma-data-for-its-three-in-one-mrna-therapy?ref=yahoofinance&tlnk=yf-261104-3jcgr392'>Moderna Soars 8% on Early Multiple Myeloma Data for Its Three-in-One mRNA Therapy</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-regeneron-regn-might-well-162002464.html'>Why Regeneron (REGN) Might be Well Poised for a Surge</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/regn-vs-ilmn-stock-better-154001705.html'>REGN vs. ILMN: Which Stock Is the Better Value Option?</a></li></ul><h3>SYK</h3><img src='charts/SYK_2026-11-04.png' alt='SYK risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.medtechdive.com/news/zimmer-raises-sales-forecast-despite-slower-knee-business/873760/'>Zimmer raises sales forecast despite slower knee business</a></li><li><a href='https://www.tikr.com/blog/zimmer-biomet-soars-15-as-hip-and-tech-growth-lifts-guidance-validating-the-progress-of-its-strategy?ref=yahoofinance&tlnk=yf-261104-4hqp8m68'>Zimmer Biomet Soars 15% as Hip and Tech Growth Lifts Guidance, “Validating the Progress” of Its Strategy</a></li><li><a href='https://finance.yahoo.com/markets/options/articles/options-traders-betting-big-move-143000814.html'>Are Options Traders Betting on a Big Move in Stryker Stock?</a></li></ul><h3>TYL</h3><img src='charts/TYL_2026-11-04.png' alt='TYL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.barrons.com/livecoverage/stock-market-news-today-110326/card/a-democratic-sweep-of-midterms-could-turn-software-stocks-into-a-defensive-play-RCWPHtQquvfjwFpPa9tv?siteid=yhoof2&yptr=yahoo'>A Democratic Sweep of Midterms Could Turn Software Stocks Into a Defensive Play</a></li><li><a href='https://www.marketbeat.com/instant-alerts/transcript-what-tyler-technologies-tyl-said-on-its-q3-earnings-call-2026-10-31/?utm_source=yahoofinance&utm_medium=yahoofinance'>What Tyler Technologies (TYL) Said on Its Q3 Earnings Call</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/pick-best-cybersecurity-stocks-october-200737409.html'>Our Pick Of The Best Cybersecurity Stocks In October 2026</a></li></ul><h3>CPRT</h3><img src='charts/CPRT_2026-11-04.png' alt='CPRT risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/cprt/articles/622235/what-just-happened-to-copart-stock/2026-11-03'>What Just Happened To Copart Stock?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/copart-cprt-stock-looks-cheap-031742574.html'>Copart (CPRT) Stock Looks Cheap Based On Its Earnings Price</a></li><li><a href='https://www.trefis.com/stock/cprt/articles/621560/how-would-you-fix-copart/2026-10-30'>How Would You Fix Copart?</a></li></ul><h3>EFX</h3><img src='charts/EFX_2026-11-04.png' alt='EFX risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/aptiv-q3-earnings-surpass-estimates-163000001.html'>Aptiv Q3 Earnings Surpass Estimates Amid Non-Auto Growth</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/brs-q1-earnings-beat-estimates-162500320.html'>BR's Q1 Earnings Beat Estimates on Strong Recurring Revenue Growth</a></li><li><a href='https://247wallst.com/personal-finance/2026/11/01/her-mother-has-dementia-she-can-freeze-her-mothers-credit-at-all-three-bureaus-for-free-before-a-scammer-opens-an-account-in-her-name/'>Her Mother Has Dementia. She Can Freeze Her Mother’s Credit at All Three Bureaus, for Free, Before a Scammer Opens an Account in Her Name</a></li></ul><h3>ROL</h3><img src='charts/ROL_2026-11-04.png' alt='ROL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/wex-q3-earnings-revenues-beat-172800325.html'>WEX Q3 Earnings & Revenues Beat Estimates, Stock Declines 3.5%</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/tri-q3-earnings-revenues-miss-150000810.html'>TRI Q3 Earnings & Revenues Miss Estimates, Stock Declines 9.9%</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/rollins-rol-misses-quarterly-estimates-141928105.html'>Rollins (ROL) Misses Quarterly Estimates and Trims Full-Year Organic Growth Outlook</a></li></ul><h3>LEN</h3><img src='charts/LEN_2026-11-04.png' alt='LEN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/lennar-len-extends-credit-facilities-191553061.html'>Lennar (LEN) Extends Credit Facilities, Is The Stock Expensive?</a></li><li><a href='https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/the-election-sparks-a-rally-in-homebuilders-qBZyOAKmoVCeQcy8Sm8Y?siteid=yhoof2&yptr=yahoo'>The Election Sparks a Rally in Homebuilders</a></li><li><a href='https://finance.yahoo.com/economy/article/housing-stocks-rally-following-midterm-elections-treasury-yields-dip-lower-171937967.html'>Housing stocks rally following midterm elections, Treasury yields dip lower</a></li></ul><h3>MMM</h3><img src='charts/MMM_2026-11-04.png' alt='MMM risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-election-results-elon-musk-spacex-tesla-amd/?src=A00220&yptr=yahoo'>Stock Market Today: Dow Soars 1,500 Points As At Least 10 Stocks Break Out (Live Coverage)</a></li><li><a href='https://finance.yahoo.com/technology/ai/articles/3m-mmm-expands-ai-data-181604975.html'>3M (MMM) Expands AI Data Center Optics Push With 500 Job Investment</a></li><li><a href='https://247wallst.com/investing/2026/11/04/3ms-forever-chemicals-bill-just-grew-by-billions/'>3M’s “Forever Chemicals” Bill Just Grew by Billions</a></li></ul><h3>XYZ</h3><img src='charts/XYZ_2026-11-04.png' alt='XYZ risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/article/block-stock-jumps-as-jack-dorseys-ai-bet-shows-signs-of-paying-off-125836099.html'>Block stock jumps as Jack Dorsey's AI bet shows signs of paying off</a></li><li><a href='https://unchainedcrypto.com/block-books-764-million-for-planned-doj-deal-that-would-defer-a-bank-secrecy-act-charge/'>Block Books $764 Million for Planned DOJ Deal That Would Defer a Bank Secrecy Act Charge</a></li><li><a href='https://www.thestreet.com/crypto/markets/jack-dorsey-led-block-doj-settlement-overshadows-q3-profit'>Jack Dorsey-led Block’s DOJ settlement overshadows Q3 profit</a></li></ul><h3>DD</h3><img src='charts/DD_2026-11-04.png' alt='DD risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/04/3ms-forever-chemicals-bill-just-grew-by-billions/'>3M’s “Forever Chemicals” Bill Just Grew by Billions</a></li><li><a href='https://www.trefis.com/stock/dd/articles/622651/what-just-happened-to-dupont-stock/2026-11-04'>What Just Happened To DuPont Stock?</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/dupont-dd-signaling-peptide-purification-121549756.html'>What Is DuPont (DD) Signaling With Its New Peptide Purification Product?</a></li></ul><h3>ADM</h3><img src='charts/ADM_2026-11-04.png' alt='ADM risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/04/stock-market-today-dow-eyes-2-jump-as-amd-earnings-ease-ai-spending-fears/'>Stock Market Today: Dow Eyes 2% Jump as AMD Earnings Ease AI Spending Fears</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/adm-q3-earnings-call-highlights-140000496.html'>ADM Q3 Earnings Call Highlights Biofuels Strength and 2027 Outlook</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/archer-daniels-midland-adm-undervalued-071134821.html'>Is Archer-Daniels-Midland (ADM) Undervalued Following Strong Q3 Earnings And Higher Guidance?</a></li></ul><h3>VMC</h3><img src='charts/VMC_2026-11-04.png' alt='VMC risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/crh/articles/622230/what-is-behind-the-move-in-crh-stock/2026-11-03'>What Is Behind The Move In CRH Stock?</a></li><li><a href='https://www.trefis.com/stock/vmc/articles/621599/what-just-happened-to-vulcan-stock/2026-10-31'>What Just Happened To Vulcan Stock?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/vulcan-materials-vmc-q3-results-111200008.html'>Vulcan Materials (VMC) Q3 Results Defy Energy Cost Pressure</a></li></ul><h3>GOOGL</h3><img src='charts/GOOGL_2026-11-04.png' alt='GOOGL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/video/three-reasons-stocks-are-moving-higher-after-the-midterms-152243298.html'>Three reasons stocks are moving higher after the midterms</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/us-stock-index-futures-steady-083456013.html'>Wall Street rises after Democrats win Congress; data center stocks tumble</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-1-4-193607695.html'>Alphabet Stocks Rise 1.4% as Euro Borrowing Meets a $200 Billion Spending Plan</a></li></ul><h3>EXR</h3><img src='charts/EXR_2026-11-04.png' alt='EXR risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/real-estate/articles/cubesmart-other-self-storage-reits-171858359.html'>CubeSmart, Other Self-Storage REITs Signal Continued Recovery Following Q3 Results, BofA Says</a></li><li><a href='https://www.fool.com/earnings/call-transcripts/2026/10/28/extra-space-storage-exr-q3-2026-earnings-call-transcript/'>Extra Space Storage (EXR) Q3 2026 Earnings Call Transcript</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/extra-space-storage-exr-stock-001406977.html'>Extra Space Storage (EXR) Stock Can Q3 Earnings Wake A Flat Reaction</a></li></ul><h3>MSCI</h3><img src='charts/MSCI_2026-11-04.png' alt='MSCI risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/cryptocurrency/2026/11/01/bitcoin-price-prediction-for-november-2026/'>Bitcoin Price Prediction for November 2026</a></li><li><a href='https://247wallst.com/investing/cryptocurrency/2026/11/01/saylor-is-hinting-at-another-bitcoin-buy-before-msci-rules-on-strategy-what-happens-to-btc-if-strategy-has-to-sell-instead/'>Saylor Is Hinting at Another Bitcoin Buy Before MSCI Rules on Strategy. What Happens to BTC if Strategy Has to Sell Instead?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/2-large-cap-stocks-worth-141129199.html'>2 large-cap stocks worth your attention and 1 that underwhelm</a></li></ul><h3>FTV</h3><img src='charts/FTV_2026-11-04.png' alt='FTV risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/ftv/articles/622506/is-ingersoll-rand-a-better-way-than-fortive-to-own-industrial-demand/2026-11-04'>Is Ingersoll Rand A Better Way Than Fortive To Own Industrial Demand?</a></li><li><a href='https://www.trefis.com/stock/keys/articles/622170/what-have-keysight-stock-holders-had-to-sit-through/2026-11-03'>What Have Keysight Stock Holders Had To Sit Through?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/ftv-q3-deep-dive-recurring-070136457.html'>FTV Q3 deep dive: recurring revenue, innovation, and margin expansion drive outlook</a></li></ul><h3>ETN</h3><img src='charts/ETN_2026-11-04.png' alt='ETN risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.barrons.com/articles/ge-vernova-vertiv-eaton-ai-industrials-stocks-bf41f4bc?siteid=yhoof2&yptr=yahoo'>Why a Democratic Sweep Is Crushing GE Vernova and More Industrial Stocks</a></li><li><a href='https://finance.yahoo.com/technology/ai/articles/3-u-grid-equipment-stocks-181309052.html'>3 U.S. Grid Equipment Stocks Retail Investors Are Watching As AI Power Demand Builds</a></li><li><a href='https://www.tikr.com/blog/ge-vernova-sinks-10-vistra-down-12-as-democrats-win-congress-incrementally-more-negative-sentiment?ref=yahoofinance&tlnk=yf-261104-rgc2g3jg'>GE Vernova Sinks 10%, Vistra Down 12% as Democrats Win Congress: “Incrementally More Negative Sentiment”</a></li></ul><h3>KLAC</h3><img src='charts/KLAC_2026-11-04.png' alt='KLAC risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/buy-sell-hold-ter-stock-180400929.html'>Should You Buy, Sell, or Hold TER Stock After a 53% Rise in One Year?</a></li><li><a href='https://finance.yahoo.com/technology/ai/articles/klac-q1-earnings-call-highlights-172100286.html'>KLAC Q1 Earnings Call Highlights AI Demand and 2027 Growth Outlook</a></li><li><a href='https://www.trefis.com/stock/klac/articles/622549/what-could-derail-kla-stock/2026-11-04'>What Could Derail KLA Stock?</a></li></ul><h3>JKHY</h3><img src='charts/JKHY_2026-11-04.png' alt='JKHY risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.fool.com/earnings/call-transcripts/2026/11/04/jack-henry-jkhy-q1-2027-earnings-call-transcript/'>Jack Henry (JKHY) Q1 2027 Earnings Call Transcript</a></li><li><a href='https://www.marketbeat.com/instant-alerts/transcript-jack-henry-associates-q1-earnings-call-highlights-2026-11-04/?utm_source=yahoofinance&utm_medium=yahoofinance'>Jack Henry & Associates Q1 Earnings Call Highlights</a></li><li><a href='https://app.moby.co/home/research/tools/earningsCalendar/earnings-jack-henry-associates-inc-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss'>Jack Henry & Associates, Inc. Q1 2027 Earnings Call Summary</a></li></ul><h3>MCD</h3><img src='charts/MCD_2026-11-04.png' alt='MCD risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/article/mcdonalds-q3-sales-growth-slows-amid-tough-consumer-backdrop-new-drinks-push-120508551.html'>McDonald's Q3 sales growth slows amid tough consumer backdrop, new drinks push</a></li><li><a href='https://finance.yahoo.com/video/mcdonalds-reports-mixed-q3-results-as-it-shifts-to-value-offerings-145220707.html'>McDonald's reports mixed Q3 results as it shifts to value offerings</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/us-large-cap-dividend-hike-200111452.html'>US large-cap dividend hike watch: 10 stocks with the longest growth streaks</a></li></ul><h3>UPS</h3><img src='charts/UPS_2026-11-04.png' alt='UPS risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/small-business/articles/shippers-spread-parcel-volume-carrier-120000904.html'>Shippers spread parcel volume as carrier surcharges climb</a></li><li><a href='https://247wallst.com/investing/2026/11/04/ups-has-paid-the-same-1-64-dividend-for-7-quarters-should-retirees-worry/'>UPS Has Paid the Same $1.64 Dividend for 7 Quarters. Should Retirees Worry?</a></li><li><a href='https://www.fool.com/investing/2026/11/04/heres-what-a-10000-investment-in-ups-stock-could-b/'>Here's What a $10,000 Investment in UPS Stock Could Be Worth in 3 Years</a></li></ul><h3>GOOG</h3><img src='charts/GOOG_2026-11-04.png' alt='GOOG risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/economy/article/californias-billionaire-tax-on-track-for-defeat-as-the-state-continues-to-count-votes-190840319.html'>California's billionaire tax on track for defeat as the state continues to count votes</a></li><li><a href='https://finance.yahoo.com/video/three-reasons-stocks-are-moving-higher-after-the-midterms-152243298.html'>Three reasons stocks are moving higher after the midterms</a></li><li><a href='https://finance.yahoo.com/video/why-elon-musk-will-keep-funding-grok-no-matter-the-cost-134354511.html'>Why Elon Musk will keep funding Grok, no matter the cost</a></li></ul><h3>HD</h3><img src='charts/HD_2026-11-04.png' alt='HD risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/economy/article/housing-stocks-rally-following-midterm-elections-treasury-yields-dip-lower-171937967.html'>Housing stocks rally following midterm elections, Treasury yields dip lower</a></li><li><a href='https://finance.yahoo.com/real-estate/articles/housing-policy-hopes-put-home-181317367.html'>Housing Policy Hopes Put Home Depot Stock Back In Focus</a></li><li><a href='https://www.thestreet.com/real-estate/home-depot-sends-its-strongest-warning-yet-on-the-housing-market'>Home Depot sends its strongest warning yet on the housing market</a></li></ul><h3>BKR</h3><img src='charts/BKR_2026-11-04.png' alt='BKR risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/energy/articles/venture-global-opens-commercial-operations-141600184.html'>Venture Global Opens Commercial Operations at Plaquemines LNG Phase 1</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/investors-reacting-baker-hughes-bkr-131154099.html'>How Investors Are Reacting To Baker Hughes (BKR) Earnings Beat</a></li><li><a href='https://finance.yahoo.com/energy/articles/does-baker-hughes-bkr-change-070857269.html'>Does Baker Hughes (BKR) Change The Story With Its Cyprus Subsea Contract?</a></li></ul><h3>PODD</h3><img src='charts/PODD_2026-11-04.png' alt='PODD risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.marketbeat.com/instant-alerts/transcript-what-insulet-podd-said-on-its-q3-earnings-call-2026-11-04/?utm_source=yahoofinance&utm_medium=yahoofinance'>What Insulet (PODD) Said on Its Q3 Earnings Call</a></li><li><a href='https://app.moby.co/home/research/tools/earningsCalendar/earnings-insulet-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss'>Insulet Corporation Q3 2026 Earnings Call Summary</a></li><li><a href='https://www.fool.com/earnings/call-transcripts/2026/11/04/insulet-podd-q3-2026-earnings-call-transcript/'>Insulet (PODD) Q3 2026 Earnings Call Transcript</a></li></ul><h3>AJG</h3><img src='charts/AJG_2026-11-04.png' alt='AJG risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/pru-q3-earnings-beat-estimates-163300863.html'>PRU Q3 Earnings Beat Estimates on PGIM and U.S. Protection Strength</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-arthur-163736318.html'>5 revealing analyst questions from Arthur J. Gallagher’s Q3 earnings call</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/bros-organic-growth-slows-compass-161700062.html'>BRO's Organic Growth Slows: Can COMPASS Platform Improve Efficiency?</a></li></ul><h3>MGM</h3><img src='charts/MGM_2026-11-04.png' alt='MGM risk/reward chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/04/one-big-reason-investors-should-keep-an-eye-on-draftkings/'>One Big Reason Investors Should Keep an Eye on DraftKings</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/mgm-q3-deep-dive-margin-030136940.html'>MGM Q3 deep dive: margin recovery and digital growth offset soft leisure demand</a></li><li><a href='https://finance.yahoo.com/video/amperity-ceo-kabir-shahani-pe-153137837.html'>Amperity CEO Kabir Shahani- ‘Pér is a Teammate’ Helping Brands Find Answers_1</a></li></ul><h3>LULU</h3><img src='charts/LULU_2026-11-04.png' alt='LULU risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.fool.com/investing/2026/11/04/lululemon-stock-is-down-48-in-2026-is-it-a-buy-bef/'>Lululemon Stock Is Down 48% in 2026. Is It a Buy Before 2027?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/lululemon-athletica-lulu-faces-class-191431042.html'>Lululemon Athletica (LULU) Faces A Class Action Lawsuit, Is It Fully Valued?</a></li><li><a href='https://247wallst.com/investing/2026/11/04/nike-climbs-7-as-dow-rally-lifts-consumer-stocks-deckers-gains-7-lululemon-rises-6/'>Nike Climbs 7% as Dow Rally Lifts Consumer Stocks; Deckers Gains 7%, Lululemon Rises 6%</a></li></ul><h3>ABT</h3><img src='charts/ABT_2026-11-04.png' alt='ABT risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/healthcare/articles/abbott-laboratories-abt-posted-positive-150925524.html'>Abbott Laboratories (ABT) Posted Positive Trial Results For Two Heart Devices</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/bsx-q3-results-reset-growth-135500158.html'>BSX Q3 Results Reset Growth Expectations as 2027 Outlook Stays Weak</a></li><li><a href='https://www.trefis.com/stock/bsx/articles/622505/should-you-pick-boston-scientific-stock-over-its-competitors/2026-11-04'>Should You Pick Boston Scientific Stock Over Its Competitors?</a></li></ul><h3>PSA</h3><img src='charts/PSA_2026-11-04.png' alt='PSA risk/reward chart' style='max-width:100%;'><ul><li><a href='https://www.credaily.com/briefs/self-storage-reits-post-q3-gains-as-extra-space-noi-rises-4-6/'>Self-Storage REITs Post Q3 Gains as Extra Space NOI Rises 4.6%</a></li><li><a href='https://finance.yahoo.com/real-estate/articles/cubesmart-other-self-storage-reits-171858359.html'>CubeSmart, Other Self-Storage REITs Signal Continued Recovery Following Q3 Results, BofA Says</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/3-dividend-stocks-yields-4-211004095.html'>3 Dividend Stocks With Yields Up To 4%</a></li></ul><h3>JBL</h3><img src='charts/JBL_2026-11-04.png' alt='JBL risk/reward chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/flexs-2027-axiom-spin-off-174900283.html'>Flex's 2027 Axiom Spin-Off: Will Two Firms Unlock Value for Investors?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/sanm-declines-25-past-six-141700935.html'>SANM Declines 25% in the Past Six Months: Should You Buy the Stock?</a></li><li><a href='https://www.trefis.com/stock/flex/articles/622638/does-beating-the-market-prove-flex-is-a-great-company/2026-11-04'>Does Beating The Market Prove Flex Is A Great Company?</a></li></ul>
+</body>
+</html>
