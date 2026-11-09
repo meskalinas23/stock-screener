@@ -1,287 +1,217 @@
-# Mean-Reversion Screener — 2026-11-06
-
-**📅 Today's high-impact events:**
-- Average Hourly Earnings m/m on 2026-11-06 at 13:30 UTC
-- Non-Farm Employment Change on 2026-11-06 at 13:30 UTC
-- Unemployment Rate on 2026-11-06 at 13:30 UTC
+# Mean-Reversion Screener — 2026-11-09
 
 **This week's high-impact events:**
-- Average Hourly Earnings m/m on 2026-11-06 at 13:30 UTC
-- Non-Farm Employment Change on 2026-11-06 at 13:30 UTC
-- Unemployment Rate on 2026-11-06 at 13:30 UTC
+- Core CPI m/m on 2026-11-10 at 13:30 UTC
+- CPI m/m on 2026-11-10 at 13:30 UTC
+- Core PPI m/m on 2026-11-13 at 13:30 UTC
+- PPI m/m on 2026-11-13 at 13:30 UTC
 
-**Live track record:** 1129 resolved picks, 33% win rate, avg 8.8 days held on winners. (Small samples early on aren't statistically meaningful yet.)
+**Live track record:** 1137 resolved picks, 33% win rate, avg 8.7 days held on winners. (Small samples early on aren't statistically meaningful yet.)
 
 **Sector concentration warning:**
-- 14 of today's picks are in Information Technology — likely one shared sector move, not 14 independent opportunities
-- 7 of today's picks are in Industrials — likely one shared sector move, not 7 independent opportunities
-- 3 of today's picks are in Health Care — likely one shared sector move, not 3 independent opportunities
-- 7 of today's picks are in Energy — likely one shared sector move, not 7 independent opportunities
-- 4 of today's picks are in Communication Services — likely one shared sector move, not 4 independent opportunities
+- 8 of today's picks are in Information Technology — likely one shared sector move, not 8 independent opportunities
+- 4 of today's picks are in Industrials — likely one shared sector move, not 4 independent opportunities
+- 5 of today's picks are in Health Care — likely one shared sector move, not 5 independent opportunities
+- 4 of today's picks are in Energy — likely one shared sector move, not 4 independent opportunities
+- 4 of today's picks are in Consumer Discretionary — likely one shared sector move, not 4 independent opportunities
 
-43 candidate(s) flagged. Highest risk/reward first.
+32 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| FTNT | Information Technology | LONG | $120.24 | 15.7 | -25.6% | 0.7x | $120.24 | $114.22 | $161.61 | 6.88:1 | 8.0 | 73% | 11 | 90d |
-| FIX | Industrials | LONG | $1010.87 | 28.8 | -23.5% | 0.99x | $1010.87 | $960.33 | $1320.96 | 6.14:1 | 6.7 | 58% | 12 | 104d |
-| FFIV | Information Technology | LONG | $313.55 | 14.8 | -23.3% | 0.56x | $313.55 | $297.87 | $408.81 | 6.08:1 | 8.5 | 50% | 8 | 81d |
-| MU | Information Technology | LONG | $690.26 | 26.6 | -21.5% | 1.17x | $690.26 | $655.75 | $879.0 | 5.47:1 | 9.0 | 64% | 11 | 47d |
-| LRCX | Information Technology | LONG | $199.53 | 28.7 | -20.0% | 0.9x | $199.53 | $189.55 | $249.29 | 4.99:1 | 5.0 | 57% | 7 | 82d |
-| ILMN | Health Care | LONG | $211.24 | 27.0 | -18.4% | 0.54x | $211.24 | $200.68 | $258.91 | 4.51:1 | 7.0 | 55% | 11 | 90d |
-| FISV | Financials | SHORT | $63.81 | 91.8 | 25.2% | 0.79x | $63.81 | $67.0 | $50.97 | 4.02:1 | 8.6 | 71% | 7 | 96d |
-| MPC | Energy | LONG | $372.15 | 17.3 | -16.7% | 0.56x | $372.15 | $353.55 | $446.67 | 4.0:1 | 10.4 | 73% | 11 | 88d |
-| VLO | Energy | LONG | $346.68 | 21.6 | -15.5% | 0.49x | $346.68 | $329.35 | $410.46 | 3.68:1 | 10.4 | 71% | 7 | 83d |
-| KEYS | Information Technology | LONG | $273.62 | 29.3 | -15.5% | 0.93x | $273.62 | $259.94 | $323.77 | 3.67:1 | 8.8 | 67% | 9 | 13d |
-| KLAC | Information Technology | LONG | $137.01 | 32.8 | -14.1% | 0.56x | $137.01 | $130.16 | $159.55 | 3.29:1 | 4.0 | 62% | 8 | 83d |
-| DVN | Energy | LONG | $42.31 | 16.0 | -14.0% | 1.24x | $42.31 | $40.19 | $49.19 | 3.26:1 | 8.0 | 82% | 11 | 102d |
-| MOS | Materials | SHORT | $22.6 | 80.3 | 19.3% | 0.57x | $22.6 | $23.73 | $18.94 | 3.24:1 | 7.8 | 53% | 17 | 109d |
-| JBL | Information Technology | LONG | $239.24 | 24.8 | -13.8% | 0.46x | $239.24 | $227.28 | $277.67 | 3.21:1 | 8.3 | 58% | 12 | 40d |
-| GEV | Industrials | LONG | $769.16 | 29.8 | -13.0% | 1.46x | $769.16 | $730.7 | $883.92 | 2.98:1 | 8.6 | 58% | 12 | 82d |
-| VST | Utilities | LONG | $124.78 | 38.8 | -12.7% | 1.2x | $124.78 | $118.54 | $142.91 | 2.91:1 | 9.0 | 54% | 13 | unknown |
-| ROK | Industrials | LONG | $374.47 | 19.6 | -12.6% | 1.36x | $374.47 | $355.75 | $428.26 | 2.87:1 | 7.6 | 69% | 13 | 90d |
-| CSCO | Information Technology | LONG | $94.08 | 19.6 | -11.9% | 0.67x | $94.08 | $89.38 | $106.81 | 2.7:1 | 7.0 | 67% | 6 | 6d |
-| IDXX | Health Care | SHORT | $675.23 | 71.5 | 15.6% | 0.37x | $675.23 | $708.99 | $584.24 | 2.69:1 | 8.7 | 64% | 11 | 87d |
-| AVGO | Information Technology | LONG | $292.91 | 25.9 | -11.8% | 0.88x | $292.91 | $278.26 | $332.09 | 2.67:1 | 5.6 | 50% | 16 | 33d |
-| PSX | Energy | LONG | $246.32 | 22.0 | -11.7% | 0.52x | $246.32 | $234.0 | $279.04 | 2.66:1 | 11.6 | 70% | 10 | 89d |
-| NVDA | Information Technology | LONG | $187.52 | 28.1 | -11.4% | 1.13x | $187.52 | $178.14 | $211.59 | 2.57:1 | 7.4 | 71% | 14 | 11d |
-| NWSA | Communication Services | LONG | $26.36 | 25.0 | -11.1% | 0.99x | $26.36 | $25.04 | $29.64 | 2.49:1 | 7.7 | 64% | 14 | 90d |
-| PNR | Industrials | SHORT | $68.17 | 65.7 | 14.0% | 0.25x | $68.17 | $71.58 | $59.77 | 2.46:1 | 13.5 | 50% | 4 | 88d |
-| GEN | Information Technology | SHORT | $29.79 | 70.2 | 14.0% | 0.44x | $29.79 | $31.28 | $26.14 | 2.45:1 | 7.6 | 54% | 13 | 90d |
-| ETN | Industrials | LONG | $341.33 | 35.9 | -10.8% | 0.95x | $341.33 | $324.27 | $382.6 | 2.42:1 | 11.8 | 63% | 19 | 88d |
-| CLX | Consumer Staples | SHORT | $100.0 | 87.5 | 13.3% | 0.41x | $100.0 | $104.99 | $88.26 | 2.35:1 | 9.9 | 82% | 11 | 88d |
-| NWS | Communication Services | LONG | $29.06 | 27.3 | -10.4% | 1.29x | $29.06 | $27.6 | $32.44 | 2.33:1 | 6.6 | 67% | 15 | 90d |
-| GOOGL | Communication Services | LONG | $285.49 | 31.3 | -10.1% | 0.61x | $285.49 | $271.22 | $317.48 | 2.24:1 | 8.3 | 50% | 14 | 89d |
-| PWR | Industrials | LONG | $546.43 | 39.1 | -10.1% | 1.11x | $546.43 | $519.11 | $607.62 | 2.24:1 | 6.7 | 58% | 12 | 104d |
-| CMG | Consumer Discretionary | SHORT | $34.6 | 72.7 | 12.6% | 0.4x | $34.6 | $36.32 | $30.73 | 2.23:1 | 9.7 | 68% | 19 | 95d |
-| GEHC | Health Care | SHORT | $82.95 | 73.9 | 12.0% | 0.49x | $82.95 | $87.1 | $74.05 | 2.15:1 | 8.6 | 75% | 16 | 89d |
-| GOOG | Communication Services | LONG | $284.24 | 31.1 | -9.7% | 0.62x | $284.24 | $270.03 | $314.63 | 2.14:1 | 7.0 | 50% | 14 | 89d |
-| TT | Industrials | LONG | $401.58 | 30.6 | -9.5% | 0.58x | $401.58 | $381.51 | $443.78 | 2.1:1 | 11.2 | 59% | 17 | 83d |
-| ADI | Information Technology | LONG | $365.65 | 28.4 | -9.4% | 0.78x | $365.65 | $347.37 | $403.78 | 2.09:1 | 8.0 | 73% | 11 | 18d |
-| WMB | Energy | LONG | $64.64 | 25.8 | -9.4% | 0.54x | $64.64 | $61.41 | $71.38 | 2.09:1 | 9.5 | 100% | 10 | 95d |
-| GPN | Financials | SHORT | $97.64 | 70.6 | 11.6% | 0.62x | $97.64 | $102.52 | $87.5 | 2.08:1 | 10.1 | 71% | 14 | 103d |
-| ABNB | Consumer Discretionary | SHORT | $191.31 | 73.1 | 11.5% | 2.01x 🔥 | $191.31 | $200.88 | $171.53 | 2.07:1 | 6.2 | 57% | 14 | 97d |
-| AKAM | Information Technology | LONG | $83.09 | 35.4 | -9.4% | 1.34x | $83.09 | $78.94 | $91.68 | 2.07:1 | 10.8 | 69% | 16 | 104d |
-| ADM | Consumer Staples | LONG | $70.67 | 16.6 | -9.3% | 0.56x | $70.67 | $67.14 | $77.95 | 2.06:1 | 8.4 | 100% | 7 | 88d |
-| TRGP | Energy | LONG | $266.13 | 25.1 | -9.2% | 1.1x | $266.13 | $252.82 | $293.25 | 2.04:1 | 10.4 | 70% | 10 | 104d |
-| FANG | Energy | LONG | $180.25 | 24.9 | -9.2% | 0.44x | $180.25 | $171.24 | $198.54 | 2.03:1 | 8.8 | 62% | 16 | 108d |
-| ROP | Information Technology | SHORT | $477.2 | 68.5 | 11.3% | 0.5x | $477.2 | $501.07 | $428.69 | 2.03:1 | 7.2 | 50% | 10 | 81d |
+| FTNT | Information Technology | LONG | $122.47 | 22.8 | -22.5% | 0.85x | $122.47 | $116.35 | $158.02 | 5.81:1 | 8.0 | 73% | 11 | 87d |
+| FFIV | Information Technology | LONG | $317.75 | 20.3 | -20.7% | 0.73x | $317.75 | $301.86 | $400.89 | 5.23:1 | 8.5 | 50% | 8 | 78d |
+| FISV | Financials | SHORT | $63.52 | 91.7 | 22.6% | 1.13x | $63.52 | $66.7 | $51.8 | 3.69:1 | 8.6 | 71% | 7 | 93d |
+| MU | Information Technology | LONG | $733.15 | 35.7 | -15.4% | 1.03x | $733.15 | $696.49 | $866.2 | 3.63:1 | 9.0 | 64% | 11 | 44d |
+| NVDA | Information Technology | LONG | $178.67 | 21.9 | -14.6% | 3.33x 🔥 | $178.67 | $169.74 | $209.16 | 3.41:1 | 7.4 | 71% | 14 | 8d |
+| FIX | Industrials | LONG | $1113.23 | 41.1 | -14.0% | 0.99x | $1113.23 | $1057.57 | $1295.05 | 3.27:1 | 6.7 | 58% | 12 | 101d |
+| ILMN | Health Care | LONG | $220.78 | 35.5 | -13.8% | 0.78x | $220.78 | $209.74 | $256.21 | 3.21:1 | 7.0 | 55% | 11 | 87d |
+| IDXX | Health Care | SHORT | $706.65 | 77.2 | 19.1% | 0.97x | $706.65 | $741.98 | $593.42 | 3.2:1 | 9.0 | 60% | 10 | 84d |
+| MOS | Materials | SHORT | $22.77 | 81.1 | 19.1% | 0.88x | $22.77 | $23.91 | $19.13 | 3.2:1 | 7.8 | 53% | 17 | 106d |
+| CLX | Consumer Staples | SHORT | $105.53 | 91.8 | 18.1% | 1.52x 🔥 | $105.53 | $110.81 | $89.38 | 3.06:1 | 9.9 | 82% | 11 | 85d |
+| DVN | Energy | LONG | $42.4 | 17.8 | -13.2% | 1.45x | $42.4 | $40.28 | $48.86 | 3.05:1 | 8.0 | 82% | 11 | 99d |
+| VLO | Energy | LONG | $356.75 | 31.8 | -12.2% | 1.05x | $356.75 | $338.91 | $406.49 | 2.79:1 | 10.4 | 71% | 7 | 80d |
+| MPC | Energy | LONG | $389.88 | 33.0 | -12.0% | 1.14x | $389.88 | $370.39 | $443.25 | 2.74:1 | 10.4 | 73% | 11 | 85d |
+| PNR | Industrials | SHORT | $70.2 | 71.0 | 15.7% | 0.46x | $70.2 | $73.71 | $60.68 | 2.71:1 | 13.5 | 50% | 4 | 85d |
+| CMG | Consumer Discretionary | SHORT | $35.74 | 76.7 | 15.3% | 0.71x | $35.74 | $37.53 | $30.99 | 2.66:1 | 9.6 | 68% | 19 | 92d |
+| AKAM | Information Technology | LONG | $80.29 | 31.3 | -11.4% | 2.67x 🔥 | $80.29 | $76.28 | $90.61 | 2.57:1 | 10.8 | 69% | 16 | 101d |
+| DAL | Industrials | SHORT | $91.8 | 73.3 | 13.5% | 1.02x | $91.8 | $96.39 | $80.86 | 2.38:1 | 9.0 | 54% | 13 | 65d |
+| EW | Health Care | SHORT | $104.71 | 88.4 | 13.5% | 1.38x | $104.71 | $109.95 | $92.23 | 2.38:1 | 10.5 | 92% | 12 | 92d |
+| ALGN | Health Care | SHORT | $174.26 | 76.4 | 13.3% | 2.06x 🔥 | $174.26 | $182.97 | $153.86 | 2.34:1 | 8.6 | 60% | 15 | 86d |
+| WYNN | Consumer Discretionary | SHORT | $86.7 | 75.8 | 13.1% | 1.3x | $86.7 | $91.03 | $76.64 | 2.32:1 | 9.0 | 62% | 16 | 94d |
+| LOW | Consumer Discretionary | SHORT | $232.1 | 77.4 | 12.9% | 0.89x | $232.1 | $243.71 | $205.64 | 2.28:1 | 10.2 | 67% | 9 | 9d |
+| GEN | Information Technology | SHORT | $29.8 | 70.3 | 12.6% | 0.75x | $29.8 | $31.29 | $26.46 | 2.24:1 | 7.6 | 54% | 13 | 87d |
+| NWSA | Communication Services | LONG | $26.57 | 27.6 | -9.9% | 1.39x | $26.57 | $25.24 | $29.5 | 2.21:1 | 7.7 | 64% | 14 | 87d |
+| XYZ | Financials | SHORT | $88.56 | 73.8 | 12.4% | 1.21x | $88.56 | $92.99 | $78.82 | 2.2:1 | 4.1 | 58% | 12 | 112d |
+| GEHC | Health Care | SHORT | $84.03 | 74.5 | 12.3% | 0.95x | $84.03 | $88.23 | $74.84 | 2.19:1 | 8.6 | 75% | 16 | 86d |
+| FANG | Energy | LONG | $178.17 | 22.1 | -9.8% | 1.28x | $178.17 | $169.26 | $197.63 | 2.18:1 | 8.8 | 62% | 16 | 105d |
+| NCLH | Consumer Discretionary | SHORT | $18.43 | 66.7 | 12.1% | 0.74x | $18.43 | $19.35 | $16.43 | 2.17:1 | 7.5 | 53% | 15 | 112d |
+| ADM | Consumer Staples | LONG | $69.84 | 13.1 | -9.8% | 1.38x | $69.84 | $66.35 | $77.39 | 2.16:1 | 8.4 | 100% | 7 | 85d |
+| LRCX | Information Technology | LONG | $221.31 | 44.4 | -9.6% | 1.2x | $221.31 | $210.24 | $244.92 | 2.13:1 | 5.0 | 57% | 7 | 79d |
+| DD | Industrials | SHORT | $155.14 | 74.5 | 11.9% | 0.95x | $155.14 | $162.9 | $138.67 | 2.12:1 | 10.0 | 57% | 14 | 92d |
+| KEYS | Information Technology | LONG | $288.97 | 41.2 | -9.5% | 0.77x | $288.97 | $274.52 | $319.25 | 2.1:1 | 8.8 | 67% | 9 | 10d |
+| NWS | Communication Services | LONG | $29.33 | 30.8 | -9.1% | 1.42x | $29.33 | $27.86 | $32.28 | 2.01:1 | 6.6 | 67% | 15 | 87d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
 ## News context
 
 **FTNT**
-- [Extreme Networks jumps 15% on report company is exploring a sale](https://finance.yahoo.com/markets/stocks/articles/extreme-networks-jumps-15-report-155407885.html)
-- [Will CRWD's Acquisitions of Fiddler and Dreadnode Boost its AI Growth?](https://finance.yahoo.com/technology/ai/articles/crwds-acquisitions-fiddler-dreadnode-boost-143300088.html)
-- [Fortinet (FTNT) Unveiled Two New Security Services](https://finance.yahoo.com/technology/ai/articles/fortinet-ftnt-unveiled-two-security-201418648.html)
-
-**FIX**
-- [The Cheapest AI Stocks to Buy Now](https://finance.yahoo.com/markets/stocks/articles/cheapest-ai-stocks-buy-now-154800566.html)
-- [Why Did Comfort Systems USA (FIX) Stock Drop As Attention Builds?](https://finance.yahoo.com/markets/stocks/articles/why-did-comfort-systems-usa-071326453.html)
-- [Is Quanta Still The Best Way To Own Tech's Building Boom?](https://www.trefis.com/stock/pwr/articles/622944/is-quanta-still-the-best-way-to-own-techs-building-boom/2026-11-05)
+- [Palo Alto Networks Is Down 27% From Its High: Is It Time to Sell, or Load Up?](https://www.tikr.com/blog/palo-alto-networks-is-down-27-from-its-high-is-it-time-to-sell-or-load-up?ref=yahoofinance&tlnk=yf-261109-635gqj25)
+- [Can CrowdStrike's Latest AI Integrations Drive Security Growth?](https://finance.yahoo.com/technology/ai/articles/crowdstrikes-latest-ai-integrations-drive-123200438.html)
+- [Fortinet Sinks 12% in a Week as the Cybersecurity Selloff Spreads: Is It Time to Load Up?](https://www.tikr.com/blog/fortinet-sinks-12-in-a-week-as-the-cybersecurity-selloff-spreads-is-it-time-to-load-up?ref=yahoofinance&tlnk=yf-261109-9p29c985)
 
 **FFIV**
+- [NET Stock Rises 10% Post Q3 Results: Should You Buy, Sell or Hold?](https://finance.yahoo.com/markets/stocks/articles/net-stock-rises-10-post-121100821.html)
 - [Oversold AI and chip stocks after the Nasdaq’s worst day since 2020](https://finance.yahoo.com/markets/stocks/articles/oversold-ai-chip-stocks-nasdaq-144740381.html)
 - [Do Options Traders Know Something About F5 Stock We Don't?](https://finance.yahoo.com/markets/options/articles/options-traders-know-something-f5-124600448.html)
-- [What Just Happened To Lumentum Shares?](https://www.trefis.com/stock/lite/articles/622215/what-just-happened-to-lumentum-shares/2026-11-03)
+
+**FISV**
+- [Fiserv Soars 26% in a Week on a $1 Billion Savings Plan: Buybacks Return “Earlier Than Anticipated”](https://www.tikr.com/blog/fiserv-soars-26-in-a-week-on-a-1-billion-savings-plan-buybacks-return-earlier-than-anticipated?ref=yahoofinance&tlnk=yf-261109-28f4xcgh)
+- [Michael Burry Is Betting a Buyer Will Pay Up to $120 a Share for Fiserv](https://247wallst.com/investing/2026/11/08/michael-burry-is-betting-a-buyer-will-pay-up-to-120-a-share-for-fiserv/)
+- [Why Michael Burry Says Fiserv Stock Could Surge as Much as 94% From Here](https://www.barchart.com/story/news/8719726/why-michael-burry-says-fiserv-stock-could-surge-as-much-as-94-from-here)
 
 **MU**
-- [Stock market today: Nasdaq, S&P 500 rebound after brutal sell-off as US adds 165K jobs](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html)
-- [Investing.com’s stocks of the week](https://finance.yahoo.com/markets/stocks/articles/investing-com-stocks-week-191819455.html)
-- [Micron Stock Is the Cheapest Right Now -- Here's Why](https://finance.yahoo.com/markets/stocks/articles/micron-stock-cheapest-now-heres-191642844.html)
+- [Micron Technology: Is the Stock a No-Brainer Buy at Less Than $740?](https://www.fool.com/investing/2026/11/09/micron-technology-is-the-stock-a-no-brainer-buy-at-less-than-740/)
+- [Nvidia stock sinks 4% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy](https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html)
+- [Is Micron a Millionaire-Maker Stock?](https://www.fool.com/investing/2026/11/09/is-micron-a-millionaire-maker-stock/)
 
-**LRCX**
-- [Investing.com’s stocks of the week](https://finance.yahoo.com/markets/stocks/articles/investing-com-stocks-week-191819455.html)
-- [Applied Materials Stocks Rise 4.7% as Chip Equipment Rallies Ahead of Earnings](https://finance.yahoo.com/markets/stocks/articles/applied-materials-stocks-rise-4-190310933.html)
-- [Nvidia, Intel, Tesla, AMD, Coherent, Lam Research, Moderna, and More Stocks That Explain Today’s Market](https://www.barrons.com/articles/stock-movers-ddbd1841?siteid=yhoof2&yptr=yahoo)
+**NVDA**
+- [AI infrastructure spending is still accelerating—but can it last?](https://finance.yahoo.com/video/ai-infrastructure-spending-is-still-acceleratingbut-can-it-last-221359947.html)
+- [Why the Jensen Huang scandal is a 'net loss for China'](https://finance.yahoo.com/video/why-the-jensen-huang-scandal-is-a-net-loss-for-china-221329322.html)
+- [Nvidia CEO Huang's scandal is the flip side of centralized leadership: Sierra co-founder Clay Bavor](https://finance.yahoo.com/technology/article/nvidia-ceo-huangs-scandal-is-the-flip-side-of-centralized-leadership-sierra-co-founder-clay-bavor-220838172.html)
+
+**FIX**
+- [3 Reasons Growth Investors Will Love Comfort Systems (FIX)](https://finance.yahoo.com/markets/stocks/articles/3-reasons-growth-investors-love-164502596.html)
+- [URI Raises 2026 Revenue View by $450M: Can Mega-Projects Fuel Growth?](https://finance.yahoo.com/markets/stocks/articles/uri-raises-2026-revenue-view-154000750.html)
+- [Are Construction Stocks Lagging  Comfort Systems USA (FIX) This Year?](https://finance.yahoo.com/markets/stocks/articles/construction-stocks-lagging-comfort-systems-134003025.html)
 
 **ILMN**
 - [A Bloody Bad Time: Grail Gutted On Light Blood Test Sales](https://www.investors.com/news/technology/grail-stock-grail-earnings-q3-2026/?src=A00220&yptr=yahoo)
 - [REGN vs. ILMN: Which Stock Is the Better Value Option?](https://finance.yahoo.com/markets/stocks/articles/regn-vs-ilmn-stock-better-154001705.html)
 - [Illumina (ILMN) Selected For Singapore Genome Sequencing Program Covering 450,000 People](https://finance.yahoo.com/healthcare/articles/illumina-ilmn-selected-singapore-genome-211630754.html)
 
-**FISV**
-- [NSP Stock Barely Moves Since Posting Q3 Earnings & Revenue Beat](https://finance.yahoo.com/markets/stocks/articles/nsp-stock-barely-moves-since-143900608.html)
-- [US Fintech Weekly: Fiserv Bounces Post-Earnings, Crypto Brokers Suffer, And Federal Agencies Prepare Innovation Guidelines](https://stocktwits.com/news-articles/markets/equity/us-fintech-weekly-fiserv-bounces-post-earnings-crypto-brokers-suffer-and-federal-agencies-prepare-innovation-guidelines/cNG1yBQR94Y)
-- [Shift4’s 3Q Net Income Climbs Along with EBITDA](https://finance.yahoo.com/markets/stocks/articles/shift4-3q-net-income-climbs-211912736.html)
-
-**MPC**
-- [Marathon Petroleum And 2 Top Pipeline Stocks](https://finance.yahoo.com/energy/articles/marathon-petroleum-2-top-pipeline-161309722.html)
-- [Petrobras Strengthens Oil Spill Response With New Vessel Charter](https://finance.yahoo.com/energy/articles/petrobras-strengthens-oil-spill-response-144300173.html)
-- [3 Refining Stocks That Have Doubled in 2026: What's Next?](https://finance.yahoo.com/energy/articles/3-refining-stocks-doubled-2026-130900865.html)
-
-**VLO**
-- [3 Refining Stocks That Have Doubled in 2026: What's Next?](https://finance.yahoo.com/energy/articles/3-refining-stocks-doubled-2026-130900865.html)
-- [Can Par Pacific's Heavy Crude Exposure Improve Refining Economics?](https://finance.yahoo.com/energy/articles/par-pacifics-heavy-crude-exposure-130800591.html)
-- [3 Refining Stocks To Watch As Cheaper Crude Tests Margins](https://finance.yahoo.com/energy/articles/3-refining-stocks-watch-cheaper-032523819.html)
-
-**KEYS**
-- [Motorola Beats Q3 Earnings Estimates on Strong Demand, Record Orders](https://finance.yahoo.com/markets/stocks/articles/motorola-beats-q3-earnings-estimates-124700638.html)
-- [Millicom International Cellular SA (TIGO) Lags Q3 Earnings Estimates](https://finance.yahoo.com/markets/stocks/articles/millicom-international-cellular-sa-tigo-113504616.html)
-- [Should You Pick Synopsys Stock Over Its Peers?](https://www.trefis.com/stock/snps/articles/622291/should-you-pick-synopsys-stock-over-its-peers/2026-11-04)
-
-**KLAC**
-- [What Is The True Hidden Price Of Lam Research Stock?](https://www.trefis.com/stock/lrcx/articles/623289/what-is-the-true-hidden-price-of-lam-research-stock/2026-11-06)
-- [A $17 Billion Hedge Fund Is Handing Back Cash After Its Worst Month Since 2020](https://247wallst.com/investing/2026/11/06/a-17-billion-hedge-fund-is-handing-back-cash-after-its-worst-month-since-2020/)
-- [How to Approach Onto Innovation Stock Ahead of Q3 Earnings?](https://finance.yahoo.com/markets/stocks/articles/approach-onto-innovation-stock-ahead-141600741.html)
-
-**DVN**
-- [Sector Update: Energy Stocks Higher Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-friday-184319151.html)
-- [Sector Update: Energy](https://finance.yahoo.com/energy/articles/sector-energy-181446029.html)
-- [CRGY Stock After Q3 Earnings: Is More Upside on the Horizon?](https://finance.yahoo.com/markets/stocks/articles/crgy-stock-q3-earnings-more-155000982.html)
+**IDXX**
+- [Should You Continue to Hold TMO Stock in Your Portfolio?](https://finance.yahoo.com/markets/stocks/articles/continue-hold-tmo-stock-portfolio-122000834.html)
+- [How IDEXX Stock Is Engineered To Make Money For You](https://www.trefis.com/stock/idxx/articles/623216/how-idexx-stock-is-engineered-to-make-money-for-you/2026-11-06)
+- [Earnings Calendar and Analysis for This Week](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks)
 
 **MOS**
+- [Mosaic's Phosphate Recovery Likely to Take Time Despite Cost Cuts, RBC Says](https://finance.yahoo.com/markets/commodities/articles/mosaic-apos-phosphate-recovery-likely-170721132.html)
+- [Mosaic Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-mosaic-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance)
 - [12 S&P 500 Stocks Gain The Most From The 'Blue Wave'](https://www.investors.com/etfs-and-funds/sectors/sp-500-stocks-gain-the-most-from-the-blue-wave/?src=A00220&yptr=yahoo)
-- [Are Wall Street Analysts Bullish on Mosaic Stock?](https://www.barchart.com/story/news/8666779/are-wall-street-analysts-bullish-on-mosaic-stock)
-- [The Mosaic Co (MOS) (Q3 2026) Earnings Call Highlights: Sulfur Cost Advantage, Phosphate ...](https://finance.yahoo.com/markets/stocks/articles/mosaic-co-mos-q3-2026-231340715.html)
-
-**JBL**
-- [What Makes Jabil a Buy Despite the Recent Stock Price Slump?](https://finance.yahoo.com/markets/stocks/articles/makes-jabil-buy-despite-recent-112400975.html)
-- [Did Jabil's Sales Earn Its Stock's Rise?](https://www.trefis.com/stock/jbl/articles/622993/did-jabils-sales-earn-its-stocks-rise/2026-11-05)
-- [Jabil (JBL) Stock Dips While Market Gains: Key Facts](https://finance.yahoo.com/markets/stocks/articles/jabil-jbl-stock-dips-while-221502927.html)
-
-**GEV**
-- [Constellation Energy Fell 9% on the Midterm Sweep. Monday’s Report Has to Defend Its Growth Estimates](https://www.tikr.com/blog/constellation-energy-fell-9-on-the-midterm-sweep-mondays-report-has-to-defend-its-growth-estimates?ref=yahoofinance&tlnk=yf-261106-348rq84g)
-- [Bloom Energy Rises 2%, AMD Up 8% as AI Stocks Rebound From Midterm Rout](https://www.tikr.com/blog/bloom-energy-rises-2-amd-up-8-as-ai-stocks-rebound-from-midterm-rout?ref=yahoofinance&tlnk=yf-261106-qv7xx7qr)
-- [AI Party isn't Ending Because Of The Blue Wave Says Ives](https://finance.yahoo.com/video/ai-party-isnt-ending-because-174550337.html)
-
-**VST**
-- [Vistra Stocks Jump 7.69% After Earnings Surge and Fresh $1.5 Billion Buyback](https://finance.yahoo.com/markets/stocks/articles/vistra-stocks-jump-7-69-190727884.html)
-- [Flash Heard: Texas Power Giant Says Blue Wave Doesn’t Spell Doom for Data Centers](https://www.wsj.com/livecoverage/october-jobs-report-stock-market-11-06-2026/card/flash-heard-texas-power-giant-says-blue-wave-doesn-t-spell-doom-for-data-centers-wFED5GglccyqydIVpLgR?siteid=yhoof2&yptr=yahoo)
-- [Sector Update: Energy Stocks Higher Friday Afternoon](https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-friday-184319151.html)
-
-**ROK**
-- [Betting On Infrastructure Spending: Is Dover Or Hubbell The Better Way In?](https://www.trefis.com/stock/dov/articles/623230/betting-on-infrastructure-spending-is-dover-or-hubbell-the-better-way-in/2026-11-06)
-- [Rockwell Automation Inc (ROK) (Q4 2026) Earnings Call Highlights: Core Sales Surge 7%, Adjusted ...](https://finance.yahoo.com/markets/stocks/articles/rockwell-automation-inc-rok-q4-131007706.html)
-- [Rockwell Automation, Inc. Q4 2026 Earnings Call Summary](https://app.moby.co/home/research/tools/earningsCalendar/earnings-rockwell-automation-inc-q4-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss)
-
-**CSCO**
-- [Investor Warns Nvidia Is Repeating Cisco's Fatal Mistake](https://finance.yahoo.com/markets/stocks/articles/investor-warns-nvidia-repeating-ciscos-181800315.html)
-- [How Investors Are Reacting To Cisco Stock After Analyst Downgrade](https://finance.yahoo.com/markets/stocks/articles/investors-reacting-cisco-stock-analyst-181405768.html)
-- [What Changed In Arista's Story?](https://www.trefis.com/stock/anet/articles/623302/what-changed-in-aristas-story/2026-11-06)
-
-**IDXX**
-- [3 Reasons Growth Investors Will Love Idexx (IDXX)](https://finance.yahoo.com/markets/stocks/articles/3-reasons-growth-investors-love-164502594.html)
-- [Elanco Animal Health Reports Soon: How Has The Stock Reacted To Past Earnings?](https://www.trefis.com/stock/elan/articles/622775/elanco-animal-health-reports-soon-how-has-the-stock-reacted-to-past-earnings/2026-11-05)
-- [IDEXX Laboratories (IDXX) Q3 Earnings Leave Its Premium Valuation In Focus](https://finance.yahoo.com/markets/stocks/articles/idexx-laboratories-idxx-q3-earnings-232237894.html)
-
-**AVGO**
-- [Investing.com’s stocks of the week](https://finance.yahoo.com/markets/stocks/articles/investing-com-stocks-week-191819455.html)
-- [Oracle Faces Major Wall Street Test After AI Selloff](https://finance.yahoo.com/technology/ai/articles/oracle-faces-major-wall-street-191405948.html)
-- [Cathie Wood Makes $437 Million In Trades. Adds Nvidia, SpaceX; Offloads Broadcom](https://www.investors.com/news/cathie-wood-ark-invest-nvidia-spacex-broadcom-google-amd/?src=A00220&yptr=yahoo)
-
-**PSX**
-- [Is Phillips 66 Stock Worth Buying Despite Its Premium Valuation?](https://finance.yahoo.com/markets/stocks/articles/phillips-66-stock-worth-buying-143300695.html)
-- [State Street Energy SPDR (XLE) Sells $75.9 Million of Exxon on Nov. 4](https://finance.yahoo.com/energy/articles/state-street-energy-spdr-xle-110525697.html)
-- [Can MPC's Gulf Coast Focus Fuel Stronger Future Refining Returns?](https://finance.yahoo.com/energy/articles/mpcs-gulf-coast-focus-fuel-163900782.html)
-
-**NVDA**
-- [What the AI stock crash cost your 401(k) for every $1,000 invested](https://finance.yahoo.com/markets/article/what-the-ai-stock-crash-cost-your-401k-for-every-1000-invested-172821837.html)
-- [Rising GPU prices just might turn Nvidia into a buy](https://finance.yahoo.com/video/rising-gpu-prices-just-might-turn-nvidia-into-a-buy-160742850.html)
-- [Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020](https://finance.yahoo.com/markets/article/nvidia-amd-micron-sandsik-lead-chip-sector-higher-134336542.html)
-
-**NWSA**
-- [News Corp (NWSA) Q1 2027 Earnings Call Transcript](https://www.fool.com/earnings/call-transcripts/2026/11/05/news-corp-nwsa-q1-2027-earnings-call-transcript/)
-- [NWSA Q1 Earnings Beat on Real Estate and Publishing Gains](https://finance.yahoo.com/media-advertising/articles/nwsa-q1-earnings-beat-real-162600294.html)
-- [Anthropic Just Paid a News Publisher for the First Time, and It Was AP](https://247wallst.com/investing/2026/11/05/anthropic-just-paid-a-news-publisher-for-the-first-time-and-it-was-ap/)
-
-**PNR**
-- [How Investors Are Reacting To Pentair (PNR) Reaffirmed Full Year Guidance](https://finance.yahoo.com/markets/stocks/articles/investors-reacting-pentair-pnr-reaffirmed-141734388.html)
-- [ProShares S&P 500 Div Aristocrats (NOBL) Buys $3.9 Million More Pentair on Nov. 3](https://finance.yahoo.com/markets/stocks/articles/proshares-p-500-div-aristocrats-110452062.html)
-- [What FT Vest Dividend Aristocrats Target Income (KNG) Bought: C.H. Robinson Leads on Oct. 30](https://finance.yahoo.com/markets/stocks/articles/ft-vest-dividend-aristocrats-target-110455696.html)
-
-**GEN**
-- [What Was Gen Digital Telling You Before Its Stock Ran?](https://www.trefis.com/stock/gen/articles/622335/what-was-gen-digital-telling-you-before-its-stock-ran/2026-11-04)
-- [3 Underowned S&P 500 Stocks as Investors Rotate Beyond AI](https://finance.yahoo.com/markets/stocks/articles/3-underowned-p-500-stocks-171435079.html)
-- [Are Business Services Stocks Lagging  GEN DIGITAL INC (GEN) This Year?](https://finance.yahoo.com/markets/stocks/articles/business-services-stocks-lagging-gen-124002175.html)
-
-**ETN**
-- [GE Vernova Has Something Nvidia Needs Under a Democratic Congress](https://247wallst.com/investing/2026/11/06/ge-vernova-has-something-nvidia-needs-under-a-democratic-congress/)
-- [Can Eaton Convert Its Record Backlog Into Stronger Earnings?](https://finance.yahoo.com/markets/stocks/articles/eaton-convert-record-backlog-stronger-171300757.html)
-- [Stocks to Watch: DraftKings, Airbnb, Iren, CoreWeave](https://www.wsj.com/livecoverage/october-jobs-report-stock-market-11-06-2026/card/stocks-to-watch-draftkings-airbnb-iren-coreweave-K3mHErTnFxPagbWPHHSI?siteid=yhoof2&yptr=yahoo)
 
 **CLX**
+- [3 Magnificent High-Yield Dividend Stocks to Buy Near Their 52-Week Lows](https://www.fool.com/investing/2026/11/09/3-magnificent-high-yield-dividend-stocks-to-buy/)
 - [How Fresh Step used AI to go from brief to ads at one-tenth the cost](https://www.marketingdive.com/news/how-fresh-step-used-ai-to-go-from-brief-to-ads-at-one-tenth-the-cost/873688/)
 - [ProShares S&P 500 Div Aristocrats (NOBL) Buys $3.9 Million More Pentair on Nov. 3](https://finance.yahoo.com/markets/stocks/articles/proshares-p-500-div-aristocrats-110452062.html)
-- [Clorox vs. PepsiCo: Which Dividend Stock Could Make You Richer Over the Next 10 Years?](https://www.fool.com/investing/2026/11/04/clorox-vs-pepsico-which-dividend-stock-could-make-you-richer-over-the-next-10-years/)
 
-**NWS**
-- [News Corp (NWSA) Q1 2027 Earnings Call Transcript](https://www.fool.com/earnings/call-transcripts/2026/11/05/news-corp-nwsa-q1-2027-earnings-call-transcript/)
-- [NWSA Q1 Earnings Beat on Real Estate and Publishing Gains](https://finance.yahoo.com/media-advertising/articles/nwsa-q1-earnings-beat-real-162600294.html)
-- [Anthropic Just Paid a News Publisher for the First Time, and It Was AP](https://247wallst.com/investing/2026/11/05/anthropic-just-paid-a-news-publisher-for-the-first-time-and-it-was-ap/)
+**DVN**
+- [Devon Energy Corp (DVN) (Q3 2026) Earnings Call Highlights: Record Production, $2 Billion Free ...](https://finance.yahoo.com/energy/articles/devon-energy-corp-dvn-q3-170403468.html)
+- [CEG Q3 Earnings Beat on Calpine, Strong Commercial Performance](https://finance.yahoo.com/markets/stocks/articles/ceg-q3-earnings-beat-calpine-143100106.html)
+- [Devon Energy Corporation (DVN) Is a Trending Stock: Facts to Know Before Betting on It](https://finance.yahoo.com/markets/stocks/articles/devon-energy-corporation-dvn-trending-130004805.html)
 
-**GOOGL**
-- [Warby Parker Sets Sights On Smart Glasses Launch](https://www.investors.com/news/technology/warby-parker-stock-wrby-smart-glasses-launch/?src=A00220&yptr=yahoo)
-- [Microsoft and Google Face a New Bill as Data Centers “Have to Pay Their Own Costs”](https://www.tikr.com/blog/microsoft-and-google-face-a-new-bill-as-data-centers-have-to-pay-their-own-costs?ref=yahoofinance&tlnk=yf-261106-5qc3f788)
-- [Google Is Spending $17 Billion on a Wyoming Data Center and Says It Will Pay for 100% of Its Power](https://247wallst.com/investing/2026/11/06/google-is-spending-17-billion-on-a-wyoming-data-center-and-says-it-will-pay-for-100-of-its-power/)
+**VLO**
+- [Valero Energy Surges 113% YTD: Should Investors Bet on the Momentum?](https://finance.yahoo.com/energy/articles/valero-energy-surges-113-ytd-143500800.html)
+- [What Mattered Most In Chevron's Latest Quarter?](https://www.trefis.com/stock/cvx/articles/623636/what-mattered-most-in-chevrons-latest-quarter/2026-11-09)
+- [What iShares Global Energy ETF (IXC) Sold: Exxon Mobil Leads on Nov. 5](https://finance.yahoo.com/energy/articles/ishares-global-energy-etf-ixc-110643860.html)
 
-**PWR**
-- [GE Vernova Has Something Nvidia Needs Under a Democratic Congress](https://247wallst.com/investing/2026/11/06/ge-vernova-has-something-nvidia-needs-under-a-democratic-congress/)
-- [AI Stocks Plunge: Buy, Sell or Hold?](https://finance.yahoo.com/markets/stocks/articles/ai-stocks-plunge-buy-sell-171600469.html)
-- [What Does Quanta Stock's Winning Streak Really Prove?](https://www.trefis.com/stock/pwr/articles/623327/what-does-quanta-stocks-winning-streak-really-prove/2026-11-06)
+**MPC**
+- [CNQ Q3 Earnings Beat on Strong Pricing and Record Thermal Output](https://finance.yahoo.com/energy/articles/cnq-q3-earnings-beat-strong-152800153.html)
+- [Can Cenovus Improve Refining Margins Through Market Expansion?](https://finance.yahoo.com/energy/articles/cenovus-improve-refining-margins-market-144800178.html)
+- [Delek Targets Another $1 Per Barrel at El Dorado: Can Margins Climb?](https://finance.yahoo.com/energy/articles/delek-targets-another-1-per-125400155.html)
+
+**PNR**
+- [Pentair: 3 Key Takeaways for Long-Term Investors](https://www.fool.com/earnings/takeaways/2026/11/08/pentair-3-key-takeaways-for-long-term-investors/)
+- [How Investors Are Reacting To Pentair (PNR) Reaffirmed Full Year Guidance](https://finance.yahoo.com/markets/stocks/articles/investors-reacting-pentair-pnr-reaffirmed-141734388.html)
+- [ProShares S&P 500 Div Aristocrats (NOBL) Buys $3.9 Million More Pentair on Nov. 3](https://finance.yahoo.com/markets/stocks/articles/proshares-p-500-div-aristocrats-110452062.html)
 
 **CMG**
-- [Can Chipotle's Sales Growth Offset Lower Restaurant-Level Margins?](https://finance.yahoo.com/markets/stocks/articles/chipotles-sales-growth-offset-lower-152200516.html)
-- [Bloomin' Brands Q3 Loss Narrower Than Expected, Revenues Rise Y/Y](https://finance.yahoo.com/markets/stocks/articles/bloomin-brands-q3-loss-narrower-144600542.html)
-- [Chipotle (CMG) Stock Sees Fair Value Cut As Analysts Turn More Cautious](https://finance.yahoo.com/markets/stocks/articles/chipotle-cmg-stock-sees-fair-131804832.html)
-
-**GEHC**
-- [Tandem Diabetes Care names next CEO](https://www.medtechdive.com/news/tandem-diabetes-care-names-next-ceo/874001/)
-- [Mettler-Toledo Stock Up on Q3 Earnings & Revenue Beat, '26 View Up](https://finance.yahoo.com/markets/stocks/articles/mettler-toledo-stock-q3-earnings-130800524.html)
-- [GE HealthCare Unveils Allia Celeo to Advance Interventional Imaging](https://finance.yahoo.com/healthcare/articles/ge-healthcare-unveils-allia-celeo-162700606.html)
-
-**GOOG**
-- [$3 trillion wipe-out, CEOs on the volatility of politics, and the status of the AI trade](https://finance.yahoo.com/video/3-trillion-wipe-out-ceos-on-the-volatility-of-politics-and-the-status-of-the-ai-trade-151554253.html)
-- [Warby Parker Sets Sights On Smart Glasses Launch](https://www.investors.com/news/technology/warby-parker-stock-wrby-smart-glasses-launch/?src=A00220&yptr=yahoo)
-- [Microsoft and Google Face a New Bill as Data Centers “Have to Pay Their Own Costs”](https://www.tikr.com/blog/microsoft-and-google-face-a-new-bill-as-data-centers-have-to-pay-their-own-costs?ref=yahoofinance&tlnk=yf-261106-5qc3f788)
-
-**TT**
-- [New Dividend Growth ETF Enters the Market](https://finance.yahoo.com/markets/stocks/articles/dividend-growth-etf-enters-market-164400096.html)
-- [What Does Lennox International Offer That Masco Does Not?](https://www.trefis.com/stock/mas/articles/622949/what-does-lennox-international-offer-that-masco-does-not/2026-11-05)
-- [Trane Technologies' Strong HVAC Backlog Signals Growth in 2027](https://finance.yahoo.com/markets/stocks/articles/trane-technologies-strong-hvac-backlog-171400211.html)
-
-**ADI**
-- [FIVN Q3 Earnings & Revenues Surpass Estimates, Both Increase Y/Y](https://finance.yahoo.com/news/fivn-q3-earnings-revenues-surpass-153500224.html)
-- [SYNA Q1 Earnings Beat Estimates, Revenues Miss on Weak Demand](https://finance.yahoo.com/markets/stocks/articles/syna-q1-earnings-beat-estimates-152400592.html)
-- [Unity Q3 Earnings Beat Estimates on Vector Strength and Margin Gains](https://finance.yahoo.com/markets/stocks/articles/unity-q3-earnings-beat-estimates-152300876.html)
-
-**WMB**
-- [ETFs Are Net Sellers of Williams (WMB) on Nov. 4](https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-williams-wmb-110344609.html)
-- [What Are Wall Street Analysts' Target Price for Williams Companies Stock?](https://www.barchart.com/story/news/8692997/what-are-wall-street-analysts-target-price-for-williams-companies-stock)
-- [A $750,000 Dividend Portfolio Could Cost You $9,000 a Year in Taxes. Here’s How](https://247wallst.com/investing/2026/11/05/a-750000-dividend-portfolio-could-cost-you-9000-a-year-in-taxes-heres-how/)
-
-**GPN**
-- [Shift4’s 3Q Net Income Climbs Along with EBITDA](https://finance.yahoo.com/markets/stocks/articles/shift4-3q-net-income-climbs-211912736.html)
-- [Global Payments (GPN) Q3 2026 Earnings Call Transcript](https://www.fool.com/earnings/call-transcripts/2026/11/05/global-payments-gpn-q3-2026-earnings-call-transcript/)
-- [GPN Q3 Earnings Beat Estimates on Genius Growth, Margins Rise](https://finance.yahoo.com/markets/stocks/articles/gpn-q3-earnings-beat-estimates-180300069.html)
-
-**ABNB**
-- [Airbnb stock jumps as company reenters 'growth mode,' plans to develop its own AI agent](https://finance.yahoo.com/markets/stocks/article/airbnb-stock-jumps-as-company-reenters-growth-mode-plans-to-develop-its-own-ai-agent-150424311.html)
-- [Intel and AMD in Focus as Tech Stocks Seek Rebound](https://finance.yahoo.com/markets/stocks/articles/intel-amd-focus-tech-stocks-192042980.html)
-- [Sector Update: Consumer Stocks Mixed in Afternoon Trading](https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-afternoon-183429495.html)
+- [Robots and surge pricing won't save fast food: Robert Irvine](https://finance.yahoo.com/video/robots-surge-pricing-wont-save-120000821.html)
+- [The business mistake McDonald's and Chipotle keep making: Robert Irvine](https://finance.yahoo.com/video/business-mistake-mcdonalds-chipotle-keep-110000524.html)
+- [Colgate vs. Chipotle: Which Is the Better Buy for 2027?](https://www.fool.com/coverage/better-buy/2026/11/09/colgate-vs-chipotle-which-is-the-better-buy-for-2027/)
 
 **AKAM**
-- [IREN Stock Surges and Akamai Gains. Cloud Earnings Defy Political Fears.](https://www.barrons.com/articles/akamai-iren-earnings-stock-price-2a82ae44?siteid=yhoof2&yptr=yahoo)
-- [Akamai Technologies Q3 'Solid,' but Q4 Outlook Hit by CIS Delay, BofA Says](https://finance.yahoo.com/markets/stocks/articles/akamai-technologies-q3-apos-solid-154609731.html)
-- [Akamai Q3 Earnings Beat Estimates on Security and Cloud Growth](https://finance.yahoo.com/markets/stocks/articles/akamai-q3-earnings-beat-estimates-151200534.html)
+- [Moody’s and S&P downgrade Akamai on debt-fueled AI infrastructure buildout](https://finance.yahoo.com/markets/stocks/articles/moody-p-downgrade-akamai-debt-162412289.html)
+- [AKAM Stock Slides: Akamai Plans $2.2B Convertible Debt Offering To Fund Cloud Expansion, Repay Debt](https://stocktwits.com/news-articles/markets/equity/akam-stock-slides-akamai-plans-2-2-b-convertible-debt-offering-to-fund-cloud-expansion-repay-debt/cNGraYpR9eu)
+- [AKAM Q3 2026 deep dive: cloud infrastructure contracts expand as near-term guidance softens](https://finance.yahoo.com/markets/stocks/articles/akam-q3-2026-deep-dive-042936806.html)
+
+**DAL**
+- [Delta Air Lines Stocks Rise 4.68% as Oil Retreats Toward $87](https://finance.yahoo.com/markets/stocks/articles/delta-air-lines-stocks-rise-190340880.html)
+- [Amex Platinum's $600 hotel credit now comes with a catch starting in 2027](https://finance.yahoo.com/personal-finance/credit-cards/article/amex-platinums-benefits-updates-2027-181143354.html)
+- [Southwest Q3 Revenue Surges While Fuel Costs Test Margin Momentum](https://finance.yahoo.com/markets/stocks/articles/southwest-q3-revenue-surges-while-164000951.html)
+
+**EW**
+- [Edwards Lifesciences Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-edwards-lifesciences-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance)
+- [HIMS' Q3 Earnings: Can Weight Loss Momentum Drive Performance?](https://finance.yahoo.com/healthcare/articles/hims-q3-earnings-weight-loss-151400002.html)
+- [Edwards Life (EW) Q3 2026 Earnings Call Transcript](https://www.fool.com/earnings/call-transcripts/2026/11/05/edwards-life-ew-q3-2026-earnings-call-transcript/)
+
+**ALGN**
+- [Did Strong Earnings Just Shift Align's (ALGN) Investment Narrative?](https://finance.yahoo.com/markets/stocks/articles/did-strong-earnings-just-shift-221452248.html)
+- [ALGN Q3 deep dive: product mix, international demand, and new leadership shape outlook](https://finance.yahoo.com/markets/stocks/articles/algn-q3-deep-dive-product-053336400.html)
+- [5 insightful analyst questions from Align Technology’s Q3 earnings call](https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-align-192329675.html)
+
+**WYNN**
+- [Wynn: 3 Key Takeaways for Long-Term Investors](https://www.fool.com/earnings/takeaways/2026/11/09/wynn-3-key-takeaways-for-long-term-investors/)
+- [Wynn Resorts Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-wynn-resorts-q3-earnings-call-highlights-2026-11-06/?utm_source=yahoofinance&utm_medium=yahoofinance)
+- [Wynn Resorts' Q3 Earnings Miss Estimates on Weak Gaming Results](https://finance.yahoo.com/markets/stocks/articles/wynn-resorts-q3-earnings-miss-154600563.html)
+
+**LOW**
+- [3 Top Dividend Stocks to Buy in November for a Lifetime of Passive Income](https://www.fool.com/investing/2026/11/09/3-top-dividend-stocks-buy-november-lifetime-income/)
+- [This Dividend King Yielding 2X the S&P 500 Looks Like a Buy in November.](https://www.fool.com/investing/2026/11/07/this-dividend-king-yielding-2x-the-sp-500-looks/)
+- [Where Could Home Depot's Next Growth Come From?](https://www.trefis.com/stock/hd/articles/623628/where-could-home-depots-next-growth-come-from/2026-11-07)
+
+**GEN**
+- [4 Overlooked Tech Stocks That Pay Dividends and Have Room to Grow](https://247wallst.com/investing/2026/11/09/4-overlooked-tech-stocks-that-pay-dividends-and-have-room-to-grow/)
+- [What Was Gen Digital Telling You Before Its Stock Ran?](https://www.trefis.com/stock/gen/articles/622335/what-was-gen-digital-telling-you-before-its-stock-ran/2026-11-04)
+- [3 Underowned S&P 500 Stocks as Investors Rotate Beyond AI](https://finance.yahoo.com/markets/stocks/articles/3-underowned-p-500-stocks-171435079.html)
+
+**NWSA**
+- [Upscale Home Prices Fall in October, Led by Ultra-Luxury Properties, Realtor.com Says](https://finance.yahoo.com/real-estate/articles/upscale-home-prices-fall-october-204015629.html)
+- [5 insightful analyst questions from News Corp’s Q3 CY2026 earnings call](https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-news-071736730.html)
+- [Is Earnings Growth Altering The Investment Case For News (NWSA)?](https://finance.yahoo.com/markets/stocks/articles/earnings-growth-altering-investment-case-011116061.html)
+
+**XYZ**
+- [3 Great Founder Led Stocks To Own In November 2026](https://finance.yahoo.com/markets/stocks/articles/3-great-founder-led-stocks-141127027.html)
+- [3 Founder Led Stocks To Own In November 2026](https://finance.yahoo.com/markets/stocks/articles/3-founder-led-stocks-own-061206473.html)
+- [Why Sherrod Brown May Not Be Crypto’s Biggest Problem in the Senate](https://unchainedcrypto.com/why-sherrod-brown-may-not-be-cryptos-biggest-problem-in-the-senate/)
+
+**GEHC**
+- [GE HealthCare (GEHC) Raised Full-Year Guidance. Here’s What’s Behind Its Recovery.](https://finance.yahoo.com/healthcare/articles/ge-healthcare-gehc-raised-full-181437807.html)
+- [TECH Q1 Earnings & Revenues Beat, Merck KGaA Merger Deal Advances](https://finance.yahoo.com/healthcare/articles/tech-q1-earnings-revenues-beat-125000590.html)
+- [GE HealthCare Technologies (GEHC) Led A $160 Million Cardiac Imaging Investment](https://finance.yahoo.com/healthcare/articles/ge-healthcare-technologies-gehc-led-221722159.html)
+
+**FANG**
+- [ConocoPhillips Trades at a Premium: Is It the Right Time to Buy?](https://finance.yahoo.com/energy/articles/conocophillips-trades-premium-time-buy-170300578.html)
+- [5 Oil Stocks Could Turn $500,000 Into $14,000 a Year in Dividend Income](https://247wallst.com/investing/2026/11/09/5-oil-stocks-could-turn-500000-into-14000-a-year-in-dividend-income/)
+- [Diamondback Energy Sees New Revenue Potential in AI Power Boom](https://finance.yahoo.com/energy/articles/diamondback-energy-sees-revenue-potential-125000581.html)
+
+**NCLH**
+- [The business mistake McDonald's and Chipotle keep making: Robert Irvine](https://finance.yahoo.com/video/business-mistake-mcdonalds-chipotle-keep-110000524.html)
+- [RCL Targets Adjusted EPS in the $20 Range for 2027: Can Momentum Last?](https://finance.yahoo.com/markets/stocks/articles/rcl-targets-adjusted-eps-20-153500105.html)
+- [Dimensional U.S. Small Cap ETF (DFAS) Sells $24.2 Million of Charles River on Nov. 5](https://finance.yahoo.com/markets/stocks/articles/dimensional-u-small-cap-etf-110616791.html)
 
 **ADM**
 - [Should You Buy ADM Stock At This Price?](https://www.trefis.com/stock/adm/articles/623237/should-you-buy-adm-stock-at-this-price/2026-11-06)
 - [The Zacks Analyst Blog Highlights Archer-Daniels-Midland, Freeport-McMoRan, UnitedHealth, Casey's General Stores and Crane](https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-archer-132300344.html)
 - [2 AgriTech and Food Innovation Stocks to Buy for a Stable Portfolio](https://finance.yahoo.com/markets/stocks/articles/2-agritech-food-innovation-stocks-115000355.html)
 
-**TRGP**
-- [Targa Resources Corp (TRGP) (Q3 2026) Earnings Call Highlights: Record Permian Volumes Drive $6 ...](https://finance.yahoo.com/energy/articles/targa-resources-corp-trgp-q3-071457239.html)
-- [Targa Resources Corp. Q3 2026 Earnings Call Summary](https://app.moby.co/home/research/tools/earningsCalendar/earnings-targa-resources-corp-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss)
-- [Targa Resources (TRGP) Reports Q3 Earnings: What Key Metrics Have to Say](https://finance.yahoo.com/markets/stocks/articles/targa-resources-trgp-reports-q3-210001870.html)
+**LRCX**
+- [A $5.4 Billion Fund Bought These 3 Stocks](https://www.tikr.com/blog/palestra-capital-management-bought-amazon-lam-research-amd?ref=yahoofinance&tlnk=yf-261109-p753jq5x)
+- [Cathie Wood and 73 Other Funds Bought Chip Stocks. Cerebras Is Down 59% Since. Time to Buy?](https://www.tikr.com/blog/cathie-wood-funds-bought-chip-stocks-cerebras-down-51-time-to-buy?ref=yahoofinance&tlnk=yf-261109-9fcqjhc6)
+- [Markets News, Nov. 9, 2026: Dow Climbs 1,100 Points as Stocks Rebound from Last Week’s AI Sell-Off; Nvidia Sinks Amid CEO Probe](https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11092026-12244409)
 
-**FANG**
-- [APA Q3 Earnings Beat on Strong Oil Prices and U.S. Output](https://finance.yahoo.com/energy/articles/apa-q3-earnings-beat-strong-155200571.html)
-- [5 Dividend Stocks With Ex-Dividend Deadlines Next Week. Don’t Miss These Dates](https://247wallst.com/investing/2026/11/06/5-dividend-stocks-with-ex-dividend-deadlines-next-week-dont-miss-these-dates/)
-- [Diamondback Just Raised Its Dividend 7.3%. These 3 Energy Stocks Are Paying Investors Too](https://247wallst.com/investing/2026/11/06/diamondback-just-raised-its-dividend-7-3-these-3-energy-stocks-are-paying-investors-too/)
+**DD**
+- [3M’s “Forever Chemicals” Bill Just Grew by Billions](https://247wallst.com/investing/2026/11/04/3ms-forever-chemicals-bill-just-grew-by-billions/)
+- [What Just Happened To DuPont Stock?](https://www.trefis.com/stock/dd/articles/622651/what-just-happened-to-dupont-stock/2026-11-04)
+- [What Is DuPont (DD) Signaling With Its New Peptide Purification Product?](https://finance.yahoo.com/healthcare/articles/dupont-dd-signaling-peptide-purification-121549756.html)
 
-**ROP**
-- [What Invesco S&P 500 Equal Weight Tech (RSPT) Bought: Okta Leads on Wednesday](https://finance.yahoo.com/markets/stocks/articles/invesco-p-500-equal-weight-110614552.html)
-- [Roper Technologies (ROP) Stock Looks Fully Valued As Cash Flow Comes Into Focus](https://finance.yahoo.com/markets/stocks/articles/roper-technologies-rop-stock-looks-071322309.html)
-- [Roper Technologies Rewards Shareholders With 10% Dividend Hike](https://finance.yahoo.com/markets/stocks/articles/roper-technologies-rewards-shareholders-10-162700479.html)
+**KEYS**
+- [3 Cash Rich AI Stocks Investors Are Watching As Debt Costs Rise](https://finance.yahoo.com/technology/ai/articles/3-cash-rich-ai-stocks-071007742.html)
+- [Motorola Beats Q3 Earnings Estimates on Strong Demand, Record Orders](https://finance.yahoo.com/markets/stocks/articles/motorola-beats-q3-earnings-estimates-124700638.html)
+- [Millicom International Cellular SA (TIGO) Lags Q3 Earnings Estimates](https://finance.yahoo.com/markets/stocks/articles/millicom-international-cellular-sa-tigo-113504616.html)
+
+**NWS**
+- [Upscale Home Prices Fall in October, Led by Ultra-Luxury Properties, Realtor.com Says](https://finance.yahoo.com/real-estate/articles/upscale-home-prices-fall-october-204015629.html)
+- [5 insightful analyst questions from News Corp’s Q3 CY2026 earnings call](https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-news-071736730.html)
+- [Is Earnings Growth Altering The Investment Case For News (NWSA)?](https://finance.yahoo.com/markets/stocks/articles/earnings-growth-altering-investment-case-011116061.html)
