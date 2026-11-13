@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+        .flags { color: #a05a00; font-size: 0.9em; margin: 4px 0; }
+        .flags.ok { color: #0a7d2c; }
+        .chip { background: #f0f0f0; border-radius: 10px; padding: 2px 8px; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-11-13</p>
+    <div class='warning'><strong>📅 Today's high-impact events:</strong><ul><li>Core PPI m/m on 2026-11-13 at 13:30 UTC</li><li>PPI m/m on 2026-11-13 at 13:30 UTC</li></ul><strong>This week's high-impact events:</strong><ul><li>Core PPI m/m on 2026-11-13 at 13:30 UTC</li><li>PPI m/m on 2026-11-13 at 13:30 UTC</li></ul></div>
+    
+        <p class="track-record"><strong>Live track record:</strong>
+        1157 closed picks, 34% win rate.
+        Average predicted probability 41% vs actual 59%
+        (17 decided). 115 still open.
+        <a href="../track.html">Full track record &rarr;</a></p>
+        
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>3 of today's picks are in Information Technology &mdash; likely one shared sector move, not 3 independent opportunities</li><li>3 of today's picks are in Health Care &mdash; likely one shared sector move, not 3 independent opportunities</li></ul></div>
+    <h2>Setups (9)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Probability</th><th>Hist. win rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>NVDA</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$162.67</td>
+                <td>20.2</td>
+                <td>-18.1%</td>
+                <td>1.51x &#128293;</td>
+                <td>$162.67</td>
+                <td>$154.54</td>
+                <td>$198.68</td>
+                <td>4.43:1</td>
+                <td>7.4</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>37%</b></td>
+                <td>67%</td>
+                <td>15</td>
+                <td>4d</td>
+            </tr>
+            
+            <tr>
+                <td>FFIV</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$310.11</td>
+                <td>19.5</td>
+                <td>-16.8%</td>
+                <td>0.46x</td>
+                <td>$310.11</td>
+                <td>$294.6</td>
+                <td>$372.54</td>
+                <td>4.03:1</td>
+                <td>8.5</td>
+                <td title="below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>35%</b></td>
+                <td>50%</td>
+                <td>8</td>
+                <td>74d</td>
+            </tr>
+            
+            <tr>
+                <td>ILMN</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$208.45</td>
+                <td>29.3</td>
+                <td>-14.9%</td>
+                <td>0.31x</td>
+                <td>$208.45</td>
+                <td>$198.02</td>
+                <td>$244.83</td>
+                <td>3.49:1</td>
+                <td>7.0</td>
+                <td title="lower highs and lower lows (-7)"><b>48%</b></td>
+                <td>55%</td>
+                <td>11</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>CHTR</td>
+                <td>Communication Services</td>
+                <td class="short">SHORT</td>
+                <td>$138.27</td>
+                <td>73.6</td>
+                <td>18.4%</td>
+                <td>0.69x</td>
+                <td>$138.27</td>
+                <td>$145.19</td>
+                <td>$116.76</td>
+                <td>3.11:1</td>
+                <td>7.0</td>
+                <td title="no structure penalty"><b>71%</b></td>
+                <td>71%</td>
+                <td>14</td>
+                <td>77d</td>
+            </tr>
+            
+            <tr>
+                <td>FTNT</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$127.84</td>
+                <td>35.5</td>
+                <td>-13.1%</td>
+                <td>0.28x</td>
+                <td>$127.84</td>
+                <td>$121.45</td>
+                <td>$147.18</td>
+                <td>3.03:1</td>
+                <td>8.0</td>
+                <td title="below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>58%</b></td>
+                <td>73%</td>
+                <td>11</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>CLX</td>
+                <td>Consumer Staples</td>
+                <td class="short">SHORT</td>
+                <td>$109.38</td>
+                <td>94.0</td>
+                <td>16.3%</td>
+                <td>0.53x</td>
+                <td>$109.38</td>
+                <td>$114.85</td>
+                <td>$94.04</td>
+                <td>2.8:1</td>
+                <td>9.9</td>
+                <td title="broke above 60d swing high (-15); above 200-day avg, uptrend (-8); higher highs and higher lows (-7)"><b>52%</b></td>
+                <td>82%</td>
+                <td>11</td>
+                <td>81d</td>
+            </tr>
+            
+            <tr>
+                <td>FISV</td>
+                <td>Financials</td>
+                <td class="short">SHORT</td>
+                <td>$63.51</td>
+                <td>74.2</td>
+                <td>15.4%</td>
+                <td>0.52x</td>
+                <td>$63.51</td>
+                <td>$66.69</td>
+                <td>$55.03</td>
+                <td>2.67:1</td>
+                <td>8.6</td>
+                <td title="above 200-day avg, uptrend (-8); higher highs and higher lows (-7)"><b>56%</b></td>
+                <td>71%</td>
+                <td>7</td>
+                <td>89d</td>
+            </tr>
+            
+            <tr>
+                <td>IDXX</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$704.75</td>
+                <td>72.1</td>
+                <td>12.6%</td>
+                <td>0.3x</td>
+                <td>$704.75</td>
+                <td>$739.99</td>
+                <td>$625.68</td>
+                <td>2.24:1</td>
+                <td>9.0</td>
+                <td title="above 200-day avg, uptrend (-8); higher highs and higher lows (-7)"><b>40%</b></td>
+                <td>55%</td>
+                <td>11</td>
+                <td>80d</td>
+            </tr>
+            
+            <tr>
+                <td>EW</td>
+                <td>Health Care</td>
+                <td class="short">SHORT</td>
+                <td>$107.42</td>
+                <td>87.8</td>
+                <td>11.8%</td>
+                <td>0.46x</td>
+                <td>$107.42</td>
+                <td>$112.79</td>
+                <td>$96.06</td>
+                <td>2.11:1</td>
+                <td>10.5</td>
+                <td title="broke above 60d swing high (-15); above 200-day avg, uptrend (-8); higher highs and higher lows (-7)"><b>62%</b></td>
+                <td>92%</td>
+                <td>12</td>
+                <td>88d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. Probability = this ticker's historical win rate minus penalties when the chart structure is broken (hover for reasons). &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>Charts &amp; news</h2><h3>NVDA <span class='long'>LONG</span> &mdash; 37%</h3><p class='flags'>Probability 67% &rarr; <b>37%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on NVDA: <span class='chip'>2026-11-12: &#9203; still open</span> <span class='chip'>2026-11-10: &#10060; hit stop -10.0%</span> <span class='chip'>2026-11-09: &#10060; hit stop -5.0%</span> </p><img src='../charts/NVDA_2026-11-13.png' alt='NVDA chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/video/cisco-ceo-on-trusting-nvidia-chips-after-jensen-huangs-exit-absolutely-201049124.html'>Cisco CEO on trusting Nvidia chips after Jensen Huang&#x27;s exit: &#x27;Absolutely&#x27;</a></li><li><a href='https://finance.yahoo.com/video/why-nvidias-leadership-shift-could-reshape-its-competitive-edge-190152777.html'>Why Nvidia’s leadership shift could reshape its competitive edge</a></li><li><a href='https://finance.yahoo.com/markets/article/how-nvidias-stock-decline-could-impact-your-401k-and-portfolio-181913465.html'>How Nvidia&#x27;s stock decline could impact your 401(k) and portfolio</a></li></ul><h3>FFIV <span class='long'>LONG</span> &mdash; 35%</h3><p class='flags'>Probability 50% &rarr; <b>35%</b>: below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on FFIV: <span class='chip'>2026-11-06: &#9203; still open</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-03: &#10060; hit stop -5.0%</span> </p><img src='../charts/FFIV_2026-11-13.png' alt='FFIV chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/f5-ffiv-stock-may-10-161054989.html'>F5 (FFIV) Stock May Be 10% Undervalued As AI Security Demand Builds</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/net-stock-rises-10-post-121100821.html'>NET Stock Rises 10% Post Q3 Results: Should You Buy, Sell or Hold?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/oversold-ai-chip-stocks-nasdaq-144740381.html'>Oversold AI and chip stocks after the Nasdaq’s worst day since 2020</a></li></ul><h3>ILMN <span class='long'>LONG</span> &mdash; 48%</h3><p class='flags'>Probability 55% &rarr; <b>48%</b>: lower highs and lower lows (-7)</p><p>Earlier signals on ILMN: <span class='chip'>2026-11-12: &#9203; still open</span> <span class='chip'>2026-11-05: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> </p><img src='../charts/ILMN_2026-11-13.png' alt='ILMN chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/illumina-ilmn-stock-sees-modest-051332622.html'>Illumina (ILMN) Stock Sees Modest Fair Value Lift As Analysts Debate Growth Outlook</a></li><li><a href='https://www.trefis.com/stock/tmo/articles/624685/what-happened-to-people-who-bought-thermo-fisher-stock-at-a-high/2026-11-12'>What Happened To People Who Bought Thermo Fisher Stock At A High?</a></li><li><a href='https://www.trefis.com/stock/wgs/articles/624693/who-is-paying-for-genedxs-cash-burn/2026-11-12'>Who Is Paying For GeneDx&#x27;s Cash Burn?</a></li></ul><h3>CHTR <span class='short'>SHORT</span> &mdash; 71%</h3><p class='flags ok'>Probability 71%: no structure warnings.</p><p>Earlier signals on CHTR: <span class='chip'>2026-11-10: &#9203; still open</span> <span class='chip'>2026-10-12: &#9989; hit target +13.1%</span> <span class='chip'>2026-10-09: &#9989; hit target +13.2%</span> </p><img src='../charts/CHTR_2026-11-13.png' alt='CHTR chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/chtr/articles/625005/why-you-should-think-about-charter-communications-differently-now/2026-11-13'>Why You Should Think About Charter Communications Differently Now?</a></li><li><a href='https://www.trefis.com/stock/t/articles/624471/how-much-could-you-lose-in-at-t-stock-after-cpi/2026-11-13'>How Much Could You Lose In AT&amp;T Stock After CPI?</a></li><li><a href='https://www.thestreet.com/retail/spectrum-q3-2026-earnings-cost-cutting-plan-customer-losses'>Spectrum plans significant changes as more customers leave</a></li></ul><h3>FTNT <span class='long'>LONG</span> &mdash; 58%</h3><p class='flags'>Probability 73% &rarr; <b>58%</b>: below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on FTNT: <span class='chip'>2026-11-06: &#9203; still open</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-03: &#10060; hit stop -5.0%</span> </p><img src='../charts/FTNT_2026-11-13.png' alt='FTNT chart' style='max-width:100%;'><ul><li><a href='https://www.barrons.com/articles/palo-alto-stock-price-upgrade-21554fff?siteid=yhoof2&amp;yptr=yahoo'>Palo Alto Stock Upgraded to Buy After 20% Dip</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/microsoft-outage-sends-cybersecurity-stocks-175246078.html'>Microsoft Outage Sends Cybersecurity Stocks Higher. Palo Alto and CrowdStrike Lead Gains</a></li><li><a href='https://finance.yahoo.com/technology/articles/crwd-vs-ftnt-cybersecurity-stock-130200990.html'>CRWD vs. FTNT: Which Cybersecurity Stock Has an Edge Right Now?</a></li></ul><h3>CLX <span class='short'>SHORT</span> &mdash; 52%</h3><p class='flags'>Probability 82% &rarr; <b>52%</b>: broke above 60d swing high (-15); above 200-day avg, uptrend (-8); higher highs and higher lows (-7)</p><p>Earlier signals on CLX: <span class='chip'>2026-11-09: &#9203; still open</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> <span class='chip'>2026-09-08: &#10060; hit stop -5.0%</span> </p><img src='../charts/CLX_2026-11-13.png' alt='CLX chart' style='max-width:100%;'><ul><li><a href='https://247wallst.com/investing/2026/11/13/a-record-high-dividend-yield-can-be-a-warning-sign-just-ask-pfizer/'>A Record-High Dividend Yield Can Be a Warning Sign. Just Ask Pfizer</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/clorox-clx-following-first-quarter-021547982.html'>Clorox (CLX) Following First Quarter Results Faces A Pricey Narrative</a></li><li><a href='https://www.tikr.com/blog/a-1500000-portfolio-in-clorox-kimberly-clark-and-pepsico-pays-67128-a-year-in-dividends-heres-what-happens-if-one-cuts?ref=yahoofinancedividend&amp;tlnk=yf-261112-2x74qxgx'>A $1,500,000 Portfolio in Clorox, Kimberly-Clark and PepsiCo Pays $67,627 a Year in Dividends. Here’s What Happens if One Cuts</a></li></ul><h3>FISV <span class='short'>SHORT</span> &mdash; 56%</h3><p class='flags'>Probability 71% &rarr; <b>56%</b>: above 200-day avg, uptrend (-8); higher highs and higher lows (-7)</p><p>Earlier signals on FISV: <span class='chip'>2026-11-04: &#9203; still open</span> <span class='chip'>2026-11-03: &#10060; hit stop -5.0%</span> </p><img src='../charts/FISV_2026-11-13.png' alt='FISV chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/ma/articles/624929/what-could-go-wrong-with-mastercard-stock/2026-11-13'>What Could Go Wrong With Mastercard Stock?</a></li><li><a href='https://stocktwits.com/news-articles/markets/equity/gpn-stock-on-track-for-its-worst-day-in-about-19-months-as-private-equity-firms-reportedly-abandon-takeover-talks/cNGC3PyR9OR'>GPN Stock On Track For Its Worst Day In About 19 Months As Private Equity Firms Reportedly Abandon Takeover Talks</a></li><li><a href='https://www.bankingdive.com/news/csi-core-provider-community-banks-commercial-banking/874508/'>CSI arms community lenders for commercial banking fight</a></li></ul><h3>IDXX <span class='short'>SHORT</span> &mdash; 40%</h3><p class='flags'>Probability 55% &rarr; <b>40%</b>: above 200-day avg, uptrend (-8); higher highs and higher lows (-7)</p><p>Earlier signals on IDXX: <span class='chip'>2026-11-04: &#9203; still open</span> <span class='chip'>2026-11-03: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-02: &#10060; hit stop -5.0%</span> </p><img src='../charts/IDXX_2026-11-13.png' alt='IDXX chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/heres-why-retain-nvst-stock-171400174.html'>Here&#x27;s Why You Should Retain NVST Stock in Your Portfolio for Now</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/continue-retain-bruker-stock-portfolio-151800620.html'>Should You Continue to Retain Bruker Stock in Your Portfolio?</a></li><li><a href='https://www.trefis.com/stock/zts/articles/623948/should-you-buy-zoetis-stock-at-this-price/2026-11-10'>Should You Buy Zoetis Stock At This Price?</a></li></ul><h3>EW <span class='short'>SHORT</span> &mdash; 62%</h3><p class='flags'>Probability 92% &rarr; <b>62%</b>: broke above 60d swing high (-15); above 200-day avg, uptrend (-8); higher highs and higher lows (-7)</p><p>Earlier signals on EW: <span class='chip'>2026-11-09: &#9203; still open</span> </p><img src='../charts/EW_2026-11-13.png' alt='EW chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/a-9-2-billion-fund-dumps-these-3-stocks?ref=yahoofinance&amp;tlnk=yf-261113-73q37c26'>A $9.2 Billion Fund Dumps These 3 Stocks</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/boston-scientific-bets-watchman-growth-162100939.html'>Boston Scientific Bets on WATCHMAN Growth Despite Market Slowdown</a></li><li><a href='https://www.marketbeat.com/instant-alerts/transcript-edwards-lifesciences-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&amp;utm_medium=yahoofinance'>Edwards Lifesciences Q3 Earnings Call Highlights</a></li></ul>
+</body>
+</html>

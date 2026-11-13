@@ -1,37 +1,41 @@
-# Mean-Reversion Screener — 2026-11-12
+# Mean-Reversion Screener — 2026-11-13
+
+**📅 Today's high-impact events:**
+- Core PPI m/m on 2026-11-13 at 13:30 UTC
+- PPI m/m on 2026-11-13 at 13:30 UTC
 
 **This week's high-impact events:**
 - Core PPI m/m on 2026-11-13 at 13:30 UTC
 - PPI m/m on 2026-11-13 at 13:30 UTC
 
-**Live track record:** 1155 resolved picks, 34% win rate, avg 8.6 days held on winners. (Small samples early on aren't statistically meaningful yet.)
+**Live track record:** 1157 resolved picks, 34% win rate, avg 8.6 days held on winners. (Small samples early on aren't statistically meaningful yet.)
 
 **Sector concentration warning:**
 - 3 of today's picks are in Information Technology — likely one shared sector move, not 3 independent opportunities
+- 3 of today's picks are in Health Care — likely one shared sector move, not 3 independent opportunities
 
-10 candidate(s) flagged. Highest risk/reward first.
+9 candidate(s) flagged. Highest risk/reward first.
 
 | Ticker | Sector | Direction | Price | RSI(7) | % vs 20D Avg | Volume vs Avg | Entry | Stop | Target | Risk:Reward | Avg Hold (days) | Historical Win Rate | Sample | Next Earnings |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| NVDA | Information Technology | LONG | $164.29 | 21.1 | -18.3% | 3.53x 🔥 | $164.29 | $156.08 | $201.16 | 4.49:1 | 7.4 | 71% | 14 | 5d |
-| FFIV | Information Technology | LONG | $317.81 | 22.7 | -16.2% | 0.28x | $317.81 | $301.92 | $379.14 | 3.86:1 | 8.5 | 50% | 8 | 75d |
-| ILMN | Health Care | LONG | $210.23 | 30.3 | -15.1% | 0.52x | $210.23 | $199.72 | $247.57 | 3.55:1 | 7.0 | 55% | 11 | 84d |
-| FTNT | Information Technology | LONG | $128.9 | 36.4 | -13.6% | 0.38x | $128.9 | $122.45 | $149.21 | 3.15:1 | 8.0 | 73% | 11 | 84d |
-| CLX | Consumer Staples | SHORT | $107.9 | 93.2 | 16.2% | 0.83x | $107.9 | $113.3 | $92.85 | 2.79:1 | 9.9 | 82% | 11 | 82d |
-| CHTR | Communication Services | SHORT | $133.46 | 70.1 | 15.7% | 0.67x | $133.46 | $140.13 | $115.39 | 2.71:1 | 7.0 | 71% | 14 | 78d |
-| FISV | Financials | SHORT | $61.92 | 71.0 | 14.1% | 0.77x | $61.92 | $65.01 | $54.26 | 2.47:1 | 8.6 | 71% | 7 | 90d |
-| IDXX | Health Care | SHORT | $699.14 | 70.9 | 13.0% | 0.39x | $699.14 | $734.09 | $618.51 | 2.31:1 | 9.0 | 60% | 10 | 81d |
-| IFF | Materials | LONG | $80.58 | 23.2 | -9.8% | 0.57x | $80.58 | $76.55 | $89.38 | 2.18:1 | 6.4 | 62% | 13 | 90d |
-| NWSA | Communication Services | LONG | $26.3 | 27.9 | -9.4% | 0.39x | $26.3 | $24.98 | $29.02 | 2.07:1 | 7.7 | 64% | 14 | 84d |
+| NVDA | Information Technology | LONG | $162.67 | 20.2 | -18.1% | 1.51x 🔥 | $162.67 | $154.54 | $198.68 | 4.43:1 | 7.4 | 67% | 15 | 4d |
+| FFIV | Information Technology | LONG | $310.11 | 19.5 | -16.8% | 0.46x | $310.11 | $294.6 | $372.54 | 4.03:1 | 8.5 | 50% | 8 | 74d |
+| ILMN | Health Care | LONG | $208.45 | 29.3 | -14.9% | 0.31x | $208.45 | $198.02 | $244.83 | 3.49:1 | 7.0 | 55% | 11 | 83d |
+| CHTR | Communication Services | SHORT | $138.27 | 73.6 | 18.4% | 0.69x | $138.27 | $145.19 | $116.76 | 3.11:1 | 7.0 | 71% | 14 | 77d |
+| FTNT | Information Technology | LONG | $127.84 | 35.5 | -13.1% | 0.28x | $127.84 | $121.45 | $147.18 | 3.03:1 | 8.0 | 73% | 11 | 83d |
+| CLX | Consumer Staples | SHORT | $109.38 | 94.0 | 16.3% | 0.53x | $109.38 | $114.85 | $94.04 | 2.8:1 | 9.9 | 82% | 11 | 81d |
+| FISV | Financials | SHORT | $63.51 | 74.2 | 15.4% | 0.52x | $63.51 | $66.69 | $55.03 | 2.67:1 | 8.6 | 71% | 7 | 89d |
+| IDXX | Health Care | SHORT | $704.75 | 72.1 | 12.6% | 0.3x | $704.75 | $739.99 | $625.68 | 2.24:1 | 9.0 | 55% | 11 | 80d |
+| EW | Health Care | SHORT | $107.42 | 87.8 | 11.8% | 0.46x | $107.42 | $112.79 | $96.06 | 2.11:1 | 10.5 | 92% | 12 | 88d |
 
 Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SHORT = overbought, expected to pull back down toward the 20-day average. Target = reversion to the 20-day moving average. Stop-loss = 5% against the position. 'Avg Hold (days)' and 'Historical Win Rate' come from backtesting this same setup on this ticker's own past ~2 years — 'Sample' is how many past instances that's based on; under ~5 isn't reliable. Tickers with earnings due within 3 days are excluded entirely (gap risk). 'Volume vs Avg' 🔥 means today's volume was 1.5x+ the 20-day average. This is a mechanical screen only — check the news below before acting. Not financial advice.
 
 ## News context
 
 **NVDA**
-- [Nvidia executive Ian Buck emerges as CEO frontrunner on prediction markets](https://finance.yahoo.com/technology/article/nvidia-executive-ian-buck-emerges-as-ceo-frontrunner-on-prediction-markets-202512437.html)
-- [Retail investors are buying Nvidia's stock crash like never before — history urges patience](https://finance.yahoo.com/markets/article/retail-investors-are-buying-nvidias-stock-crash-like-never-before--history-urges-patience-194808211.html)
-- [What's next for Nvidia after Jensen Huang's exit?](https://finance.yahoo.com/video/whats-next-for-nvidia-after-jensen-huangs-exit-192952347.html)
+- [Cisco CEO on trusting Nvidia chips after Jensen Huang's exit: 'Absolutely'](https://finance.yahoo.com/video/cisco-ceo-on-trusting-nvidia-chips-after-jensen-huangs-exit-absolutely-201049124.html)
+- [Why Nvidia’s leadership shift could reshape its competitive edge](https://finance.yahoo.com/video/why-nvidias-leadership-shift-could-reshape-its-competitive-edge-190152777.html)
+- [How Nvidia's stock decline could impact your 401(k) and portfolio](https://finance.yahoo.com/markets/article/how-nvidias-stock-decline-could-impact-your-401k-and-portfolio-181913465.html)
 
 **FFIV**
 - [F5 (FFIV) Stock May Be 10% Undervalued As AI Security Demand Builds](https://finance.yahoo.com/markets/stocks/articles/f5-ffiv-stock-may-10-161054989.html)
@@ -39,41 +43,36 @@ Notes: LONG = oversold, expected to bounce back up toward the 20-day average. SH
 - [Oversold AI and chip stocks after the Nasdaq’s worst day since 2020](https://finance.yahoo.com/markets/stocks/articles/oversold-ai-chip-stocks-nasdaq-144740381.html)
 
 **ILMN**
+- [Illumina (ILMN) Stock Sees Modest Fair Value Lift As Analysts Debate Growth Outlook](https://finance.yahoo.com/markets/stocks/articles/illumina-ilmn-stock-sees-modest-051332622.html)
 - [What Happened To People Who Bought Thermo Fisher Stock At A High?](https://www.trefis.com/stock/tmo/articles/624685/what-happened-to-people-who-bought-thermo-fisher-stock-at-a-high/2026-11-12)
 - [Who Is Paying For GeneDx's Cash Burn?](https://www.trefis.com/stock/wgs/articles/624693/who-is-paying-for-genedxs-cash-burn/2026-11-12)
-- [Could You Have Seen The Run In Guardant Health Stock Coming?](https://www.trefis.com/stock/gh/articles/624232/could-you-have-seen-the-run-in-guardant-health-stock-coming/2026-11-11)
-
-**FTNT**
-- [Cisco (CSCO) vs. ANET and HPE: Can AI Networking Turn Strong Orders Into Lasting Earnings Growth?](https://finance.yahoo.com/markets/stocks/articles/cisco-csco-vs-anet-hpe-170046904.html)
-- [Intellectual Property: Valuing, Protecting and Securitizing, 6th Palm Beach CorpGov Forum](https://finance.yahoo.com/small-business/articles/intellectual-property-valuing-protecting-securitizing-163915128.html)
-- [What Did Cloudflare Stock Investors Miss Before The Run?](https://www.trefis.com/stock/net/articles/624622/what-did-cloudflare-stock-investors-miss-before-the-run/2026-11-12)
-
-**CLX**
-- [A $1,500,000 Portfolio in Clorox, Kimberly-Clark and PepsiCo Pays $67,627 a Year in Dividends. Here’s What Happens if One Cuts](https://www.tikr.com/blog/a-1500000-portfolio-in-clorox-kimberly-clark-and-pepsico-pays-67128-a-year-in-dividends-heres-what-happens-if-one-cuts?ref=yahoofinancedividend&tlnk=yf-261112-2x74qxgx)
-- [My Forever Portfolio: 5 Dividend-Paying Value Stocks That Are Too Cheap to Ignore](https://www.fool.com/investing/2026/11/12/my-forever-portfolio-5-dividend-paying-value-stock/)
-- [Bank of America raises Fed interest rate warning after October CPI surprise](https://www.thestreet.com/fed/bank-of-america-december-fed-hike-warning)
 
 **CHTR**
+- [Why You Should Think About Charter Communications Differently Now?](https://www.trefis.com/stock/chtr/articles/625005/why-you-should-think-about-charter-communications-differently-now/2026-11-13)
+- [How Much Could You Lose In AT&T Stock After CPI?](https://www.trefis.com/stock/t/articles/624471/how-much-could-you-lose-in-at-t-stock-after-cpi/2026-11-13)
 - [Spectrum plans significant changes as more customers leave](https://www.thestreet.com/retail/spectrum-q3-2026-earnings-cost-cutting-plan-customer-losses)
-- [Comcast (CMCSA) vs. CHTR and VZ: Can the Post-Versant Reset and Broadband Stabilization Drive a Re-Rating?](https://finance.yahoo.com/markets/stocks/articles/comcast-cmcsa-vs-chtr-vz-170751918.html)
-- [What Is The Biggest Threat To Charter Communications Stock?](https://www.trefis.com/stock/chtr/articles/624569/what-is-the-biggest-threat-to-charter-communications-stock/2026-11-12)
+
+**FTNT**
+- [Palo Alto Stock Upgraded to Buy After 20% Dip](https://www.barrons.com/articles/palo-alto-stock-price-upgrade-21554fff?siteid=yhoof2&yptr=yahoo)
+- [Microsoft Outage Sends Cybersecurity Stocks Higher. Palo Alto and CrowdStrike Lead Gains](https://finance.yahoo.com/markets/stocks/articles/microsoft-outage-sends-cybersecurity-stocks-175246078.html)
+- [CRWD vs. FTNT: Which Cybersecurity Stock Has an Edge Right Now?](https://finance.yahoo.com/technology/articles/crwd-vs-ftnt-cybersecurity-stock-130200990.html)
+
+**CLX**
+- [A Record-High Dividend Yield Can Be a Warning Sign. Just Ask Pfizer](https://247wallst.com/investing/2026/11/13/a-record-high-dividend-yield-can-be-a-warning-sign-just-ask-pfizer/)
+- [Clorox (CLX) Following First Quarter Results Faces A Pricey Narrative](https://finance.yahoo.com/markets/stocks/articles/clorox-clx-following-first-quarter-021547982.html)
+- [A $1,500,000 Portfolio in Clorox, Kimberly-Clark and PepsiCo Pays $67,627 a Year in Dividends. Here’s What Happens if One Cuts](https://www.tikr.com/blog/a-1500000-portfolio-in-clorox-kimberly-clark-and-pepsico-pays-67128-a-year-in-dividends-heres-what-happens-if-one-cuts?ref=yahoofinancedividend&tlnk=yf-261112-2x74qxgx)
 
 **FISV**
+- [What Could Go Wrong With Mastercard Stock?](https://www.trefis.com/stock/ma/articles/624929/what-could-go-wrong-with-mastercard-stock/2026-11-13)
 - [GPN Stock On Track For Its Worst Day In About 19 Months As Private Equity Firms Reportedly Abandon Takeover Talks](https://stocktwits.com/news-articles/markets/equity/gpn-stock-on-track-for-its-worst-day-in-about-19-months-as-private-equity-firms-reportedly-abandon-takeover-talks/cNGC3PyR9OR)
 - [CSI arms community lenders for commercial banking fight](https://www.bankingdive.com/news/csi-core-provider-community-banks-commercial-banking/874508/)
-- [Fiserv Stock Outlook: Is Wall Street Bullish or Bearish?](https://www.barchart.com/story/news/8797933/fiserv-stock-outlook-is-wall-street-bullish-or-bearish)
 
 **IDXX**
+- [Here's Why You Should Retain NVST Stock in Your Portfolio for Now](https://finance.yahoo.com/markets/stocks/articles/heres-why-retain-nvst-stock-171400174.html)
+- [Should You Continue to Retain Bruker Stock in Your Portfolio?](https://finance.yahoo.com/markets/stocks/articles/continue-retain-bruker-stock-portfolio-151800620.html)
 - [Should You Buy Zoetis Stock At This Price?](https://www.trefis.com/stock/zts/articles/623948/should-you-buy-zoetis-stock-at-this-price/2026-11-10)
-- [Is Now the Right Time to Hold Labcorp Stock in Your Portfolio?](https://finance.yahoo.com/healthcare/articles/now-time-hold-labcorp-stock-175700208.html)
-- [Should You Continue to Hold TMO Stock in Your Portfolio?](https://finance.yahoo.com/markets/stocks/articles/continue-hold-tmo-stock-portfolio-122000834.html)
 
-**IFF**
-- [Why International Flavors (IFF) International Revenue Trends Deserve Your Attention](https://finance.yahoo.com/markets/stocks/articles/why-international-flavors-iff-international-131505260.html)
-- [Here’s Why BofA Cut International Flavors & Fragrances (IFF) to Underperform](https://finance.yahoo.com/markets/stocks/articles/why-bofa-cut-international-flavors-202614886.html)
-- [International Flavors & Fragrances Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-international-flavors-fragrances-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance)
-
-**NWSA**
-- [Homebuying Cost Surges for Mortgage Holders Amid Elevated Rates, Prices, Realtor.com Says](https://finance.yahoo.com/real-estate/articles/homebuying-cost-surges-mortgage-holders-190958040.html)
-- [Upscale Home Prices Fall in October, Led by Ultra-Luxury Properties, Realtor.com Says](https://finance.yahoo.com/real-estate/articles/upscale-home-prices-fall-october-204015629.html)
-- [5 insightful analyst questions from News Corp’s Q3 CY2026 earnings call](https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-news-071736730.html)
+**EW**
+- [A $9.2 Billion Fund Dumps These 3 Stocks](https://www.tikr.com/blog/a-9-2-billion-fund-dumps-these-3-stocks?ref=yahoofinance&tlnk=yf-261113-73q37c26)
+- [Boston Scientific Bets on WATCHMAN Growth Despite Market Slowdown](https://finance.yahoo.com/healthcare/articles/boston-scientific-bets-watchman-growth-162100939.html)
+- [Edwards Lifesciences Q3 Earnings Call Highlights](https://www.marketbeat.com/instant-alerts/transcript-edwards-lifesciences-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance)
