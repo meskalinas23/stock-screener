@@ -1060,7 +1060,7 @@ id,date_flagged,ticker,direction,entry,stop,target,probability,hist_win_rate,pen
 1059,2026-10-26,LRCX,LONG,238.98,227.03,296.16,,,,,loss,2026-11-02,5,227.03,-5.0
 1060,2026-10-26,ROP,SHORT,439.07,461.02,379.6,,,,,loss,2026-10-30,4,462.31,-5.29
 1061,2026-10-26,EFX,SHORT,177.29,186.15,155.17,,,,,loss,2026-11-02,5,186.15,-5.0
-1062,2026-10-26,T,LONG,20.72,19.68,23.19,,,,,open,,,,
+1062,2026-10-26,T,LONG,20.72,19.68,23.19,,,,,expired,2026-11-23,20,22.3,7.63
 1063,2026-10-26,CBOE,SHORT,334.92,351.67,298.87,,,,,loss,2026-11-05,8,351.67,-5.0
 1064,2026-10-27,LRCX,LONG,240.59,228.56,291.93,,,,,loss,2026-11-02,4,228.56,-5.0
 1065,2026-10-27,FIX,LONG,1286.88,1222.54,1536.11,,,,,loss,2026-10-30,3,1222.54,-5.0
@@ -1238,7 +1238,7 @@ id,date_flagged,ticker,direction,entry,stop,target,probability,hist_win_rate,pen
 1237,2026-11-05,CSCO,LONG,95.78,90.99,108.03,44,67.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",loss,2026-11-20,11,90.99,-5.0
 1238,2026-11-05,ROK,LONG,382.31,363.19,431.22,39,69.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",loss,2026-11-20,11,363.19,-5.0
 1239,2026-11-05,WMB,LONG,64.06,60.86,71.77,77,100.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
-1240,2026-11-05,PSX,LONG,250.9,238.36,280.83,70,70.0,0,,open,,,,
+1240,2026-11-05,PSX,LONG,250.9,238.36,280.83,70,70.0,0,,loss,2026-11-20,11,238.36,-5.0
 1241,2026-11-05,CVS,LONG,80.46,76.44,89.72,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",win,2026-11-11,4,89.72,11.51
 1242,2026-11-05,NWS,LONG,29.27,27.81,32.6,44,67.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",loss,2026-11-20,11,27.81,-4.99
 1243,2026-11-05,CEG,LONG,238.81,226.87,265.84,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",win,2026-11-09,2,265.84,11.32
@@ -1247,7 +1247,7 @@ id,date_flagged,ticker,direction,entry,stop,target,probability,hist_win_rate,pen
 1246,2026-11-05,APA,LONG,44.33,42.11,48.81,70,70.0,0,,open,,,,
 1247,2026-11-06,FTNT,LONG,120.24,114.22,161.61,50,73.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
 1248,2026-11-06,FFIV,LONG,313.55,297.87,408.81,27,50.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
-1249,2026-11-06,VLO,LONG,346.68,329.35,410.46,71,71.0,0,,open,,,,
+1249,2026-11-06,VLO,LONG,346.68,329.35,410.46,71,71.0,0,,loss,2026-11-23,11,329.35,-5.0
 1250,2026-11-06,DVN,LONG,42.31,40.19,49.19,74,82.0,8,"below 200-day avg, downtrend (-8)",open,,,,
 1251,2026-11-06,VST,LONG,124.78,118.54,142.91,24,54.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",loss,2026-11-20,10,118.54,-5.0
 1252,2026-11-06,ADI,LONG,365.65,347.37,403.78,65,73.0,8,"below 200-day avg, downtrend (-8)",win,2026-11-11,3,403.78,10.43
@@ -1295,7 +1295,7 @@ id,date_flagged,ticker,direction,entry,stop,target,probability,hist_win_rate,pen
 1294,2026-11-20,NVDA,LONG,126.2,119.89,181.49,34,64.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1295,2026-11-20,MU,LONG,591.03,561.48,786.48,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1296,2026-11-20,P,LONG,91.84,87.25,111.96,43,50.0,7,lower highs and lower lows (-7),open,,,,
-1297,2026-11-20,KLAC,LONG,126.75,120.41,149.38,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
+1297,2026-11-20,KLAC,LONG,126.75,120.41,149.38,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",win,2026-11-23,1,149.38,17.85
 1298,2026-11-20,GEV,LONG,694.24,659.53,817.69,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1299,2026-11-20,JBL,LONG,223.38,212.21,258.21,20,50.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1300,2026-11-20,CDNS,LONG,279.29,265.32,322.63,40,55.0,15,"below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
@@ -1304,10 +1304,13 @@ id,date_flagged,ticker,direction,entry,stop,target,probability,hist_win_rate,pen
 1303,2026-11-20,ADI,LONG,346.83,329.49,397.64,47,70.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
 1304,2026-11-20,VST,LONG,115.18,109.42,131.54,35,50.0,15,"below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1305,2026-11-20,ROK,LONG,361.08,343.03,409.04,41,71.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
-1306,2026-11-20,TXN,LONG,263.18,250.02,297.99,47,55.0,8,"below 200-day avg, downtrend (-8)",open,,,,
-1307,2026-11-20,APH,LONG,69.72,66.24,77.82,35,65.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
+1306,2026-11-20,TXN,LONG,263.18,250.02,297.99,47,55.0,8,"below 200-day avg, downtrend (-8)",win,2026-11-23,1,297.99,13.23
+1307,2026-11-20,APH,LONG,69.72,66.24,77.82,35,65.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",win,2026-11-23,1,77.82,11.62
 1308,2026-11-20,IP,LONG,30.27,28.76,33.79,34,57.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
 1309,2026-11-20,CSCO,LONG,90.12,85.61,100.48,41,71.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
 1310,2026-11-20,SLB,LONG,45.69,43.41,50.94,50,73.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
 1311,2026-11-20,IRM,LONG,101.91,96.81,112.54,39,62.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
 1312,2026-11-20,IBKR,LONG,70.99,67.44,78.13,30,60.0,30,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)",open,,,,
+1313,2026-11-24,CRWD,LONG,208.97,198.52,235.47,43,50.0,7,lower highs and lower lows (-7),open,,,,
+1314,2026-11-24,NEM,LONG,100.73,95.69,111.56,27,50.0,23,"broke below 60d swing low (-15); below 200-day avg, downtrend (-8)",open,,,,
+1315,2026-11-24,VLO,LONG,329.4,312.93,364.87,61,83.0,22,broke below 60d swing low (-15); lower highs and lower lows (-7),open,,,,

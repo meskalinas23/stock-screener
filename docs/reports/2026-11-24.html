@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+        .flags { color: #a05a00; font-size: 0.9em; margin: 4px 0; }
+        .flags.ok { color: #0a7d2c; }
+        .chip { background: #f0f0f0; border-radius: 10px; padding: 2px 8px; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-11-24</p>
+    <div class='warning'><strong>This week's high-impact events:</strong><ul><li>Core PCE Price Index m/m on 2026-11-25 at 13:30 UTC</li><li>Prelim GDP q/q on 2026-11-25 at 13:30 UTC</li></ul></div>
+    
+        <p class="track-record"><strong>Live track record:</strong>
+        1220 closed picks, 33% win rate.
+        Average predicted probability 42% vs actual 39%
+        (51 decided). 95 still open.
+        <a href="../track.html">Full track record &rarr;</a></p>
+        
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>3 of today's picks are in Energy &mdash; likely one shared sector move, not 3 independent opportunities</li></ul></div>
+    <h2>Setups (9)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Probability</th><th>Hist. win rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>UNH</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$336.08</td>
+                <td>22.1</td>
+                <td>-14.0%</td>
+                <td>1.79x &#128293;</td>
+                <td>$336.08</td>
+                <td>$319.28</td>
+                <td>$390.79</td>
+                <td>3.26:1</td>
+                <td>10.5</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>20%</b></td>
+                <td>50%</td>
+                <td>12</td>
+                <td>50d</td>
+            </tr>
+            
+            <tr>
+                <td>IP</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$28.98</td>
+                <td>17.5</td>
+                <td>-13.7%</td>
+                <td>1.98x &#128293;</td>
+                <td>$28.98</td>
+                <td>$27.53</td>
+                <td>$33.59</td>
+                <td>3.18:1</td>
+                <td>8.0</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8)"><b>34%</b></td>
+                <td>57%</td>
+                <td>21</td>
+                <td>66d</td>
+            </tr>
+            
+            <tr>
+                <td>CRWD</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$208.97</td>
+                <td>32.3</td>
+                <td>-11.3%</td>
+                <td>3.87x &#128293;</td>
+                <td>$208.97</td>
+                <td>$198.52</td>
+                <td>$235.47</td>
+                <td>2.54:1</td>
+                <td>6.9</td>
+                <td title="lower highs and lower lows (-7)"><b>43%</b></td>
+                <td>50%</td>
+                <td>16</td>
+                <td>unknown</td>
+            </tr>
+            
+            <tr>
+                <td>MPC</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$357.69</td>
+                <td>22.4</td>
+                <td>-10.7%</td>
+                <td>0.88x</td>
+                <td>$357.69</td>
+                <td>$339.81</td>
+                <td>$400.52</td>
+                <td>2.39:1</td>
+                <td>10.4</td>
+                <td title="lower highs and lower lows (-7)"><b>73%</b></td>
+                <td>80%</td>
+                <td>10</td>
+                <td>71d</td>
+            </tr>
+            
+            <tr>
+                <td>VEEV</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$268.65</td>
+                <td>21.7</td>
+                <td>-10.0%</td>
+                <td>0.92x</td>
+                <td>$268.65</td>
+                <td>$255.22</td>
+                <td>$298.63</td>
+                <td>2.23:1</td>
+                <td>8.5</td>
+                <td title="lower highs and lower lows (-7)"><b>48%</b></td>
+                <td>55%</td>
+                <td>11</td>
+                <td>10d</td>
+            </tr>
+            
+            <tr>
+                <td>DVN</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$40.95</td>
+                <td>25.3</td>
+                <td>-9.9%</td>
+                <td>1.13x</td>
+                <td>$40.95</td>
+                <td>$38.9</td>
+                <td>$45.45</td>
+                <td>2.2:1</td>
+                <td>8.0</td>
+                <td title="below 200-day avg, downtrend (-8)"><b>74%</b></td>
+                <td>82%</td>
+                <td>11</td>
+                <td>85d</td>
+            </tr>
+            
+            <tr>
+                <td>NEM</td>
+                <td>Materials</td>
+                <td class="long">LONG</td>
+                <td>$100.73</td>
+                <td>35.8</td>
+                <td>-9.7%</td>
+                <td>1.15x</td>
+                <td>$100.73</td>
+                <td>$95.69</td>
+                <td>$111.56</td>
+                <td>2.15:1</td>
+                <td>5.2</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8)"><b>27%</b></td>
+                <td>50%</td>
+                <td>12</td>
+                <td>87d</td>
+            </tr>
+            
+            <tr>
+                <td>VLO</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$329.4</td>
+                <td>24.5</td>
+                <td>-9.7%</td>
+                <td>0.84x</td>
+                <td>$329.4</td>
+                <td>$312.93</td>
+                <td>$364.87</td>
+                <td>2.15:1</td>
+                <td>10.4</td>
+                <td title="broke below 60d swing low (-15); lower highs and lower lows (-7)"><b>61%</b></td>
+                <td>83%</td>
+                <td>6</td>
+                <td>66d</td>
+            </tr>
+            
+            <tr>
+                <td>EXPE</td>
+                <td>Consumer Discretionary</td>
+                <td class="long">LONG</td>
+                <td>$239.46</td>
+                <td>33.9</td>
+                <td>-9.5%</td>
+                <td>0.61x</td>
+                <td>$239.46</td>
+                <td>$227.49</td>
+                <td>$264.65</td>
+                <td>2.1:1</td>
+                <td>8.5</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8)"><b>30%</b></td>
+                <td>53%</td>
+                <td>15</td>
+                <td>80d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. Probability = this ticker's historical win rate minus penalties when the chart structure is broken (hover for reasons). &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>Charts &amp; news</h2><h3>UNH <span class='long'>LONG</span> &mdash; 20%</h3><p class='flags'>Probability 50% &rarr; <b>20%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on UNH: <span class='chip'>2026-11-19: &#9203; still open</span> <span class='chip'>2026-11-18: &#10060; hit stop -5.0%</span> </p><img src='../charts/UNH_2026-11-24.png' alt='UNH chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/not-good-medicare-proposes-107-billion-in-bonus-cuts-thats-a-big-risk-for-unitedhealth-and-humana?ref=yahoofinance&amp;tlnk=yf-261123-2phpfq43'>Not Good: Medicare Proposes $107 Billion in Bonus Cuts. That’s a Big Risk for UnitedHealth and Humana</a></li><li><a href='https://www.barrons.com/articles/stock-movers-901d6342?siteid=yhoof2&amp;yptr=yahoo'>Nvidia, Dell, Micron, Anthropic, CrowdStrike, UnitedHealth, and More Stocks That Explain Today’s Market</a></li><li><a href='https://www.barrons.com/articles/defensive-stocks-ai-tyson-walmart-55bd8545?siteid=yhoof2&amp;yptr=yahoo'>Why Walmart and Other Defensive Stocks Are Losing Their Luster</a></li></ul><h3>IP <span class='long'>LONG</span> &mdash; 34%</h3><p class='flags'>Probability 57% &rarr; <b>34%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8)</p><p>Earlier signals on IP: <span class='chip'>2026-11-20: &#9203; still open</span> <span class='chip'>2026-09-17: &#10060; hit stop -5.0%</span> <span class='chip'>2026-09-16: &#10060; hit stop -5.0%</span> </p><img src='../charts/IP_2026-11-24.png' alt='IP chart' style='max-width:100%;'><ul><li><a href='https://www.marketbeat.com/instant-alerts/event-international-paper-approves-ds-smith-spin-off-targets-2-billion-debt-reduction-2026-11-23/?utm_source=yahoofinance&amp;utm_medium=yahoofinance'>International Paper Approves DS Smith Spin-Off, Targets $2 Billion Debt Reduction</a></li><li><a href='https://www.barrons.com/articles/international-paper-ds-smith-spinoff-stock-036befc9?siteid=yhoof2&amp;yptr=yahoo'>Paper Giant Scraps Sale of European Package Business for Spinoff Instead. Why the Stock Fell.</a></li><li><a href='https://www.trefis.com/stock/ip/articles/627693/can-international-papers-6-dividend-offset-its-38-drop/2026-11-23'>Can International Paper&#x27;s 6% Dividend Offset Its 38% Drop?</a></li></ul><h3>CRWD <span class='long'>LONG</span> &mdash; 43%</h3><p class='flags'>Probability 50% &rarr; <b>43%</b>: lower highs and lower lows (-7)</p><img src='../charts/CRWD_2026-11-24.png' alt='CRWD chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/technology/article/crowdstrike-is-spending-439-billion-to-buy-zscaler-in-a-huge-cybersecurity-deal-as-tech-outages-spread-110645119.html'>CrowdStrike is spending $43.9 billion to buy Zscaler in a huge cybersecurity deal as tech outages spread</a></li><li><a href='https://www.tikr.com/blog/palo-alto-has-a-really-good-chance-of-being-a-trillion-dollar-business-says-chamath-heres-what-it-takes?ref=yahoofinance&amp;tlnk=yf-261123-f9mpmcjw'>Palo Alto Has “a Really Good Chance of Being a Trillion Dollar Business,” Says Chamath. Here’s What It Takes</a></li><li><a href='https://www.fool.com/investing/2026/11/23/why-crowdstrike-stock-was-down-today/'>Why CrowdStrike Stock Was Down Today</a></li></ul><h3>MPC <span class='long'>LONG</span> &mdash; 73%</h3><p class='flags'>Probability 80% &rarr; <b>73%</b>: lower highs and lower lows (-7)</p><p>Earlier signals on MPC: <span class='chip'>2026-11-19: &#9203; still open</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> <span class='chip'>2026-08-25: &#10060; hit stop -5.5%</span> </p><img src='../charts/MPC_2026-11-24.png' alt='MPC chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/mplxs-dividend-yield-just-hit-8-7-its-highest-since-march-2024-can-its-distributable-cash-flow-keep-paying-it?ref=yahoofinancedividend&amp;tlnk=yf-261123-q5cq58f5'>MPLX’s Dividend Yield Just Hit 8.7%, Its Highest Since March 2024. Can Its Distributable Cash Flow Keep Paying It?</a></li><li><a href='https://247wallst.com/investing/2026/11/23/billionaire-carl-icahn-has-86-of-his-9-4-billion-stock-portfolio-in-just-two-companies/'>Billionaire Carl Icahn Has 86% of His $9.4 Billion Stock Portfolio in Just Two Companies</a></li><li><a href='https://finance.yahoo.com/energy/articles/zacks-analyst-blog-highlights-valero-114500717.html'>The Zacks Analyst Blog Highlights Valero Energy, Marathon Petroleum and Phillips 66</a></li></ul><h3>VEEV <span class='long'>LONG</span> &mdash; 48%</h3><p class='flags'>Probability 55% &rarr; <b>48%</b>: lower highs and lower lows (-7)</p><p>Earlier signals on VEEV: <span class='chip'>2026-11-19: &#9203; still open</span> <span class='chip'>2026-11-18: &#10060; hit stop -5.0%</span> <span class='chip'>2026-09-03: &#8987; expired +3.9%</span> </p><img src='../charts/VEEV_2026-11-24.png' alt='VEEV chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/veeva-veev-stock-may-17-231605275.html'>Veeva (VEEV) Stock May Be 17% Undervalued On Cash Flow Expectations</a></li><li><a href='https://www.trefis.com/stock/veev/articles/627332/why-is-veeva-stock-falling/2026-11-20'>Why Is Veeva Stock Falling?</a></li><li><a href='https://www.barchart.com/story/news/8932678/veeva-systems-stock-analyst-estimates-ratings'>Veeva Systems Stock: Analyst Estimates &amp; Ratings</a></li></ul><h3>DVN <span class='long'>LONG</span> &mdash; 74%</h3><p class='flags'>Probability 82% &rarr; <b>74%</b>: below 200-day avg, downtrend (-8)</p><p>Earlier signals on DVN: <span class='chip'>2026-11-06: &#9203; still open</span> <span class='chip'>2026-08-24: &#10060; hit stop -5.0%</span> <span class='chip'>2026-08-24: &#10060; hit stop -5.4%</span> </p><img src='../charts/DVN_2026-11-24.png' alt='DVN chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/mtdr/articles/627674/can-matador-pay-its-3-1-billion-spending-bill/2026-11-23'>Can Matador Pay Its $3.1 Billion Spending Bill?</a></li><li><a href='https://www.tikr.com/blog/how-many-shares-of-devon-energy-or-eog-resources-pay-1000-a-month-in-dividends?ref=yahoofinancedividend&amp;tlnk=yf-261122-64v947hq'>How Many Shares of Devon Energy or EOG Resources Pay $1,000 a Month in Dividends?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/crgy-vs-fang-e-p-150400550.html'>CRGY vs. FANG: Which E&amp;P Player Has the Upper Hand?</a></li></ul><h3>NEM <span class='long'>LONG</span> &mdash; 27%</h3><p class='flags'>Probability 50% &rarr; <b>27%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8)</p><p>Earlier signals on NEM: <span class='chip'>2026-08-28: &#9989; hit target +11.4%</span> <span class='chip'>2026-08-27: &#8987; expired +7.7%</span> <span class='chip'>2026-08-25: &#8987; expired +8.6%</span> </p><img src='../charts/NEM_2026-11-24.png' alt='NEM chart' style='max-width:100%;'><ul><li><a href='https://www.trefis.com/stock/nem/articles/627553/can-newmont-stock-climb-back-to-130/2026-11-23'>Can Newmont Stock Climb Back To $130?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/5-cheapest-stocks-billionaire-druckenmiller-212047402.html'>5 Cheapest Stocks Billionaire Druckenmiller is Betting on</a></li><li><a href='https://www.trefis.com/stock/teck/articles/627834/why-did-teck-resources-stock-fall-again/2026-11-23'>Why Did Teck Resources Stock Fall Again?</a></li></ul><h3>VLO <span class='long'>LONG</span> &mdash; 61%</h3><p class='flags'>Probability 83% &rarr; <b>61%</b>: broke below 60d swing low (-15); lower highs and lower lows (-7)</p><p>Earlier signals on VLO: <span class='chip'>2026-11-06: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-02: &#10060; hit stop -5.0%</span> </p><img src='../charts/VLO_2026-11-24.png' alt='VLO chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/energy/articles/5-energy-stocks-shrug-off-220000268.html'>5 Energy Stocks That Can Shrug Off a December Fed Rate Hike</a></li><li><a href='https://finance.yahoo.com/energy/articles/saipem-wins-offshore-drilling-contracts-161500059.html'>Saipem Wins New Offshore Drilling Contracts in Egypt and Suriname</a></li><li><a href='https://www.trefis.com/stock/cvx/articles/627550/should-you-buy-chevron-stock-for-its-cash/2026-11-22'>Should You Buy Chevron Stock For Its Cash?</a></li></ul><h3>EXPE <span class='long'>LONG</span> &mdash; 30%</h3><p class='flags'>Probability 53% &rarr; <b>30%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8)</p><p>Earlier signals on EXPE: <span class='chip'>2026-11-18: &#9203; still open</span> <span class='chip'>2026-11-10: &#10060; hit stop -5.2%</span> <span class='chip'>2026-09-24: &#9989; hit target +13.3%</span> </p><img src='../charts/EXPE_2026-11-24.png' alt='EXPE chart' style='max-width:100%;'><ul><li><a href='https://www.tikr.com/blog/cathie-wood-and-8-other-big-funds-bought-airbnb-last-quarter-ken-fisher-and-11-others-sold-whos-right?ref=yahoofinance&amp;tlnk=yf-261123-49mx45f3'>Cathie Wood and 8 Other Big Funds Bought Airbnb Last Quarter. Ken Fisher and 11 Others Sold. Who’s Right?</a></li><li><a href='https://www.barrons.com/articles/expedia-booking-stock-muse-ai-test-e4332be1?siteid=yhoof2&amp;yptr=yahoo'>Why Expedia and Booking Can Beat the Muse Test—and the Stocks Can Rally</a></li><li><a href='https://www.trefis.com/stock/mar/articles/627178/is-marriott-stock-worth-41x-earnings-next-to-booking/2026-11-20'>Is Marriott Stock Worth 41x Earnings Next To Booking?</a></li></ul>
+</body>
+</html>
