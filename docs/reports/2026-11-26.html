@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mean-Reversion Screener</title>
+    <style>
+        body { font-family: -apple-system, Arial, sans-serif; max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+        th { background: #f5f5f5; }
+        .long { color: #0a7d2c; font-weight: bold; }
+        .short { color: #c0392b; font-weight: bold; }
+        .updated { color: #666; font-size: 0.9em; }
+        .warning { background: #fff8e1; border: 1px solid #f0d060; padding: 10px 15px; border-radius: 4px; margin: 15px 0; }
+        .track-record { background: #eef7ee; border: 1px solid #b7d9b7; padding: 10px 15px; border-radius: 4px; }
+        .notes { color: #555; font-size: 0.85em; margin-top: 15px; }
+        .archive { columns: 3; column-gap: 20px; list-style: none; padding: 0; }
+        .archive li { margin-bottom: 4px; }
+        .flags { color: #a05a00; font-size: 0.9em; margin: 4px 0; }
+        .flags.ok { color: #0a7d2c; }
+        .chip { background: #f0f0f0; border-radius: 10px; padding: 2px 8px; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <h1>Mean-Reversion Screener</h1>
+    <p class="updated">Last updated: 2026-11-26</p>
+    <div class='warning'><em>No high-impact USD events found this week.</em></div>
+    
+        <p class="track-record"><strong>Live track record:</strong>
+        1241 closed picks, 33% win rate.
+        Average predicted probability 41% vs actual 33%
+        (66 decided). 83 still open.
+        <a href="../track.html">Full track record &rarr;</a></p>
+        
+    <div class='warning'><strong>Sector concentration warning:</strong><ul><li>5 of today's picks are in Information Technology &mdash; likely one shared sector move, not 5 independent opportunities</li></ul></div>
+    <h2>Setups (10)</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Ticker</th><th>Sector</th><th>Dir</th><th>Price</th><th>RSI(7)</th>
+                    <th>% vs 20D</th><th>Volume</th><th>Entry</th><th>Stop</th><th>Target</th>
+                    <th>R:R</th><th>Avg Hold</th><th>Probability</th><th>Hist. win rate</th><th>Sample</th><th>Earnings</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>MU</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$601.25</td>
+                <td>34.0</td>
+                <td>-19.1%</td>
+                <td>1.43x</td>
+                <td>$601.25</td>
+                <td>$571.19</td>
+                <td>$742.8</td>
+                <td>4.71:1</td>
+                <td>8.7</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>20%</b></td>
+                <td>50%</td>
+                <td>12</td>
+                <td>21d</td>
+            </tr>
+            
+            <tr>
+                <td>LRCX</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$185.01</td>
+                <td>34.6</td>
+                <td>-14.1%</td>
+                <td>1.46x</td>
+                <td>$185.01</td>
+                <td>$175.76</td>
+                <td>$215.46</td>
+                <td>3.29:1</td>
+                <td>5.0</td>
+                <td title="below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>35%</b></td>
+                <td>50%</td>
+                <td>8</td>
+                <td>62d</td>
+            </tr>
+            
+            <tr>
+                <td>ADI</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$333.11</td>
+                <td>36.6</td>
+                <td>-13.6%</td>
+                <td>1.48x</td>
+                <td>$333.11</td>
+                <td>$316.45</td>
+                <td>$385.76</td>
+                <td>3.16:1</td>
+                <td>8.6</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8)"><b>47%</b></td>
+                <td>70%</td>
+                <td>10</td>
+                <td>83d</td>
+            </tr>
+            
+            <tr>
+                <td>NVDA</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$149.3</td>
+                <td>41.4</td>
+                <td>-13.4%</td>
+                <td>1.04x</td>
+                <td>$149.3</td>
+                <td>$141.84</td>
+                <td>$172.48</td>
+                <td>3.1:1</td>
+                <td>7.8</td>
+                <td title="below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>49%</b></td>
+                <td>64%</td>
+                <td>14</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>MPC</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$346.27</td>
+                <td>18.1</td>
+                <td>-11.6%</td>
+                <td>0.9x</td>
+                <td>$346.27</td>
+                <td>$328.96</td>
+                <td>$391.88</td>
+                <td>2.63:1</td>
+                <td>10.4</td>
+                <td title="broke below 60d swing low (-15); lower highs and lower lows (-7)"><b>58%</b></td>
+                <td>80%</td>
+                <td>10</td>
+                <td>68d</td>
+            </tr>
+            
+            <tr>
+                <td>CHTR</td>
+                <td>Communication Services</td>
+                <td class="short">SHORT</td>
+                <td>$147.27</td>
+                <td>73.4</td>
+                <td>14.8%</td>
+                <td>1.2x</td>
+                <td>$147.27</td>
+                <td>$154.63</td>
+                <td>$128.31</td>
+                <td>2.57:1</td>
+                <td>7.0</td>
+                <td title="higher highs and higher lows (-7)"><b>64%</b></td>
+                <td>71%</td>
+                <td>14</td>
+                <td>64d</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>Information Technology</td>
+                <td class="long">LONG</td>
+                <td>$94.69</td>
+                <td>39.7</td>
+                <td>-10.6%</td>
+                <td>0.92x</td>
+                <td>$94.69</td>
+                <td>$89.96</td>
+                <td>$105.93</td>
+                <td>2.37:1</td>
+                <td>7.6</td>
+                <td title="lower highs and lower lows (-7)"><b>43%</b></td>
+                <td>50%</td>
+                <td>10</td>
+                <td>90d</td>
+            </tr>
+            
+            <tr>
+                <td>GEV</td>
+                <td>Industrials</td>
+                <td class="long">LONG</td>
+                <td>$715.0</td>
+                <td>35.6</td>
+                <td>-10.2%</td>
+                <td>1.22x</td>
+                <td>$715.0</td>
+                <td>$679.25</td>
+                <td>$796.18</td>
+                <td>2.27:1</td>
+                <td>8.6</td>
+                <td title="broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>20%</b></td>
+                <td>50%</td>
+                <td>14</td>
+                <td>62d</td>
+            </tr>
+            
+            <tr>
+                <td>UNH</td>
+                <td>Health Care</td>
+                <td class="long">LONG</td>
+                <td>$346.19</td>
+                <td>33.0</td>
+                <td>-9.9%</td>
+                <td>0.87x</td>
+                <td>$346.19</td>
+                <td>$328.88</td>
+                <td>$384.32</td>
+                <td>2.2:1</td>
+                <td>10.5</td>
+                <td title="below 200-day avg, downtrend (-8); lower highs and lower lows (-7)"><b>35%</b></td>
+                <td>50%</td>
+                <td>12</td>
+                <td>47d</td>
+            </tr>
+            
+            <tr>
+                <td>VLO</td>
+                <td>Energy</td>
+                <td class="long">LONG</td>
+                <td>$323.0</td>
+                <td>22.2</td>
+                <td>-9.6%</td>
+                <td>0.75x</td>
+                <td>$323.0</td>
+                <td>$306.85</td>
+                <td>$357.27</td>
+                <td>2.12:1</td>
+                <td>10.4</td>
+                <td title="broke below 60d swing low (-15); lower highs and lower lows (-7)"><b>49%</b></td>
+                <td>71%</td>
+                <td>7</td>
+                <td>63d</td>
+            </tr>
+            </tbody>
+        </table>
+        
+    <p class="notes">
+        LONG = oversold, expected to bounce back up toward the 20-day average.
+        SHORT = overbought, expected to pull back down toward the 20-day average.
+        Stop-loss = 5% against the position. Probability = this ticker's historical win rate minus penalties when the chart structure is broken (hover for reasons). &#128293; means volume was 1.5x+ the 20-day average.
+        Tickers with earnings due within 3 days are excluded.
+        Macro events pulled live from a public economic calendar feed (high-impact USD events only).
+        Mechanical screen only &mdash; check news before acting. Not financial advice.
+    </p>
+    <h2>Charts &amp; news</h2><h3>MU <span class='long'>LONG</span> &mdash; 20%</h3><p class='flags'>Probability 50% &rarr; <b>20%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on MU: <span class='chip'>2026-11-25: &#9203; still open</span> <span class='chip'>2026-11-20: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-05: &#10060; hit stop -5.0%</span> </p><img src='../charts/MU_2026-11-26.png' alt='MU chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-hard-write-off-micron-210000375.html'>Why It’s Hard to Write Off Micron (MU) Even with a Memory Peak in Sight</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/5-most-oversold-semiconductor-stocks-194738573.html'>5 Most Oversold Semiconductor Stocks to Buy for 2027</a></li><li><a href='https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-wild-ride-nasdaq-nvidia-slash-losses-anthropic-higher/?src=A00220&amp;yptr=yahoo'>Dow Jones Futures Rise With U.S. Markets Shut; Look For This Bullish Signal</a></li></ul><h3>LRCX <span class='long'>LONG</span> &mdash; 35%</h3><p class='flags'>Probability 50% &rarr; <b>35%</b>: below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on LRCX: <span class='chip'>2026-11-25: &#9203; still open</span> <span class='chip'>2026-11-05: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.6%</span> </p><img src='../charts/LRCX_2026-11-26.png' alt='LRCX chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/lam-research-corporation-lrcx-oversold-194754377.html'>Is Lam Research Corporation (LRCX) Oversold as Strong  AI Demand Supports Recovery?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/lam-research-stocks-fall-5-183545721.html'>Lam Research Stocks Fall 5.68% as China Exposure Weighs on Chip Toolmakers</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/applied-materials-stocks-fall-3-183452125.html'>Applied Materials Stocks Fall 3.89% as UBS Trims Target and China Curbs Loom</a></li></ul><h3>ADI <span class='long'>LONG</span> &mdash; 47%</h3><p class='flags'>Probability 70% &rarr; <b>47%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8)</p><p>Earlier signals on ADI: <span class='chip'>2026-11-24: &#9203; still open</span> <span class='chip'>2026-11-20: &#10060; hit stop -5.4%</span> <span class='chip'>2026-11-06: &#9989; hit target +10.4%</span> </p><img src='../charts/ADI_2026-11-26.png' alt='ADI chart' style='max-width:100%;'><ul><li><a href='https://www.proactiveinvestors.com/companies/news/1102545/analog-devices-keeps-ubs-target-despite-softer-earnings-guidance-1102545.html'>Analog Devices keeps UBS target despite softer earnings guidance</a></li><li><a href='https://247wallst.com/investing/2026/11/25/analog-devices-just-plunged-after-earnings-is-its-dividend-now-a-bargain/'>Analog Devices Just Plunged After Earnings. Is Its Dividend Now a Bargain?</a></li><li><a href='https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks'>Earnings Calendar and Analysis for This Week</a></li></ul><h3>NVDA <span class='long'>LONG</span> &mdash; 49%</h3><p class='flags'>Probability 64% &rarr; <b>49%</b>: below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on NVDA: <span class='chip'>2026-11-20: &#9203; still open</span> <span class='chip'>2026-11-19: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-17: &#10060; hit stop -5.0%</span> </p><img src='../charts/NVDA_2026-11-26.png' alt='NVDA chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/video/jensen-huangs-second-act-nvidia-140000599.html'>Will Jensen Huang&#x27;s second act as Nvidia CEO be different?</a></li><li><a href='https://finance.yahoo.com/video/jensen-huang-absolutely-could-fired-130000374.html'>Jensen Huang &#x27;absolutely could be fired again,&#x27; legal expert says</a></li><li><a href='https://finance.yahoo.com/video/5-things-im-thankful-ai-120000522.html'>5 things I&#x27;m thankful for in AI</a></li></ul><h3>MPC <span class='long'>LONG</span> &mdash; 58%</h3><p class='flags'>Probability 80% &rarr; <b>58%</b>: broke below 60d swing low (-15); lower highs and lower lows (-7)</p><p>Earlier signals on MPC: <span class='chip'>2026-11-24: &#9203; still open</span> <span class='chip'>2026-11-19: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> </p><img src='../charts/MPC_2026-11-26.png' alt='MPC chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/marathon-petroleum-mpc-dropped-drawing-111521309.html'>Marathon Petroleum (MPC) Dropped, So What Is Drawing Attention Now?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/ishares-russell-mid-cap-iwr-110535789.html'>iShares Russell Mid-Cap (IWR) Adds Marathon Petroleum and Phillips 66 on Tuesday</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/marathon-petroleum-mpc-stock-looks-091440489.html'>Marathon Petroleum (MPC) Stock Looks Reasonable Following Strong Q3 Results</a></li></ul><h3>CHTR <span class='short'>SHORT</span> &mdash; 64%</h3><p class='flags'>Probability 71% &rarr; <b>64%</b>: higher highs and higher lows (-7)</p><p>Earlier signals on CHTR: <span class='chip'>2026-11-25: &#9203; still open</span> <span class='chip'>2026-11-17: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-10: &#10060; hit stop -5.0%</span> </p><img src='../charts/CHTR_2026-11-26.png' alt='CHTR chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html'>Why Charter Communications Stock Is Back In Focus After $2 Billion Cost Saving Plan</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/charter-communications-chtr-jumps-cox-160904399.html'>Charter Communications (CHTR) Jumps After Cox Deal, Is It Still Cheap?</a></li><li><a href='https://stocktwits.com/news-articles/markets/equity/chtr-stock-posts-2nd-consecutive-day-of-gains-retail-turns-bullish-the-gift-that-keeps-on-giving/cNbx3BgR9ZT'>CHTR Stock Posts 2nd Consecutive Day Of Gains: Retail Turns Bullish — &#x27;The Gift That Keeps On Giving&#x27;</a></li></ul><h3>P <span class='long'>LONG</span> &mdash; 43%</h3><p class='flags'>Probability 50% &rarr; <b>43%</b>: lower highs and lower lows (-7)</p><p>Earlier signals on P: <span class='chip'>2026-11-25: &#9203; still open</span> <span class='chip'>2026-11-20: &#10060; hit stop -6.2%</span> <span class='chip'>2026-11-18: &#9989; hit target +13.2%</span> </p><img src='../charts/P_2026-11-26.png' alt='P chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/technology/articles/keel-p-technology-services-stock-145700047.html'>KEEL or P: Which Technology Services Stock Is Better-Placed Now?</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/invesco-p-500-high-beta-110539855.html'>Invesco S&amp;P 500 High Beta (SPHB) Buys $13.4 Million More Bloom Energy on Monday</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/why-everpure-p-stock-down-203130134.html'>Why Is Everpure (P) Stock Down Today? AI Chip, Storage Selloff Weighs</a></li></ul><h3>GEV <span class='long'>LONG</span> &mdash; 20%</h3><p class='flags'>Probability 50% &rarr; <b>20%</b>: broke below 60d swing low (-15); below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on GEV: <span class='chip'>2026-11-20: &#9203; still open</span> <span class='chip'>2026-11-05: &#10060; hit stop -5.0%</span> <span class='chip'>2026-10-23: &#10060; hit stop -5.0%</span> </p><img src='../charts/GEV_2026-11-26.png' alt='GEV chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/energy/articles/energy-transition-green-rain-energy-113711470.html'>Energy Transition Update - Green Rain Energy Expands With Innovative EV Charging Deal</a></li><li><a href='https://www.tikr.com/blog/morgan-stanleys-335-target-says-bloom-energys-selloff-went-too-far?ref=yahoofinance&amp;tlnk=yf-261126-27xrg2g9'>Morgan Stanley’s $335 Target Says Bloom Energy’s Selloff Went Too Far</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/state-street-industrial-select-sector-110507358.html'>State Street Industrial Select Sector SPDR (XLI) Adds GE and RTX on Nov. 24</a></li></ul><h3>UNH <span class='long'>LONG</span> &mdash; 35%</h3><p class='flags'>Probability 50% &rarr; <b>35%</b>: below 200-day avg, downtrend (-8); lower highs and lower lows (-7)</p><p>Earlier signals on UNH: <span class='chip'>2026-11-19: &#9203; still open</span> <span class='chip'>2026-11-18: &#10060; hit stop -5.0%</span> </p><img src='../charts/UNH_2026-11-26.png' alt='UNH chart' style='max-width:100%;'><ul><li><a href='https://finance.yahoo.com/healthcare/articles/could-cms-proposed-star-ratings-110600684.html'>Could CMS&#x27; Proposed Star Ratings Changes Slow ELV&#x27;s MA Recovery?</a></li><li><a href='https://finance.yahoo.com/healthcare/articles/state-street-health-care-select-110418846.html'>State Street Health Care Select Sector SPDR (XLV) Sells LLY and JNJ on Nov. 24</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-unitedhealth-unh-110321795.html'>ETFs Are Net Sellers of UnitedHealth (UNH) on Nov. 24</a></li></ul><h3>VLO <span class='long'>LONG</span> &mdash; 49%</h3><p class='flags'>Probability 71% &rarr; <b>49%</b>: broke below 60d swing low (-15); lower highs and lower lows (-7)</p><p>Earlier signals on VLO: <span class='chip'>2026-11-24: &#9203; still open</span> <span class='chip'>2026-11-06: &#10060; hit stop -5.0%</span> <span class='chip'>2026-11-04: &#10060; hit stop -5.0%</span> </p><img src='../charts/VLO_2026-11-26.png' alt='VLO chart' style='max-width:100%;'><ul><li><a href='https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026/card/gasoline-prices-decline-for-32nd-straight-day-oq1GbMVgQD8lHIsSJDmc?siteid=yhoof2&amp;yptr=yahoo'>Gasoline Prices Decline for 32nd Straight Day</a></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/arko-petroleum-apc-stock-5-201515767.html'>Arko Petroleum (APC) Stock Is Up 5.3% Today Without Company News</a></li><li><a href='https://finance.yahoo.com/energy/articles/energy-stocks-benefit-supply-disruptions-175400730.html'>Energy Stocks Benefit From Supply Disruptions: Can Momentum Last?</a></li></ul>
+</body>
+</html>
